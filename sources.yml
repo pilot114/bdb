@@ -1,0 +1,30 @@
+# TODO: auth. with headers, with login:pass for dbs, etc
+
+mongo_test:
+  expire: 1d
+  type: [db, mongo]
+  url: mongodb://172.17.0.2:27017
+  selectors:
+    star_size: [space, star, size]
+    star_type: [space, star, type]
+    planet_age: [space, planet, age]
+
+csv_test:
+  description: Zip-codes штатов США на состояние 2014 года
+  expire: never
+  type: [file, csv]
+  url: https://www.irs.gov/pub/irs-soi/14zpallagi.csv
+  selectors:
+    users: users
+
+page_test:
+  description: Котировки с Яндекса за 10 последние дней
+  expire: 1m
+  type: [file, html]
+  url: https://news.yandex.ru/quotes/1.html
+  selectors:
+    price: td.quote__value
+    name: td.quote__change
+
+# json_test
+# http://media.mongodb.org/zips.json
