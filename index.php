@@ -9,12 +9,14 @@ use Bdb\Source;
 
 $config = Yaml::parse(file_get_contents('./sources.yml'));
 
-$client = new MongoDB\Client("mongodb://172.17.0.2:27017");
 $sources = [];
 foreach ($config as $name => $sourceConfig) {
+	// create source-specific client
 	$client = ClientFactory::build($sourceConfig);
+	// create array sources
 	$sources[$name] = new Source($name, $sourceConfig, $client);
 }
+
 // TODO: promise access
 // TODO: abstract query
 $clearData = [

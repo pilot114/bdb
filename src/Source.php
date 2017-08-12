@@ -3,6 +3,8 @@
 namespace Bdb;
 
 /*
+Source - источник данных (датасетов)
+Контролирует, откуда и как они будут получены.
 
 $source = new Source('wiki', CONFIG, CLIENT);
 или если нужно брать только из кэша
@@ -31,6 +33,7 @@ class Source
 	{
 		$this->config = $config;
 		$this->client = $client;
+		$this->cacher = new FileCacher();
 		$this->onlyCache = $onlyCache;
 
 		$this->tempDir = self::TEMP_DIR . $name;
@@ -43,7 +46,7 @@ class Source
 
 		$lastUpdateTs = $this->getLastUpdateTs();
 		$getExpireSec = $this->getExpireSec($config['expire']);
-		if (time() < $lastUpdateTs + $getExpireSec) {
+		if (time() < ($lastUpdateTs + $getExpireSec)) {
 			$this->expired = false;
 		}
 	}
@@ -78,7 +81,7 @@ class Source
 	/*
 		стягивает данные из источника и сохраняет в одном из удобочитаемых
 		для $this->client форматов в темповой директории
-		вызывается ясно или скрыто, если данные просрочены
+		вызывается явно или скрыто, если данные просрочены
 	*/
 	public function download()
 	{
