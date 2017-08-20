@@ -7,21 +7,20 @@ use Symfony\Component\Yaml\Yaml;
 use Bdb\Client\ClientFactory;
 use Bdb\Source;
 
-$config = Yaml::parse(file_get_contents('./sources.yml'));
+$config = Yaml::parse(file_get_contents('./sources/test.yml'));
 
 $sources = [];
 foreach ($config as $name => $sourceConfig) {
-	// create source-specific client
-	$client = ClientFactory::build($sourceConfig);
-	// create array sources
-	$sources[$name] = new Source($name, $sourceConfig, $client);
+	$client = ClientFactory::build($sourceConfig['type']);
+	$proccessor = ProccessorFactory::build($sourceConfig['format']);
+
+	$sources[$name] = (new Source($sourceConfig))
+		->setName($name)
+		->setClient($client)
+		->setProccessor($proccessor);
 }
 
-// TODO: promise access
-// TODO: abstract query
-$clearData = [
-	'csv_test' => $sources['csv_test']->get(['users']),
-	'mongo_test' => $sources['mongo_test']->get(['star_type', 'planet_age']),
-	'page_test' => $sources['page_test']->get(['price', 'name']),
-];
-var_dump($clearData);
+foreach ($sources as $name => $source) {
+	echo "*** $name ***\n";
+	var_dump($source->get());
+}

@@ -5,7 +5,7 @@ namespace Bdb\Client;
 use \GuzzleHttp\Client as GuzzleClient;
 use \PHPHtmlParser\Dom;
 
-class CsvClient implements iClient
+class Http
 {
 	private $transport;
 	private $config;
@@ -22,12 +22,12 @@ class CsvClient implements iClient
 		return (string)$res->getBody();
 	}
 
-	public function filterData($data, $clientQuery)
+	public function filterData($data, $selectors)
 	{
 		$dom = new Dom;
 		$dom->load($data);
 		$result = [];
-		foreach ($clientQuery as $name => $selector) {
+		foreach ($selectors as $name => $selector) {
 			$result[$name] = [];
 			foreach ($dom->find($selector) as $find) {
 				$result[$name][] = $find->text();

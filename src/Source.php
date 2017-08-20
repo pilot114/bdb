@@ -4,36 +4,38 @@ namespace Bdb;
 
 /*
 Source - источник данных (датасетов)
-Контролирует, откуда и как они будут получены.
 
-$source = new Source('wiki', CONFIG, CLIENT);
+$source = new Source($config);
 или если нужно брать только из кэша
-$source = new Source('wiki', CONFIG, CLIENT, true);
+$source = new Source($config, true);
 
 принудительно закешировать данные
-$source->download();
+$source->pull();
 
 получить датасеты
 $datasets = $source->get(['field_1', 'field_2']);
+или все сразу
+$datasets = $source->get();
 
 */
 
 class Source
 {
-	const TEMP_DIR = '/tmp/big_data_boss/';
+	const TEMP_DIR = '/tmp/bdb/';
 
 	private $config;
 	private $client;
+	private $proccessor;
+
 	private $onlyCache;
 	private $expired = true;
 	private $tempDir;
 	private $hash;
 
-	function __construct($name, $config, $client, $onlyCache = false)
+	function __construct($config, $onlyCache = false)
 	{
 		$this->config = $config;
 		$this->client = $client;
-		$this->cacher = new FileCacher();
 		$this->onlyCache = $onlyCache;
 
 		$this->tempDir = self::TEMP_DIR . $name;
@@ -51,21 +53,27 @@ class Source
 		}
 	}
 
-	private function getLastUpdateTs()
+	private function getLastUpdateTs() : int
 	{
-		$files = scandir($this->tempDir);
-		return array_pop($files);
+		$fileNames = scandir($this->tempDir);
+		$fileNames = array_filter($fileNames, function($v) {
+			return $v !== '.' && $v !== '..';
+		});
+		$lastFile = array_pop($fileNames);
+		return (int)$lastFile;
 	}
-	private function getExpireSec($expire)
+	
+	private function getExpireSec(string $expire) : int
 	{
 		if ($expire == 'always') {
 			return 0;
 		}
+		// через 7,6 миллиардов лет Солнце вступит в фазу «Красного гиганта» и уничтожит земную жизнь, в том виде как мы ее знаем
 		if ($expire == 'never') {
 			return 3600*24*365*7600000000;
 		}
 
-		list($number, $interval) = preg_split('/(?<=[0-9])(?=[a-z]+)/i', $expire);
+		[$number, $interval] = preg_split('/(?<=[0-9])(?=[a-z]+)/i', $expire);
 		$intervals = [
 			's'=>1,
 			'm'=>60,
@@ -79,11 +87,10 @@ class Source
 	}
 
 	/*
-		стягивает данные из источника и сохраняет в одном из удобочитаемых
-		для $this->client форматов в темповой директории
+		стягивает данные из источника и сохраняет в json в темповой директории.
 		вызывается явно или скрыто, если данные просрочены
 	*/
-	public function download()
+	public function pull()
 	{
 		$data = $this->client->downloadData();
 		file_put_contents($this->tempDir . '/' . time(), $data);
@@ -92,18 +99,18 @@ class Source
 
 	/*
 		запрос на получение датасетов
-		@return array
 	*/
-	public function get($query)
+	public function get(array $query = []) : array
 	{
+		// обновляем кэш
 		if ($this->expired && !$this->onlyCache) {
-			$this->download();
+			$this->pull();
 		}
 		$data = file_get_contents($this->tempDir . '/'. $this->getLastUpdateTs());
 
 		$clientQuery = [];
 		foreach ($query as $fieldName) {
-			$clientQuery[$fieldName] = $this->config['selectors'][$fieldName];
+			$clientQuery[$fieldName] = $this->config['datasets'][$fieldName];
 		}
 		return $this->client->filterData($data, $clientQuery);
 	}

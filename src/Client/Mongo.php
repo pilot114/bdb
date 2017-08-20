@@ -7,7 +7,7 @@ use \MongoDB\Client as mClient;
 use MongoDB\Collection;
 use MongoDB\Driver\Cursor;
 
-class MongoClient implements iClient
+class Mongo
 {
 	private $transport;
 	private $config;
@@ -35,12 +35,12 @@ class MongoClient implements iClient
 		return json_encode($data);
 	}
 
-	public function filterData($data, $clientQuery)
+	public function filterData($data, $column)
 	{
 		$data = json_decode($data, true);
 		$result = [];
 		foreach ($data as $name => $dataSet) {
-			if (in_array($name, $clientQuery)) {
+			if (in_array($name, $column)) {
 				$result[$name] = $dataSet;
 			}
 		}
