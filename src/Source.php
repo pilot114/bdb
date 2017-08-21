@@ -21,7 +21,7 @@ $datasets = $source->get();
 
 class Source
 {
-	const TEMP_DIR = '/tmp/bdb/';
+	const TEMP_DIR_BASE = '/tmp/bdb/';
 
 	private $config;
 	private $client;
@@ -32,25 +32,50 @@ class Source
 	private $tempDir;
 	private $hash;
 
-	function __construct($config, $onlyCache = false)
+	public function __construct($config, $onlyCache = false)
 	{
 		$this->config = $config;
-		$this->client = $client;
 		$this->onlyCache = $onlyCache;
 
-		$this->tempDir = self::TEMP_DIR . $name;
+		if (!is_dir(self::TEMP_DIR_BASE)) {
+			mkdir(self::TEMP_DIR_BASE);
+		}
+	}
+
+	public function setName($name)
+	{
+		$this->name = $name;
+
+		$this->tempDir = self::TEMP_DIR_BASE . $name;
 		if (!is_dir($this->tempDir)) {
-			if (!is_dir(self::TEMP_DIR)) {
-				mkdir(self::TEMP_DIR);
-			}
 			mkdir($this->tempDir);
 		}
 
-		$lastUpdateTs = $this->getLastUpdateTs();
-		$getExpireSec = $this->getExpireSec($config['expire']);
-		if (time() < ($lastUpdateTs + $getExpireSec)) {
-			$this->expired = false;
-		}
+		return $this;
+	}
+	public function getName()
+	{
+		return $this->name;
+	}
+
+	public function setClient($client)
+	{
+		$this->client = $client;
+		return $this;
+	}
+	public function getClient()
+	{
+		return $this->client;
+	}
+
+	public function setProccessor($proccessor)
+	{
+		$this->proccessor = $proccessor;
+		return $this;
+	}
+	public function getProccessor()
+	{
+		return $this->proccessor;
 	}
 
 	private function getLastUpdateTs() : int
@@ -68,12 +93,12 @@ class Source
 		if ($expire == 'always') {
 			return 0;
 		}
-		// через 7,6 миллиардов лет Солнце вступит в фазу «Красного гиганта» и уничтожит земную жизнь, в том виде как мы ее знаем
+		// через 7,6 миллиардов лет Солнце вступит в фазу "Красного гиганта" и уничтожит земную жизнь, в том виде как мы ее знаем
 		if ($expire == 'never') {
 			return 3600*24*365*7600000000;
 		}
 
-		[$number, $interval] = preg_split('/(?<=[0-9])(?=[a-z]+)/i', $expire);
+		list($number, $interval) = preg_split('/(?<=[0-9])(?=[a-z]+)/i', $expire);
 		$intervals = [
 			's'=>1,
 			'm'=>60,
@@ -92,7 +117,7 @@ class Source
 	*/
 	public function pull()
 	{
-		$data = $this->client->downloadData();
+		$data = $this->client->downloadData($this->config['url']);
 		file_put_contents($this->tempDir . '/' . time(), $data);
 		$this->expired = false;
 	}
@@ -102,6 +127,12 @@ class Source
 	*/
 	public function get(array $query = []) : array
 	{
+		$lastUpdateTs = $this->getLastUpdateTs();
+		$getExpireSec = $this->getExpireSec($this->config['expire']);
+		if (time() < ($lastUpdateTs + $getExpireSec)) {
+			$this->expired = false;
+		}
+
 		// обновляем кэш
 		if ($this->expired && !$this->onlyCache) {
 			$this->pull();
@@ -112,6 +143,9 @@ class Source
 		foreach ($query as $fieldName) {
 			$clientQuery[$fieldName] = $this->config['datasets'][$fieldName];
 		}
-		return $this->client->filterData($data, $clientQuery);
+		if (!$clientQuery) {
+			$clientQuery  = $this->config['datasets'];
+		}
+		return $this->proccessor->filterData($data, $clientQuery);
 	}
 }

@@ -9,9 +9,6 @@ class ClientFactory
 		if ($type == 'http') {
 			return new Http();
 		}
-		if ($type == 'mongo') {
-			return new Mongo();
-		}
 		throw new Exception("Unknown client type: " . print_r($type, true), 1);
 	}
 }

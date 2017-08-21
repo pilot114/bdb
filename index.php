@@ -5,6 +5,7 @@ include './vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 
 use Bdb\Client\ClientFactory;
+use Bdb\Proccessor\ProccessorFactory;
 use Bdb\Source;
 
 $config = Yaml::parse(file_get_contents('./sources/test.yml'));
@@ -22,5 +23,5 @@ foreach ($config as $name => $sourceConfig) {
 
 foreach ($sources as $name => $source) {
 	echo "*** $name ***\n";
-	var_dump($source->get());
+	var_dump($source->get(['name']));
 }

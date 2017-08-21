@@ -14,14 +14,14 @@ http_test:
     price: td.quote__value
     name: td.quote__change
 
-csv_test:
-  description: Zip-codes штатов США на состояние 2014 года
-  expire: never
-  type: http
-  format: csv
-  url: https://www.irs.gov/pub/irs-soi/14zpallagi.csv
-  datasets:
-    users: users
+# csv_test:
+#   description: Zip-codes штатов США на состояние 2014 года
+#   expire: never
+#   type: http
+#   format: csv
+#   url: https://www.irs.gov/pub/irs-soi/14zpallagi.csv
+#   datasets:
+#     users: users
 
 # json_test:
 #   description: Тестовые данные для MongoDB
@@ -31,16 +31,6 @@ csv_test:
 #   datasets:
 #     price: td.quote__value
 #     name: td.quote__change
-
-# mongo_test:
-#   description: Тестовая база
-#   expire: 1d
-#   type: [mongo, cursor]
-#   url: mongodb://172.17.0.2:27017
-#   datasets:
-#     star_size: [space, star, size]
-#     star_type: [space, star, type]
-#     planet_age: [space, planet, age]
 
 # https://www.vesselfinder.com/vesselsonmap?bbox=31.538128903937277%2C-29.54691472643175%2C32.06890588147635%2C-29.05770662045262&zoom=11&mmsi=0&show_names=0&ref=60064.800782705286&pv=6
 # https://www.vesselfinder.com/clickinfo?mmsi=258926000&rn=81278.6241013219&_=1486097876902
