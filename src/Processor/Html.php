@@ -1,12 +1,13 @@
 <?php
 
-namespace Bdb\Proccessor;
+namespace Bdb\Processor;
 
 use \PHPHtmlParser\Dom;
 
 class Html
 {
 	private $dom;
+	private $messages = [];
 
 	function __construct()
 	{
@@ -19,9 +20,12 @@ class Html
 		$result = [];
 		foreach ($selectors as $name => $selector) {
 			$result[$name] = [];
-			foreach ($this->dom->find($selector) as $find) {
+
+			$finds = $this->dom->find($selector);
+			foreach ($finds as $find) {
 				$result[$name][] = $find->text();
 			}
+			$this->messages[] = sprintf("%s: %d\n", $selector, count($finds));
 		}
 		return $result;
 	}

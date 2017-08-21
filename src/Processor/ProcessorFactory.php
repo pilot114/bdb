@@ -1,8 +1,8 @@
 <?php
 
-namespace Bdb\Proccessor;
+namespace Bdb\Processor;
 
-class ProccessorFactory
+class ProcessorFactory
 {
 	public static function build(string $format)
 	{

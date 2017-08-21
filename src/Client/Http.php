@@ -16,6 +16,6 @@ class Http
 	public function downloadData($url)
 	{
 		$res = $this->transport->request('GET', $url);
-		return (string)$res->getBody();
+		return mb_convert_encoding((string)$res->getBody(), "UTF-8");
 	}
 }

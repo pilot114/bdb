@@ -141,6 +141,11 @@ class Source
 
 		$clientQuery = [];
 		foreach ($query as $fieldName) {
+
+			if (!array_key_exists($fieldName, $this->config['datasets'])) {
+				throw new \Exception(sprintf("Не найден датасет %s в источнике %s", $fieldName, $this->getName()), 1);
+			}
+
 			$clientQuery[$fieldName] = $this->config['datasets'][$fieldName];
 		}
 		if (!$clientQuery) {

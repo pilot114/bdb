@@ -4,15 +4,24 @@
 # url         - уникальный идентификатор ресурса =)
 # datasets    - результирующие наборы данных
 
-http_test:
-  description: Котировки с Яндекса за 10 последние дней
-  expire: 1m
+# http_test:
+#   description: Котировки с Яндекса за 10 последние дней
+#   expire: 1h
+#   type: http
+#   format: html
+#   url: https://news.yandex.ru/quotes/1.html
+#   datasets:
+#     price: td.quote__value
+#     name: td.quote__change
+
+http_range_test:
+  description: Пользователи vk c id [443500001:443509999]
+  expire: 1h
   type: http
   format: html
-  url: https://news.yandex.ru/quotes/1.html
+  url: https://vk.com/catalog.php?selection=443-50-{0:99}
   datasets:
-    price: td.quote__value
-    name: td.quote__change
+    id_name: .column2 a
 
 # csv_test:
 #   description: Zip-codes штатов США на состояние 2014 года
