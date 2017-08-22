@@ -78,14 +78,90 @@ class Source
 		return $this->proccessor;
 	}
 
-	private function getLastUpdateTs() : int
+	/*
+	 *	стягивает данные из источника и сохраняет в json в темповой директории.
+	 *	вызывается явно или скрыто, если данные просрочены
+	 */
+	public function pull()
 	{
-		$fileNames = scandir($this->tempDir);
-		$fileNames = array_filter($fileNames, function($v) {
+		$batch = $this->client->downloadData($this->config['url']);
+		if (!is_dir($this->tempDir . '/' . time())) {
+			mkdir($this->tempDir . '/' . time());
+		}
+
+		foreach ($batch as $i => $data) {
+			$fileName = $this->tempDir . '/' . time() . '/' . $i;
+			file_put_contents($fileName, $data);
+		}
+		$this->expired = false;
+	}
+
+	/*
+	 *	запрос на получение датасетов
+	 */
+	public function get(array $query = []) : array
+	{
+		$lastUpdateTs = $this->getLastUpdateTs();
+		$getExpireSec = $this->getExpireSec($this->config['expire']);
+		if (time() < ($lastUpdateTs + $getExpireSec)) {
+			$this->expired = false;
+		}
+
+		// обновляем кэш
+		if ($this->expired && !$this->onlyCache) {
+			$this->pull();
+		}
+		$dataDir = $this->tempDir . '/'. $this->getLastUpdateTs();
+		$files = $this->getContentDir($dataDir);
+
+		// данные в том виде, в котором они были скачаны
+		$rawData = [];
+		foreach ($files as $file) {
+			$rawData[] = file_get_contents($dataDir . '/' . $file);
+		}
+
+		$clientQuery = [];
+		foreach ($query as $fieldName) {
+
+			if (!array_key_exists($fieldName, $this->config['datasets'])) {
+				throw new \Exception(sprintf("Не найден датасет %s в источнике %s", $fieldName, $this->getName()), 1);
+			}
+
+			$clientQuery[$fieldName] = $this->config['datasets'][$fieldName];
+		}
+		if (!$clientQuery) {
+			$clientQuery = $this->config['datasets'];
+		}
+
+		// TODO: подумать, как можно упростить
+		$result = [];
+		foreach ($rawData as $item) {
+			$prepareItem = $this->proccessor->filterData($item, $clientQuery);
+
+			foreach ($prepareItem as $datasetName => $dataset) {
+				if (!isset($result[$datasetName])) {
+					$result[$datasetName] = [];
+				}
+				$result[$datasetName] = array_merge($result[$datasetName], $dataset);
+			}
+		}
+		return $result; 
+	}
+
+	private function getContentDir(string $dir) : array
+	{
+		$fileNames = scandir($dir);
+
+		return array_filter($fileNames, function($v) {
 			return $v !== '.' && $v !== '..';
 		});
-		$lastFile = array_pop($fileNames);
-		return (int)$lastFile;
+	}
+
+	private function getLastUpdateTs() : int
+	{
+		$dirs = $this->getContentDir($this->tempDir);
+		$lastDir = array_pop($dirs);
+		return (int)$lastDir;
 	}
 	
 	private function getExpireSec(string $expire) : int
@@ -109,48 +185,5 @@ class Source
 			'Y'=>3600*24*365,
 		];
 		return $number * $intervals[$interval];
-	}
-
-	/*
-		стягивает данные из источника и сохраняет в json в темповой директории.
-		вызывается явно или скрыто, если данные просрочены
-	*/
-	public function pull()
-	{
-		$data = $this->client->downloadData($this->config['url']);
-		file_put_contents($this->tempDir . '/' . time(), $data);
-		$this->expired = false;
-	}
-
-	/*
-		запрос на получение датасетов
-	*/
-	public function get(array $query = []) : array
-	{
-		$lastUpdateTs = $this->getLastUpdateTs();
-		$getExpireSec = $this->getExpireSec($this->config['expire']);
-		if (time() < ($lastUpdateTs + $getExpireSec)) {
-			$this->expired = false;
-		}
-
-		// обновляем кэш
-		if ($this->expired && !$this->onlyCache) {
-			$this->pull();
-		}
-		$data = file_get_contents($this->tempDir . '/'. $this->getLastUpdateTs());
-
-		$clientQuery = [];
-		foreach ($query as $fieldName) {
-
-			if (!array_key_exists($fieldName, $this->config['datasets'])) {
-				throw new \Exception(sprintf("Не найден датасет %s в источнике %s", $fieldName, $this->getName()), 1);
-			}
-
-			$clientQuery[$fieldName] = $this->config['datasets'][$fieldName];
-		}
-		if (!$clientQuery) {
-			$clientQuery  = $this->config['datasets'];
-		}
-		return $this->proccessor->filterData($data, $clientQuery);
 	}
 }

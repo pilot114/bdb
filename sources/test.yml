@@ -19,7 +19,7 @@ http_range_test:
   expire: 1h
   type: http
   format: html
-  url: https://vk.com/catalog.php?selection=443-50-{0:99}
+  url: https://vk.com/catalog.php?selection=443-54-{0:99}
   datasets:
     id_name: .column2 a
 
