@@ -21,7 +21,13 @@ class Http
 
 		$batch = [];
 		foreach ($urls as $url) {
-			$res = $this->transport->request('GET', $url);
+			try {
+				$res = $this->transport->request('GET', $url);
+			} catch (\Exception $e) {
+				// echo $e->getMessage();
+			}
+
+
 			$batch[] = mb_convert_encoding((string)$res->getBody(), "UTF-8");
 
 			usleep(self::TIMEOUT_MILISEC * 1000);
@@ -42,7 +48,7 @@ class Http
 
 		$urls = [];
 		for ($i=$start; $i <= $end; $i++) {
-			$urls[] = preg_replace('#{(.*)}#', $i, $urlPattern) . "\n";
+			$urls[] = preg_replace('#{(.*)}#', $i, $urlPattern);
 		}
 		return $urls;
 	}

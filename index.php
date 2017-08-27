@@ -22,8 +22,6 @@ foreach ($config as $name => $sourceConfig) {
 }
 
 foreach ($sources as $name => $source) {
-	echo "*** $name ***\n";
-	$id_names = $source->get(['id_name'])['id_name'];
-	var_dump(implode(',', $id_names));
-	die();
+	$source->get();
+	echo $source;
 }

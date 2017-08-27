@@ -7,7 +7,7 @@ Source - источник данных (датасетов)
 
 $source = new Source($config);
 или если нужно брать только из кэша
-$source = new Source($config, true);
+$source = new Source($config, $onlyCache = true);
 
 принудительно закешировать данные
 $source->pull();
@@ -17,11 +17,13 @@ $datasets = $source->get(['field_1', 'field_2']);
 или все сразу
 $datasets = $source->get();
 
+вывести отладочную информацию
+echo $source;
 */
 
 class Source
 {
-	const TEMP_DIR_BASE = '/tmp/bdb/';
+	const TEMP_DIR_BASE = '/tmp/bdb';
 
 	private $config;
 	private $client;
@@ -31,6 +33,8 @@ class Source
 	private $expired = true;
 	private $tempDir;
 	private $hash;
+
+	private $result;
 
 	public function __construct($config, $onlyCache = false)
 	{
@@ -42,11 +46,31 @@ class Source
 		}
 	}
 
+	public function __toString()
+	{
+		// имя и описание источника
+		$output = sprintf("*** %s : %s ***\n", $this->getName(), $this->getDescription());
+		// имя и возраст кэша
+		$ts = $this->getLastUpdateTs();
+		$freshness = (time() - $ts) / 60;
+		$output .= sprintf("%s (%d min)\n", $this->tempDir . '/' . $ts, $freshness);
+		// данные
+		if ($this->result) {
+			$output .= print_r($this->result, true);
+		}
+		return $output;
+	}
+
+	public function getDescription()
+	{
+		return $this->config['description'];
+	}
+
 	public function setName($name)
 	{
 		$this->name = $name;
 
-		$this->tempDir = self::TEMP_DIR_BASE . $name;
+		$this->tempDir = self::TEMP_DIR_BASE . '/' . $name;
 		if (!is_dir($this->tempDir)) {
 			mkdir($this->tempDir);
 		}
@@ -79,7 +103,7 @@ class Source
 	}
 
 	/*
-	 *	стягивает данные из источника и сохраняет в json в темповой директории.
+	 *	стягивает данные из источника и сохраняет в темповой директории.
 	 *	вызывается явно или скрыто, если данные просрочены
 	 */
 	public function pull()
@@ -111,6 +135,7 @@ class Source
 		if ($this->expired && !$this->onlyCache) {
 			$this->pull();
 		}
+
 		$dataDir = $this->tempDir . '/'. $this->getLastUpdateTs();
 		$files = $this->getContentDir($dataDir);
 
@@ -145,6 +170,7 @@ class Source
 				$result[$datasetName] = array_merge($result[$datasetName], $dataset);
 			}
 		}
+		$this->result = $result;
 		return $result; 
 	}
 

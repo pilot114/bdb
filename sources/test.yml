@@ -15,7 +15,7 @@
 #     name: td.quote__change
 
 http_range_test:
-  description: Пользователи vk c id [443500001:443509999]
+  description: Пользователи vk c id [443500001:443500011]
   expire: 1h
   type: http
   format: html
