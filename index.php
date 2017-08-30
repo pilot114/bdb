@@ -8,20 +8,18 @@ use Bdb\Client\ClientFactory;
 use Bdb\Processor\ProcessorFactory;
 use Bdb\Source;
 
-$config = Yaml::parse(file_get_contents('./sources/test.yml'));
+$config = Yaml::parse(file_get_contents('./conf/sources/test.yml'));
 
 $sources = [];
 foreach ($config as $name => $sourceConfig) {
 	$client = ClientFactory::build($sourceConfig['type']);
-	$proccessor = ProcessorFactory::build($sourceConfig['format']);
+	$processor = ProcessorFactory::build($sourceConfig['format']);
 
-	$sources[$name] = (new Source($sourceConfig))
-		->setName($name)
+	$sources[$name] = (new Source($sourceConfig, $name))
 		->setClient($client)
-		->setProccessor($proccessor);
+		->setProcessor($processor);
 }
 
 foreach ($sources as $name => $source) {
-	var_dump($source->get());
 	echo $source;
 }

@@ -2,63 +2,85 @@
 
 namespace Bdb;
 
-/*
-Source - источник данных (датасетов)
-
-$source = new Source($config);
-или если нужно брать только из кэша
-$source = new Source($config, $onlyCache = true);
-
-принудительно закешировать данные
-$source->pull();
-
-получить датасеты
-$datasets = $source->get(['field_1', 'field_2']);
-или все сразу
-$datasets = $source->get();
-
-вывести отладочную информацию
-echo $source;
-*/
-
+/**
+ *  Class Source
+ *
+ *  Source - источник данных (датасетов)
+ *
+ *  $source = new Source($config);
+ *  или если нужно брать только из кэша
+ *  $source = new Source($config, $onlyCache = true);
+ *
+ *  принудительно закешировать данные
+ *  $source->pull();
+ *
+ *  получить датасеты
+ *  $datasets = $source->get(['field_1', 'field_2']);
+ *  или все сразу
+ *  $datasets = $source->get();
+ *
+ *  вывести отладочную информацию
+ *  echo $source;
+ */
 class Source
 {
 	const TEMP_DIR_BASE = '/tmp/bdb';
 
 	private $config;
 	private $client;
-	private $proccessor;
+	private $processor;
+    private $name;
 
+	// брать только из кэша
 	private $onlyCache;
-	private $expired = true;
+
+	// устарел ли кэш
+	private $expired;
+
 	private $tempDir;
-	private $hash;
-
 	private $result;
-	private $fromCache = true;
 
-	public function __construct($config, $onlyCache = false)
+	public function __construct($config, $name, $onlyCache = false)
 	{
 		$this->config = $config;
+		$this->name = $name;
 		$this->onlyCache = $onlyCache;
 
 		if (!is_dir(self::TEMP_DIR_BASE)) {
 			mkdir(self::TEMP_DIR_BASE);
 		}
-	}
+
+        $this->tempDir = self::TEMP_DIR_BASE . '/' . $this->name;
+        if (!is_dir($this->tempDir)) {
+            mkdir($this->tempDir);
+        }
+
+        $lastUpdateTs = $this->getLastUpdateTs();
+        $getExpireSec = $this->getExpireSec($this->config['expire']);
+
+        $this->expired = true;
+        if (time() < ($lastUpdateTs + $getExpireSec)) {
+            $this->expired = false;
+        }
+    }
 
 	public function __toString()
 	{
-		// имя и описание источника
-		$output = sprintf("*** %s : %s ***\n", $this->getName(), $this->getDescription());
+        // имя и настройки
+		$output = sprintf("*** %s ***\n", $this->getName());
+        $output .=  print_r($this->config, true);
 
-		// имя и возраст кэша
-		$ts = $this->getLastUpdateTs();
-		$freshness = (time() - $ts) / 60;
-		$output .= sprintf("%s (%d min)\n", $this->tempDir . '/' . $ts, $freshness);
+        // имя и возраст кэша
+        $ts = $this->getLastUpdateTs();
+        if ($ts === 0) {
+            $output .= "Кэш отсутствует\n";
+            return $output;
+        }
 
-		// откуда получены данные
-		$output .= sprintf("Из кэша: %s\n", $this->fromCache ? 'true' : 'false');
+        $freshness = (time() - $ts) / 60;
+        $expire = $this->isNeedUpdate() ? 'Устарел' : 'Свежий';
+		$output .= sprintf("%s (%d min) : %s\n", $this->tempDir . '/' . $ts, $freshness, $expire);
+
 		return $output;
 	}
 
@@ -67,23 +89,12 @@ class Source
 		return $this->config['description'];
 	}
 
-	public function setName($name)
-	{
-		$this->name = $name;
-
-		$this->tempDir = self::TEMP_DIR_BASE . '/' . $name;
-		if (!is_dir($this->tempDir)) {
-			mkdir($this->tempDir);
-		}
-
-		return $this;
-	}
 	public function getName()
 	{
 		return $this->name;
 	}
 
-	public function setClient($client)
+	public function setClient( $client)
 	{
 		$this->client = $client;
 		return $this;
@@ -93,14 +104,14 @@ class Source
 		return $this->client;
 	}
 
-	public function setProccessor($proccessor)
+	public function setProcessor($processor)
 	{
-		$this->proccessor = $proccessor;
+		$this->processor = $processor;
 		return $this;
 	}
-	public function getProccessor()
+	public function getProcessor()
 	{
-		return $this->proccessor;
+		return $this->processor;
 	}
 
 	/*
@@ -131,13 +142,6 @@ class Source
 	 */
 	public function get(array $query = []) : array
 	{
-		$lastUpdateTs = $this->getLastUpdateTs();
-		$getExpireSec = $this->getExpireSec($this->config['expire']);
-
-		if (time() < ($lastUpdateTs + $getExpireSec)) {
-			$this->expired = false;
-		}
-
 		// обновляем кэш
 		if ($this->isNeedUpdate()) {
 			$this->pull();
@@ -168,7 +172,7 @@ class Source
 		// TODO: подумать, как можно упростить
 		$result = [];
 		foreach ($rawData as $item) {
-			$prepareItem = $this->proccessor->filterData($item, $clientQuery);
+			$prepareItem = $this->processor->filterData($item, $clientQuery);
 
 			foreach ($prepareItem as $datasetName => $dataset) {
 				if (!isset($result[$datasetName])) {

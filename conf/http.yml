@@ -1,0 +1,11 @@
+
+bot1:
+  headers:
+bot2:
+  headers:
+bot3:
+  headers:
+
+user:
+  headers:
+  auth:

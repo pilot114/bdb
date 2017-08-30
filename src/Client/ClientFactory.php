@@ -9,6 +9,6 @@ class ClientFactory
 		if ($type == 'http') {
 			return new Http();
 		}
-		throw new Exception("Unknown client type: " . print_r($type, true), 1);
+		throw new \Exception("Unknown client type: " . print_r($type, true), 1);
 	}
 }

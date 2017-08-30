@@ -31,12 +31,11 @@ $sourceConfig = [
 ];
 
 $client = ClientFactory::build($sourceConfig['type']);
-$proccessor = ProcessorFactory::build($sourceConfig['format']);
+$processor = ProcessorFactory::build($sourceConfig['format']);
 
-$source = (new Source($sourceConfig))
-	->setName($sourceName)
+$source = (new Source($sourceConfig, $sourceName))
 	->setClient($client)
-	->setProccessor($proccessor);
+	->setProcessor($processor);
 
-$source->get();
+var_dump($source->get());
 echo $source;
