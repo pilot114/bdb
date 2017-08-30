@@ -22,6 +22,6 @@ foreach ($config as $name => $sourceConfig) {
 }
 
 foreach ($sources as $name => $source) {
-	$source->get();
+	var_dump($source->get());
 	echo $source;
 }

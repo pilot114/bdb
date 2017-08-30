@@ -23,7 +23,7 @@ if (count($argv) > 1) {
 $sourceName = 'test';
 $sourceConfig = [
 	'description' => 'тестовый источник',
-	'expire' => 'always',
+	'expire' => '3m',
 	'type' => 'http',
 	'format' => 'html',
 	'url' => $url ?: 'https://habrahabr.ru/top',

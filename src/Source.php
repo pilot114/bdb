@@ -35,6 +35,7 @@ class Source
 	private $hash;
 
 	private $result;
+	private $fromCache = true;
 
 	public function __construct($config, $onlyCache = false)
 	{
@@ -50,14 +51,14 @@ class Source
 	{
 		// имя и описание источника
 		$output = sprintf("*** %s : %s ***\n", $this->getName(), $this->getDescription());
+
 		// имя и возраст кэша
 		$ts = $this->getLastUpdateTs();
 		$freshness = (time() - $ts) / 60;
 		$output .= sprintf("%s (%d min)\n", $this->tempDir . '/' . $ts, $freshness);
-		// данные
-		if ($this->result) {
-			$output .= print_r($this->result, true);
-		}
+
+		// откуда получены данные
+		$output .= sprintf("Из кэша: %s\n", $this->fromCache ? 'true' : 'false');
 		return $output;
 	}
 
@@ -133,6 +134,7 @@ class Source
 
 		// обновляем кэш
 		if ($this->expired && !$this->onlyCache) {
+			$this->fromCache = false;
 			$this->pull();
 		}
 

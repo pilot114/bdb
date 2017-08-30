@@ -15,11 +15,11 @@
 #     name: td.quote__change
 
 http_range_test:
-  description: Пользователи vk c id [443500001:443500011]
-  expire: 1h
+  description: небольшой диапозон пользователей vk
+  expire: 5m
   type: http
   format: html
-  url: https://vk.com/catalog.php?selection=443-54-{0:99}
+  url: https://vk.com/catalog.php?selection=443-54-{0:10}
   datasets:
     id_name: .column2 a
 
