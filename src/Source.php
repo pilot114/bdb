@@ -121,6 +121,11 @@ class Source
 		$this->expired = false;
 	}
 
+	public function isNeedUpdate()
+	{
+		return $this->expired && !$this->onlyCache;
+	}
+
 	/*
 	 *	запрос на получение датасетов
 	 */
@@ -128,13 +133,13 @@ class Source
 	{
 		$lastUpdateTs = $this->getLastUpdateTs();
 		$getExpireSec = $this->getExpireSec($this->config['expire']);
+
 		if (time() < ($lastUpdateTs + $getExpireSec)) {
 			$this->expired = false;
 		}
 
 		// обновляем кэш
-		if ($this->expired && !$this->onlyCache) {
-			$this->fromCache = false;
+		if ($this->isNeedUpdate()) {
 			$this->pull();
 		}
 
