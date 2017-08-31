@@ -9,6 +9,7 @@ use Bdb\Processor\ProcessorFactory;
 use Bdb\Source;
 
 $config = Yaml::parse(file_get_contents('./conf/sources/test.yml'));
+$workers = Yaml::parse(file_get_contents('./conf/http.yml'));
 
 $sources = [];
 foreach ($config as $name => $sourceConfig) {

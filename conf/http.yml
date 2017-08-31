@@ -1,9 +1,9 @@
 
-bot1:
+worker1:
   headers:
-bot2:
+worker2:
   headers:
-bot3:
+worker3:
   headers:
 
 user:
