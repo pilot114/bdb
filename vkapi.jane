@@ -1,0 +1,10 @@
+<?php
+
+return [
+    'json-schema-file' => './vendor/vkcom/vk-api-schema/schema.json',
+    'root-class' => 'VkApi',
+    'namespace' => 'Bdb\Addons\VkApi',
+    'directory' => './src/Addons/VkApi',
+    'date-format' => \DateTime::RFC3339,
+    'reference' => true
+];

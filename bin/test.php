@@ -2,7 +2,6 @@
 
 include './vendor/autoload.php';
 
-
 use Bdb\Client\ClientFactory;
 use Bdb\Processor\ProcessorFactory;
 use Bdb\Source;
