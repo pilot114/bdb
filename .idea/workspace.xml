@@ -2,24 +2,323 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78217b3c-5e04-4962-963e-d116f758e615" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/gen.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/VkApiCodeGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Model/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Model/JsonReference.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Model/Method.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Model/Parameter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Model/ParameterItems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Model/VkApi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/ErrorNormalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/JsonReferenceNormalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/MethodNormalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/NormalizerFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/ParameterItemsNormalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/ParameterNormalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/VkApiNormalizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Add.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddAppEvent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddBan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddChatUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddOfficeUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddToAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddVote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AllowMessagesFromGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ApproveRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AreFriends.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/BanUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ChangePassword.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ChangeState.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckPhone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckToken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Checkin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ClearCache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CloseTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Complete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Confirm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ConfirmTag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Copy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Create.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateAds.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateCampaigns.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateChat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateClients.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateComment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateTargetGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Delete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAds.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAllRequests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAppRequests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteBan.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteCampaigns.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteChatPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteClients.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteComment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteDialog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteTargetGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteVote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DenyMessagesFromGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditChat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditComment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditPlace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/FixTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Get.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAccounts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetActiveOffers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAds.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAdsLayout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAdsPostsReach.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAdsTargeting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbumById.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbums.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbumsByVideo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbumsCount.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAll.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAllComments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAmount.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAppBalance.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAppPermissions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAppUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAvailableForCall.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetBanned.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetBroadcastList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetBudget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetById.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetByPhones.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCallbackConfirmationCode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCallbackServerSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCallbackSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCampaigns.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCatalog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCatalogInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCatalogSection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCategories.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChairs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChatUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChatUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCheckins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCities.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCitiesById.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetClients.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetComments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCount.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCounters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCountries.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCountriesById.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetDemographics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetDialogs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFaculties.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFloodStats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFollowers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFriendsList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetHints.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetHistory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetHistoryAttachments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetInvitedUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetInvites.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetKeys.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLastActivity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLeaderboard.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLinks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLists.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLongPollHistory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLongPollServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLyrics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMarketAlbumUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMarketItems.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMarketUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMembers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMentions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMessagesUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMutual.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetNearby.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetNewTags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetOfficeUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetOnline.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetOwnerPhotoUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPhotos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPopular.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPostReach.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPosts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetProfileInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPushSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRecent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRecommendations.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRecommended.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRegions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRejectionReason.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetReposts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRequests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSMSHistory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSchoolClasses.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSchools.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetScore.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetServerTime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetStatistics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetStats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetStreetsById.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSubscriptions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSuggestedSources.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSuggestions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTargetGroups.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTargetingStats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTitles.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTopics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTransactionsHistory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUniversities.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUploadURL.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUserLevel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUserPhotos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUserVideos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVersion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVideoUploadURL.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVideos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVoters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetWallUploadServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/HideCatalogSection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IgnoreItem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ImportTargetContacts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Invite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsAppUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsLiked.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsMember.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsMessagesFromGroupAllowed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Join.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Leave.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/LookupContacts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MakeCover.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MarkAsImportant.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MarkAsRead.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MarkAsViewed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MetricHit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Move.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MoveToAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/OpenTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ParseWiki.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Post.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/PutTag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RegisterDevice.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveChatUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveFromAlbum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveOfficeUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveTag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Reorder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderAlbums.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderItems.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderPhotos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderVideos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Report.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReportComment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReportPost.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Repost.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ResolveScreenName.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Restore.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RestoreComment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Save.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveAccess.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveMarketAlbumPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveMarketPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveMessagesPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveOwnerPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveProfileInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveWallPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SearchDialogs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Send.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SendNotification.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SendSMSNotification.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Set.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetActivity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetBroadcast.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCallbackServer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCallbackServerSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCallbackSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetChatPhoto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCounter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetNameInMenu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetOffline.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetOnline.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetPushSettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetSilenceMode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetUserLevel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Signup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Start.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/TrackVisitor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnbanUser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnfixTopic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnignoreItem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Unpin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnregisterDevice.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Unsubscribe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateAds.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateCampaigns.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateClients.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateTargetGroup.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Example.php" afterPath="$PROJECT_DIR$/bin/Example.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/gen.php" afterPath="$PROJECT_DIR$/bin/gen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/parse.php" afterPath="$PROJECT_DIR$/bin/parse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/test.php" afterPath="$PROJECT_DIR$/bin/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Api.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Account.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Ads.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Ads.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Apps.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Apps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Auth.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Board.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Board.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Database.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Docs.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Docs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Fave.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Fave.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Friends.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Friends.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Gifts.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Gifts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Groups.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Groups.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Leads.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Leads.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Likes.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Likes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Market.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Market.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Messages.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Messages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Newsfeed.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Newsfeed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Notes.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Notes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Notifications.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Notifications.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Orders.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Orders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Pages.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Pages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Photos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Photos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Places.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Places.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Polls.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Polls.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Secure.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Secure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Stats.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Stats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Status.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Status.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Storage.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Storage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Utils.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Utils.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Video.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Video.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Wall.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Wall.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Widgets.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Widgets.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +331,51 @@
     <favorites_list name="bdb" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="gen.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/gen.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="221" column="91" lean-forward="false" selection-start-line="221" selection-start-column="91" selection-end-line="221" selection-end-column="91" />
+              <folding>
+                <element signature="e#41#70#0#PHP" expanded="true" />
+                <element signature="e#8231#10184#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Example.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/Example.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vk.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/vk.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users_Search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Users_Search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="63" column="120" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="120" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -43,10 +386,13 @@
       <find>expired</find>
       <find>DenormalizerInterface</find>
       <find>Modifiers</find>
+      <find>offline</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\pilot114\sources\lp\bdb\src\Addons\VkApi</dir>
       <dir>C:\Users\pilot114\sources\lp\bdb\vendor\nikic</dir>
+      <dir>C:\Users\pilot114\sources\lp\bdb\src\Addons\VK\Method</dir>
+      <dir>C:\Users\pilot114\sources\lp\bdb\vendor\vkcom</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -60,22 +406,33 @@
         <option value="$PROJECT_DIR$/src/Client/ClientFactory.php" />
         <option value="$PROJECT_DIR$/conf/http_clients.yml" />
         <option value="$PROJECT_DIR$/conf/http.yml" />
-        <option value="$PROJECT_DIR$/bin/test.php" />
         <option value="$PROJECT_DIR$/src/Addons/VkApi/Group.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vkapi.jane" />
         <option value="$PROJECT_DIR$/src/Addons/VkApi/Normalizer/VkApiNormalizer.php" />
         <option value="$PROJECT_DIR$/bin/VkApiCodeGenerator.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/bin/parse.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/GetCounters.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Domain/Account.php" />
-        <option value="$PROJECT_DIR$/src/Addons/VK/Api.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/CreateCampaigns.php" />
+        <option value="$PROJECT_DIR$/bin/qwe.php" />
+        <option value="$PROJECT_DIR$/bin/test.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/AddLink.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/BaseMethod.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_RegisterDevice.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/BaseMethod.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Api.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/bin/parse.php" />
         <option value="$PROJECT_DIR$/bin/Example.php" />
         <option value="$PROJECT_DIR$/bin/gen.php" />
-        <option value="$PROJECT_DIR$/bin/qwe.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/Users_Get.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetSuggestions.php" />
+        <option value="$PROJECT_DIR$/at.txt" />
+        <option value="$PROJECT_DIR$/bin/vk.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -110,8 +467,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,33 +474,12 @@
               <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
               <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vkcom" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vkcom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vk-api-schema" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,6 +489,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pilot114\sources\lp\bdb\src\Addons\VK" />
       <recent name="C:\Users\pilot114\sources\lp\bdb\conf" />
     </key>
   </component>
@@ -182,17 +517,19 @@
       <updated>1504111248319</updated>
       <workItem from="1504111250563" duration="2541000" />
       <workItem from="1504196438332" duration="7629000" />
-      <workItem from="1504277229220" duration="22023000" />
+      <workItem from="1504277229220" duration="22145000" />
+      <workItem from="1504328818591" duration="21241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32193000" />
+    <option name="totallyTimeSpent" value="53556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25373134" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -241,47 +578,112 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/GetCounters.php">
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Property.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="303">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/GetClients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/ResolveScreenName.php">
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/PropertyProperty.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Utils.php">
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/GetPostReach.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="304">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Ads.php">
+    <entry file="file://$PROJECT_DIR$/bin/qwe.php" />
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/AddVote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Unsubscribe.php">
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Checkin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/EditPlace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1702">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1542">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/SetOffline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/SetOnline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Unpin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Processor/Html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -291,154 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/CreateClients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/EditLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PropertyFetch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/ConfirmTag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Photos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Notifications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/DeleteClients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/GetAppBalance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/ChangePassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/methods.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="580" column="9" lean-forward="true" selection-start-line="580" selection-start-column="9" selection-end-line="580" selection-end-column="9" />
-          <folding>
-            <element signature="e#14#3927#0" expanded="false" />
-            <element signature="e#3948#5648#0" expanded="false" />
-            <element signature="e#5654#12127#0" expanded="false" />
-            <element signature="e#12133#12501#0" expanded="false" />
-            <element signature="e#12507#13887#0" expanded="false" />
-            <element signature="e#13893#15796#0" expanded="false" />
-            <element signature="e#16809#19761#0" expanded="false" />
-            <element signature="e#19767#20980#0" expanded="false" />
-            <element signature="e#20986#23736#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Return_.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Builder/FunctionLike.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Param.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="250" column="9" lean-forward="false" selection-start-line="250" selection-start-column="9" selection-end-line="250" selection-end-column="9" />
+        <state relative-caret-position="191">
+          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -451,111 +707,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/CheckToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/DeleteBan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/DeleteDialog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/AddBan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/AddUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Copy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/CreateCampaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/AddVote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/ApproveRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/DeleteChatPhoto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/GetAccounts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/EditTopic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Api.php">
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/AddAlbum.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -563,50 +715,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php">
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Account_ChangePassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Widgets_GetPages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Secure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Docs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Auth_Signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/AddTopic.php">
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Account_RegisterDevice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="176">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/gen.php">
+    <entry file="file://$PROJECT_DIR$/bin/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#41#70#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="32">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php">
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="144">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/Http.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/schema.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="304">
           <caret line="118" column="6" lean-forward="false" selection-start-line="118" selection-start-column="6" selection-end-line="118" selection-end-column="6" />
           <folding>
             <element signature="n#!!block;n#jsonReference#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#parameterArray#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#parameterTypes#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#itemTypes#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#properties#0;n#!!block;n#parameter#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#parameter#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#items#0;n#!!block;n#properties#0;n#!!block;n#parameter#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#maxItems#0;n#!!block;n#properties#0;n#!!block;n#parameter#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#minItems#0;n#!!block;n#properties#0;n#!!block;n#parameter#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
@@ -624,60 +813,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Property.php">
+    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="298">
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/PropertyProperty.php">
+    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="18" />
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Class_.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/New_.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <marker date="1504377325365" expanded="true" signature="131:369" ph="{&quot;guzzlehttp/guzzle&quot;: &quot;^6.2&quot;...}" />
+            <marker date="1504377325365" expanded="true" signature="385:433" ph="{...}" />
+            <marker date="1504377325365" expanded="true" signature="400:429" ph="{&quot;Bdb\&quot;: &quot;src/&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/parse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#41#61#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/Example.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="48">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/test.php">
+    <entry file="file://$PROJECT_DIR$/bin/gen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="221" column="91" lean-forward="false" selection-start-line="221" selection-start-column="91" selection-end-line="221" selection-end-column="91" />
+          <folding>
+            <element signature="e#41#70#0#PHP" expanded="true" />
+            <element signature="e#8231#10184#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Users_Get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetSuggestions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Users_Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="63" column="120" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="94" column="20" lean-forward="false" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="85" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/GetPostReach.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="16">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/qwe.php">
+    <entry file="file://$PROJECT_DIR$/bin/vk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>

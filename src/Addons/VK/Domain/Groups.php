@@ -5,136 +5,143 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Groups
 {
-    public function isMember() : Method\IsMember
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\IsMember();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getById() : Method\GetById
+    public function isMember() : Method\Groups_IsMember
     {
-        return new Method\GetById();
+        return new Method\Groups_IsMember($this->client, $this->defaultQuery);
     }
-    public function get() : Method\Get
+    public function getById() : Method\Groups_GetById
     {
-        return new Method\Get();
+        return new Method\Groups_GetById($this->client, $this->defaultQuery);
     }
-    public function getMembers() : Method\GetMembers
+    public function get() : Method\Groups_Get
     {
-        return new Method\GetMembers();
+        return new Method\Groups_Get($this->client, $this->defaultQuery);
     }
-    public function join() : Method\Join
+    public function getMembers() : Method\Groups_GetMembers
     {
-        return new Method\Join();
+        return new Method\Groups_GetMembers($this->client, $this->defaultQuery);
     }
-    public function leave() : Method\Leave
+    public function join() : Method\Groups_Join
     {
-        return new Method\Leave();
+        return new Method\Groups_Join($this->client, $this->defaultQuery);
     }
-    public function search() : Method\Search
+    public function leave() : Method\Groups_Leave
     {
-        return new Method\Search();
+        return new Method\Groups_Leave($this->client, $this->defaultQuery);
     }
-    public function getCatalog() : Method\GetCatalog
+    public function search() : Method\Groups_Search
     {
-        return new Method\GetCatalog();
+        return new Method\Groups_Search($this->client, $this->defaultQuery);
     }
-    public function getCatalogInfo() : Method\GetCatalogInfo
+    public function getCatalog() : Method\Groups_GetCatalog
     {
-        return new Method\GetCatalogInfo();
+        return new Method\Groups_GetCatalog($this->client, $this->defaultQuery);
     }
-    public function getInvites() : Method\GetInvites
+    public function getCatalogInfo() : Method\Groups_GetCatalogInfo
     {
-        return new Method\GetInvites();
+        return new Method\Groups_GetCatalogInfo($this->client, $this->defaultQuery);
     }
-    public function getInvitedUsers() : Method\GetInvitedUsers
+    public function getInvites() : Method\Groups_GetInvites
     {
-        return new Method\GetInvitedUsers();
+        return new Method\Groups_GetInvites($this->client, $this->defaultQuery);
     }
-    public function banUser() : Method\BanUser
+    public function getInvitedUsers() : Method\Groups_GetInvitedUsers
     {
-        return new Method\BanUser();
+        return new Method\Groups_GetInvitedUsers($this->client, $this->defaultQuery);
     }
-    public function unbanUser() : Method\UnbanUser
+    public function banUser() : Method\Groups_BanUser
     {
-        return new Method\UnbanUser();
+        return new Method\Groups_BanUser($this->client, $this->defaultQuery);
     }
-    public function getBanned() : Method\GetBanned
+    public function unbanUser() : Method\Groups_UnbanUser
     {
-        return new Method\GetBanned();
+        return new Method\Groups_UnbanUser($this->client, $this->defaultQuery);
     }
-    public function create() : Method\Create
+    public function getBanned() : Method\Groups_GetBanned
     {
-        return new Method\Create();
+        return new Method\Groups_GetBanned($this->client, $this->defaultQuery);
     }
-    public function edit() : Method\Edit
+    public function create() : Method\Groups_Create
     {
-        return new Method\Edit();
+        return new Method\Groups_Create($this->client, $this->defaultQuery);
     }
-    public function editPlace() : Method\EditPlace
+    public function edit() : Method\Groups_Edit
     {
-        return new Method\EditPlace();
+        return new Method\Groups_Edit($this->client, $this->defaultQuery);
     }
-    public function getSettings() : Method\GetSettings
+    public function editPlace() : Method\Groups_EditPlace
     {
-        return new Method\GetSettings();
+        return new Method\Groups_EditPlace($this->client, $this->defaultQuery);
     }
-    public function getRequests() : Method\GetRequests
+    public function getSettings() : Method\Groups_GetSettings
     {
-        return new Method\GetRequests();
+        return new Method\Groups_GetSettings($this->client, $this->defaultQuery);
     }
-    public function editManager() : Method\EditManager
+    public function getRequests() : Method\Groups_GetRequests
     {
-        return new Method\EditManager();
+        return new Method\Groups_GetRequests($this->client, $this->defaultQuery);
     }
-    public function invite() : Method\Invite
+    public function editManager() : Method\Groups_EditManager
     {
-        return new Method\Invite();
+        return new Method\Groups_EditManager($this->client, $this->defaultQuery);
     }
-    public function addLink() : Method\AddLink
+    public function invite() : Method\Groups_Invite
     {
-        return new Method\AddLink();
+        return new Method\Groups_Invite($this->client, $this->defaultQuery);
     }
-    public function deleteLink() : Method\DeleteLink
+    public function addLink() : Method\Groups_AddLink
     {
-        return new Method\DeleteLink();
+        return new Method\Groups_AddLink($this->client, $this->defaultQuery);
     }
-    public function editLink() : Method\EditLink
+    public function deleteLink() : Method\Groups_DeleteLink
     {
-        return new Method\EditLink();
+        return new Method\Groups_DeleteLink($this->client, $this->defaultQuery);
     }
-    public function reorderLink() : Method\ReorderLink
+    public function editLink() : Method\Groups_EditLink
     {
-        return new Method\ReorderLink();
+        return new Method\Groups_EditLink($this->client, $this->defaultQuery);
     }
-    public function removeUser() : Method\RemoveUser
+    public function reorderLink() : Method\Groups_ReorderLink
     {
-        return new Method\RemoveUser();
+        return new Method\Groups_ReorderLink($this->client, $this->defaultQuery);
     }
-    public function approveRequest() : Method\ApproveRequest
+    public function removeUser() : Method\Groups_RemoveUser
     {
-        return new Method\ApproveRequest();
+        return new Method\Groups_RemoveUser($this->client, $this->defaultQuery);
     }
-    public function getCallbackConfirmationCode() : Method\GetCallbackConfirmationCode
+    public function approveRequest() : Method\Groups_ApproveRequest
     {
-        return new Method\GetCallbackConfirmationCode();
+        return new Method\Groups_ApproveRequest($this->client, $this->defaultQuery);
     }
-    public function getCallbackServerSettings() : Method\GetCallbackServerSettings
+    public function getCallbackConfirmationCode() : Method\Groups_GetCallbackConfirmationCode
     {
-        return new Method\GetCallbackServerSettings();
+        return new Method\Groups_GetCallbackConfirmationCode($this->client, $this->defaultQuery);
     }
-    public function getCallbackSettings() : Method\GetCallbackSettings
+    public function getCallbackServerSettings() : Method\Groups_GetCallbackServerSettings
     {
-        return new Method\GetCallbackSettings();
+        return new Method\Groups_GetCallbackServerSettings($this->client, $this->defaultQuery);
     }
-    public function setCallbackServer() : Method\SetCallbackServer
+    public function getCallbackSettings() : Method\Groups_GetCallbackSettings
     {
-        return new Method\SetCallbackServer();
+        return new Method\Groups_GetCallbackSettings($this->client, $this->defaultQuery);
     }
-    public function setCallbackServerSettings() : Method\SetCallbackServerSettings
+    public function setCallbackServer() : Method\Groups_SetCallbackServer
     {
-        return new Method\SetCallbackServerSettings();
+        return new Method\Groups_SetCallbackServer($this->client, $this->defaultQuery);
     }
-    public function setCallbackSettings() : Method\SetCallbackSettings
+    public function setCallbackServerSettings() : Method\Groups_SetCallbackServerSettings
     {
-        return new Method\SetCallbackSettings();
+        return new Method\Groups_SetCallbackServerSettings($this->client, $this->defaultQuery);
+    }
+    public function setCallbackSettings() : Method\Groups_SetCallbackSettings
+    {
+        return new Method\Groups_SetCallbackSettings($this->client, $this->defaultQuery);
     }
 }

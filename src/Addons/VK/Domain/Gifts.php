@@ -5,8 +5,15 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Gifts
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
+    }
+    public function get() : Method\Gifts_Get
+    {
+        return new Method\Gifts_Get($this->client, $this->defaultQuery);
     }
 }

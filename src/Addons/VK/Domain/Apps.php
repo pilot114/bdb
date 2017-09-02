@@ -5,32 +5,39 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Apps
 {
-    public function getCatalog() : Method\GetCatalog
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\GetCatalog();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function get() : Method\Get
+    public function getCatalog() : Method\Apps_GetCatalog
     {
-        return new Method\Get();
+        return new Method\Apps_GetCatalog($this->client, $this->defaultQuery);
     }
-    public function sendRequest() : Method\SendRequest
+    public function get() : Method\Apps_Get
     {
-        return new Method\SendRequest();
+        return new Method\Apps_Get($this->client, $this->defaultQuery);
     }
-    public function deleteAppRequests() : Method\DeleteAppRequests
+    public function sendRequest() : Method\Apps_SendRequest
     {
-        return new Method\DeleteAppRequests();
+        return new Method\Apps_SendRequest($this->client, $this->defaultQuery);
     }
-    public function getFriendsList() : Method\GetFriendsList
+    public function deleteAppRequests() : Method\Apps_DeleteAppRequests
     {
-        return new Method\GetFriendsList();
+        return new Method\Apps_DeleteAppRequests($this->client, $this->defaultQuery);
     }
-    public function getLeaderboard() : Method\GetLeaderboard
+    public function getFriendsList() : Method\Apps_GetFriendsList
     {
-        return new Method\GetLeaderboard();
+        return new Method\Apps_GetFriendsList($this->client, $this->defaultQuery);
     }
-    public function getScore() : Method\GetScore
+    public function getLeaderboard() : Method\Apps_GetLeaderboard
     {
-        return new Method\GetScore();
+        return new Method\Apps_GetLeaderboard($this->client, $this->defaultQuery);
+    }
+    public function getScore() : Method\Apps_GetScore
+    {
+        return new Method\Apps_GetScore($this->client, $this->defaultQuery);
     }
 }

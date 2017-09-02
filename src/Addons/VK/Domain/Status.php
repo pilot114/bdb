@@ -5,12 +5,19 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Status
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function set() : Method\Set
+    public function get() : Method\Status_Get
     {
-        return new Method\Set();
+        return new Method\Status_Get($this->client, $this->defaultQuery);
+    }
+    public function set() : Method\Status_Set
+    {
+        return new Method\Status_Set($this->client, $this->defaultQuery);
     }
 }

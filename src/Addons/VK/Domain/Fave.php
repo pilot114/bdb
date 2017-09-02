@@ -5,52 +5,59 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Fave
 {
-    public function getUsers() : Method\GetUsers
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\GetUsers();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getPhotos() : Method\GetPhotos
+    public function getUsers() : Method\Fave_GetUsers
     {
-        return new Method\GetPhotos();
+        return new Method\Fave_GetUsers($this->client, $this->defaultQuery);
     }
-    public function getPosts() : Method\GetPosts
+    public function getPhotos() : Method\Fave_GetPhotos
     {
-        return new Method\GetPosts();
+        return new Method\Fave_GetPhotos($this->client, $this->defaultQuery);
     }
-    public function getVideos() : Method\GetVideos
+    public function getPosts() : Method\Fave_GetPosts
     {
-        return new Method\GetVideos();
+        return new Method\Fave_GetPosts($this->client, $this->defaultQuery);
     }
-    public function getLinks() : Method\GetLinks
+    public function getVideos() : Method\Fave_GetVideos
     {
-        return new Method\GetLinks();
+        return new Method\Fave_GetVideos($this->client, $this->defaultQuery);
     }
-    public function getMarketItems() : Method\GetMarketItems
+    public function getLinks() : Method\Fave_GetLinks
     {
-        return new Method\GetMarketItems();
+        return new Method\Fave_GetLinks($this->client, $this->defaultQuery);
     }
-    public function addUser() : Method\AddUser
+    public function getMarketItems() : Method\Fave_GetMarketItems
     {
-        return new Method\AddUser();
+        return new Method\Fave_GetMarketItems($this->client, $this->defaultQuery);
     }
-    public function removeUser() : Method\RemoveUser
+    public function addUser() : Method\Fave_AddUser
     {
-        return new Method\RemoveUser();
+        return new Method\Fave_AddUser($this->client, $this->defaultQuery);
     }
-    public function addGroup() : Method\AddGroup
+    public function removeUser() : Method\Fave_RemoveUser
     {
-        return new Method\AddGroup();
+        return new Method\Fave_RemoveUser($this->client, $this->defaultQuery);
     }
-    public function removeGroup() : Method\RemoveGroup
+    public function addGroup() : Method\Fave_AddGroup
     {
-        return new Method\RemoveGroup();
+        return new Method\Fave_AddGroup($this->client, $this->defaultQuery);
     }
-    public function addLink() : Method\AddLink
+    public function removeGroup() : Method\Fave_RemoveGroup
     {
-        return new Method\AddLink();
+        return new Method\Fave_RemoveGroup($this->client, $this->defaultQuery);
     }
-    public function removeLink() : Method\RemoveLink
+    public function addLink() : Method\Fave_AddLink
     {
-        return new Method\RemoveLink();
+        return new Method\Fave_AddLink($this->client, $this->defaultQuery);
+    }
+    public function removeLink() : Method\Fave_RemoveLink
+    {
+        return new Method\Fave_RemoveLink($this->client, $this->defaultQuery);
     }
 }

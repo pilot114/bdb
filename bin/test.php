@@ -6,6 +6,11 @@ use Bdb\Client\ClientFactory;
 use Bdb\Processor\ProcessorFactory;
 use Bdb\Source;
 
+
+var_dump((new Bdb\Addons\VK\Api())->account()->getInfo());
+die();
+
+
 $url = null;
 $selectors = null;
 

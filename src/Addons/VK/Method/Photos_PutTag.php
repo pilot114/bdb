@@ -1,0 +1,93 @@
+<?php
+
+namespace Bdb\Addons\VK\Method;
+
+/**
+ * Adds a tag on the photo.
+ */
+class Photos_PutTag extends \Bdb\Addons\VK\BaseMethod
+{
+    protected $params = array();
+    public function isOpen() : boolean
+    {
+        return false;
+    }
+    public function __construct($client, $defaultQuery)
+    {
+        parent::__construct($client, $defaultQuery);
+    }
+    public function call()
+    {
+        return $this->onCall('photos.putTag');
+    }
+    /**
+     * ID of the user or community that owns the photo.
+     *
+     * {"type":"integer","minimum":0}
+     */
+    public function _owner_id(integer $owner_id) : Photos_PutTag
+    {
+        $this->params['owner_id'] = $owner_id;
+        return $this;
+    }
+    /**
+     * Photo ID.
+     *
+     * {"type":"integer","minimum":0}
+     */
+    public function photo_id(integer $photo_id) : Photos_PutTag
+    {
+        $this->params['photo_id'] = $photo_id;
+        return $this;
+    }
+    /**
+     * ID of the user to be tagged.
+     *
+     * {"type":"integer"}
+     */
+    public function user_id(integer $user_id) : Photos_PutTag
+    {
+        $this->params['user_id'] = $user_id;
+        return $this;
+    }
+    /**
+     * Upper left-corner coordinate of the tagged area (as a percentage of the photo's width).
+     *
+     * {"type":"float"}
+     */
+    public function _x(float $x) : Photos_PutTag
+    {
+        $this->params['x'] = $x;
+        return $this;
+    }
+    /**
+     * Upper left-corner coordinate of the tagged area (as a percentage of the photo's height).
+     *
+     * {"type":"float"}
+     */
+    public function _y(float $y) : Photos_PutTag
+    {
+        $this->params['y'] = $y;
+        return $this;
+    }
+    /**
+     * Lower right-corner coordinate of the tagged area (as a percentage of the photo's width).
+     *
+     * {"type":"float"}
+     */
+    public function _x2(float $x2) : Photos_PutTag
+    {
+        $this->params['x2'] = $x2;
+        return $this;
+    }
+    /**
+     * Lower right-corner coordinate of the tagged area (as a percentage of the photo's height).
+     *
+     * {"type":"float"}
+     */
+    public function _y2(float $y2) : Photos_PutTag
+    {
+        $this->params['y2'] = $y2;
+        return $this;
+    }
+}

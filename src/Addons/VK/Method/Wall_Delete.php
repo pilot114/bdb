@@ -1,0 +1,43 @@
+<?php
+
+namespace Bdb\Addons\VK\Method;
+
+/**
+ * Deletes a post from a user wall or community wall.
+ */
+class Wall_Delete extends \Bdb\Addons\VK\BaseMethod
+{
+    protected $params = array();
+    public function isOpen() : boolean
+    {
+        return false;
+    }
+    public function __construct($client, $defaultQuery)
+    {
+        parent::__construct($client, $defaultQuery);
+    }
+    public function call()
+    {
+        return $this->onCall('wall.delete');
+    }
+    /**
+     * User ID or community ID. Use a negative value to designate a community ID.
+     *
+     * {"type":"integer"}
+     */
+    public function _owner_id(integer $owner_id) : Wall_Delete
+    {
+        $this->params['owner_id'] = $owner_id;
+        return $this;
+    }
+    /**
+     * ID of the post to be deleted.
+     *
+     * {"type":"integer","minimum":0}
+     */
+    public function _post_id(integer $post_id) : Wall_Delete
+    {
+        $this->params['post_id'] = $post_id;
+        return $this;
+    }
+}

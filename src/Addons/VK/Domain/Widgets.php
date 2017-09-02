@@ -5,12 +5,19 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Widgets
 {
-    public function getComments() : Method\GetComments
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\GetComments();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getPages() : Method\GetPages
+    public function getComments() : Method\Widgets_GetComments
     {
-        return new Method\GetPages();
+        return new Method\Widgets_GetComments($this->client, $this->defaultQuery);
+    }
+    public function getPages() : Method\Widgets_GetPages
+    {
+        return new Method\Widgets_GetPages($this->client, $this->defaultQuery);
     }
 }

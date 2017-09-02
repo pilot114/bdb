@@ -5,8 +5,15 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Search
 {
-    public function getHints() : Method\GetHints
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\GetHints();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
+    }
+    public function getHints() : Method\Search_GetHints
+    {
+        return new Method\Search_GetHints($this->client, $this->defaultQuery);
     }
 }

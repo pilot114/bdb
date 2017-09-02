@@ -5,12 +5,19 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Notifications
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function markAsViewed() : Method\MarkAsViewed
+    public function get() : Method\Notifications_Get
     {
-        return new Method\MarkAsViewed();
+        return new Method\Notifications_Get($this->client, $this->defaultQuery);
+    }
+    public function markAsViewed() : Method\Notifications_MarkAsViewed
+    {
+        return new Method\Notifications_MarkAsViewed($this->client, $this->defaultQuery);
     }
 }

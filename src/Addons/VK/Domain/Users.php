@@ -5,32 +5,39 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Users
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function search() : Method\Search
+    public function get() : Method\Users_Get
     {
-        return new Method\Search();
+        return new Method\Users_Get($this->client, $this->defaultQuery);
     }
-    public function isAppUser() : Method\IsAppUser
+    public function search() : Method\Users_Search
     {
-        return new Method\IsAppUser();
+        return new Method\Users_Search($this->client, $this->defaultQuery);
     }
-    public function getSubscriptions() : Method\GetSubscriptions
+    public function isAppUser() : Method\Users_IsAppUser
     {
-        return new Method\GetSubscriptions();
+        return new Method\Users_IsAppUser($this->client, $this->defaultQuery);
     }
-    public function getFollowers() : Method\GetFollowers
+    public function getSubscriptions() : Method\Users_GetSubscriptions
     {
-        return new Method\GetFollowers();
+        return new Method\Users_GetSubscriptions($this->client, $this->defaultQuery);
     }
-    public function report() : Method\Report
+    public function getFollowers() : Method\Users_GetFollowers
     {
-        return new Method\Report();
+        return new Method\Users_GetFollowers($this->client, $this->defaultQuery);
     }
-    public function getNearby() : Method\GetNearby
+    public function report() : Method\Users_Report
     {
-        return new Method\GetNearby();
+        return new Method\Users_Report($this->client, $this->defaultQuery);
+    }
+    public function getNearby() : Method\Users_GetNearby
+    {
+        return new Method\Users_GetNearby($this->client, $this->defaultQuery);
     }
 }

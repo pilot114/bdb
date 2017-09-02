@@ -5,20 +5,27 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Orders
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getById() : Method\GetById
+    public function get() : Method\Orders_Get
     {
-        return new Method\GetById();
+        return new Method\Orders_Get($this->client, $this->defaultQuery);
     }
-    public function changeState() : Method\ChangeState
+    public function getById() : Method\Orders_GetById
     {
-        return new Method\ChangeState();
+        return new Method\Orders_GetById($this->client, $this->defaultQuery);
     }
-    public function getAmount() : Method\GetAmount
+    public function changeState() : Method\Orders_ChangeState
     {
-        return new Method\GetAmount();
+        return new Method\Orders_ChangeState($this->client, $this->defaultQuery);
+    }
+    public function getAmount() : Method\Orders_GetAmount
+    {
+        return new Method\Orders_GetAmount($this->client, $this->defaultQuery);
     }
 }

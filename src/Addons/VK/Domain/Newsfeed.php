@@ -5,64 +5,71 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Newsfeed
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getRecommended() : Method\GetRecommended
+    public function get() : Method\Newsfeed_Get
     {
-        return new Method\GetRecommended();
+        return new Method\Newsfeed_Get($this->client, $this->defaultQuery);
     }
-    public function getComments() : Method\GetComments
+    public function getRecommended() : Method\Newsfeed_GetRecommended
     {
-        return new Method\GetComments();
+        return new Method\Newsfeed_GetRecommended($this->client, $this->defaultQuery);
     }
-    public function getMentions() : Method\GetMentions
+    public function getComments() : Method\Newsfeed_GetComments
     {
-        return new Method\GetMentions();
+        return new Method\Newsfeed_GetComments($this->client, $this->defaultQuery);
     }
-    public function getBanned() : Method\GetBanned
+    public function getMentions() : Method\Newsfeed_GetMentions
     {
-        return new Method\GetBanned();
+        return new Method\Newsfeed_GetMentions($this->client, $this->defaultQuery);
     }
-    public function addBan() : Method\AddBan
+    public function getBanned() : Method\Newsfeed_GetBanned
     {
-        return new Method\AddBan();
+        return new Method\Newsfeed_GetBanned($this->client, $this->defaultQuery);
     }
-    public function deleteBan() : Method\DeleteBan
+    public function addBan() : Method\Newsfeed_AddBan
     {
-        return new Method\DeleteBan();
+        return new Method\Newsfeed_AddBan($this->client, $this->defaultQuery);
     }
-    public function ignoreItem() : Method\IgnoreItem
+    public function deleteBan() : Method\Newsfeed_DeleteBan
     {
-        return new Method\IgnoreItem();
+        return new Method\Newsfeed_DeleteBan($this->client, $this->defaultQuery);
     }
-    public function unignoreItem() : Method\UnignoreItem
+    public function ignoreItem() : Method\Newsfeed_IgnoreItem
     {
-        return new Method\UnignoreItem();
+        return new Method\Newsfeed_IgnoreItem($this->client, $this->defaultQuery);
     }
-    public function search() : Method\Search
+    public function unignoreItem() : Method\Newsfeed_UnignoreItem
     {
-        return new Method\Search();
+        return new Method\Newsfeed_UnignoreItem($this->client, $this->defaultQuery);
     }
-    public function getLists() : Method\GetLists
+    public function search() : Method\Newsfeed_Search
     {
-        return new Method\GetLists();
+        return new Method\Newsfeed_Search($this->client, $this->defaultQuery);
     }
-    public function saveList() : Method\SaveList
+    public function getLists() : Method\Newsfeed_GetLists
     {
-        return new Method\SaveList();
+        return new Method\Newsfeed_GetLists($this->client, $this->defaultQuery);
     }
-    public function deleteList() : Method\DeleteList
+    public function saveList() : Method\Newsfeed_SaveList
     {
-        return new Method\DeleteList();
+        return new Method\Newsfeed_SaveList($this->client, $this->defaultQuery);
     }
-    public function unsubscribe() : Method\Unsubscribe
+    public function deleteList() : Method\Newsfeed_DeleteList
     {
-        return new Method\Unsubscribe();
+        return new Method\Newsfeed_DeleteList($this->client, $this->defaultQuery);
     }
-    public function getSuggestedSources() : Method\GetSuggestedSources
+    public function unsubscribe() : Method\Newsfeed_Unsubscribe
     {
-        return new Method\GetSuggestedSources();
+        return new Method\Newsfeed_Unsubscribe($this->client, $this->defaultQuery);
+    }
+    public function getSuggestedSources() : Method\Newsfeed_GetSuggestedSources
+    {
+        return new Method\Newsfeed_GetSuggestedSources($this->client, $this->defaultQuery);
     }
 }

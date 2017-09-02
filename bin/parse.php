@@ -13,4 +13,4 @@ try {
 } catch (Error $e) {
     echo 'Parse Error: ', $e->getMessage();
 }
-var_dump($stmts);
+dump($stmts);

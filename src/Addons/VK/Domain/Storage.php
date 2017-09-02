@@ -5,16 +5,23 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Storage
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function set() : Method\Set
+    public function get() : Method\Storage_Get
     {
-        return new Method\Set();
+        return new Method\Storage_Get($this->client, $this->defaultQuery);
     }
-    public function getKeys() : Method\GetKeys
+    public function set() : Method\Storage_Set
     {
-        return new Method\GetKeys();
+        return new Method\Storage_Set($this->client, $this->defaultQuery);
+    }
+    public function getKeys() : Method\Storage_GetKeys
+    {
+        return new Method\Storage_GetKeys($this->client, $this->defaultQuery);
     }
 }

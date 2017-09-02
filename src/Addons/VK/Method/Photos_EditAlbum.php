@@ -1,0 +1,103 @@
+<?php
+
+namespace Bdb\Addons\VK\Method;
+
+/**
+ * Edits information about a photo album.
+ */
+class Photos_EditAlbum extends \Bdb\Addons\VK\BaseMethod
+{
+    protected $params = array();
+    public function isOpen() : boolean
+    {
+        return false;
+    }
+    public function __construct($client, $defaultQuery)
+    {
+        parent::__construct($client, $defaultQuery);
+    }
+    public function call()
+    {
+        return $this->onCall('photos.editAlbum');
+    }
+    /**
+     * ID of the photo album to be edited.
+     *
+     * {"type":"integer","minimum":0}
+     */
+    public function album_id(integer $album_id) : Photos_EditAlbum
+    {
+        $this->params['album_id'] = $album_id;
+        return $this;
+    }
+    /**
+     * New album title.
+     *
+     * {"type":"string"}
+     */
+    public function _title(string $title) : Photos_EditAlbum
+    {
+        $this->params['title'] = $title;
+        return $this;
+    }
+    /**
+     * New album description.
+     *
+     * {"type":"string"}
+     */
+    public function _description(string $description) : Photos_EditAlbum
+    {
+        $this->params['description'] = $description;
+        return $this;
+    }
+    /**
+     * ID of the user or community that owns the album.
+     *
+     * {"type":"integer"}
+     */
+    public function _owner_id(integer $owner_id) : Photos_EditAlbum
+    {
+        $this->params['owner_id'] = $owner_id;
+        return $this;
+    }
+    /**
+     * not description
+     *
+     * {"type":"array","items":{"type":"string"}}
+     */
+    public function _privacy_view(array $privacy_view) : Photos_EditAlbum
+    {
+        $this->params['privacy_view'] = $privacy_view;
+        return $this;
+    }
+    /**
+     * not description
+     *
+     * {"type":"array","items":{"type":"string"}}
+     */
+    public function _privacy_comment(array $privacy_comment) : Photos_EditAlbum
+    {
+        $this->params['privacy_comment'] = $privacy_comment;
+        return $this;
+    }
+    /**
+     * not description
+     *
+     * {"type":"boolean"}
+     */
+    public function _upload_by_admins_only(boolean $upload_by_admins_only) : Photos_EditAlbum
+    {
+        $this->params['upload_by_admins_only'] = $upload_by_admins_only;
+        return $this;
+    }
+    /**
+     * not description
+     *
+     * {"type":"boolean"}
+     */
+    public function _comments_disabled(boolean $comments_disabled) : Photos_EditAlbum
+    {
+        $this->params['comments_disabled'] = $comments_disabled;
+        return $this;
+    }
+}

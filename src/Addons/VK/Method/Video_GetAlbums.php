@@ -1,0 +1,63 @@
+<?php
+
+namespace Bdb\Addons\VK\Method;
+
+/**
+ * Returns a list of video albums owned by a user or community.
+ */
+class Video_GetAlbums extends \Bdb\Addons\VK\BaseMethod
+{
+    protected $params = array();
+    public function isOpen() : boolean
+    {
+        return false;
+    }
+    public function __construct($client, $defaultQuery)
+    {
+        parent::__construct($client, $defaultQuery);
+    }
+    public function call()
+    {
+        return $this->onCall('video.getAlbums');
+    }
+    /**
+     * ID of the user or community that owns the video album(s).
+     *
+     * {"type":"integer"}
+     */
+    public function _owner_id(integer $owner_id) : Video_GetAlbums
+    {
+        $this->params['owner_id'] = $owner_id;
+        return $this;
+    }
+    /**
+     * Offset needed to return a specific subset of video albums.
+     *
+     * {"type":"integer","minimum":0}
+     */
+    public function _offset(integer $offset) : Video_GetAlbums
+    {
+        $this->params['offset'] = $offset;
+        return $this;
+    }
+    /**
+     * Number of video albums to return.
+     *
+     * {"type":"integer","minimum":0,"default":50,"maximum":100}
+     */
+    public function _count(integer $count) : Video_GetAlbums
+    {
+        $this->params['count'] = $count;
+        return $this;
+    }
+    /**
+     * '1' — to return additional information about album privacy settings for the current user
+     *
+     * {"type":"boolean"}
+     */
+    public function _extended(boolean $extended) : Video_GetAlbums
+    {
+        $this->params['extended'] = $extended;
+        return $this;
+    }
+}

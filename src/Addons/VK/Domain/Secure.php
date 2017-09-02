@@ -5,44 +5,51 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Secure
 {
-    public function getAppBalance() : Method\GetAppBalance
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\GetAppBalance();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getTransactionsHistory() : Method\GetTransactionsHistory
+    public function getAppBalance() : Method\Secure_GetAppBalance
     {
-        return new Method\GetTransactionsHistory();
+        return new Method\Secure_GetAppBalance($this->client, $this->defaultQuery);
     }
-    public function getSMSHistory() : Method\GetSMSHistory
+    public function getTransactionsHistory() : Method\Secure_GetTransactionsHistory
     {
-        return new Method\GetSMSHistory();
+        return new Method\Secure_GetTransactionsHistory($this->client, $this->defaultQuery);
     }
-    public function sendSMSNotification() : Method\SendSMSNotification
+    public function getSMSHistory() : Method\Secure_GetSMSHistory
     {
-        return new Method\SendSMSNotification();
+        return new Method\Secure_GetSMSHistory($this->client, $this->defaultQuery);
     }
-    public function sendNotification() : Method\SendNotification
+    public function sendSMSNotification() : Method\Secure_SendSMSNotification
     {
-        return new Method\SendNotification();
+        return new Method\Secure_SendSMSNotification($this->client, $this->defaultQuery);
     }
-    public function setCounter() : Method\SetCounter
+    public function sendNotification() : Method\Secure_SendNotification
     {
-        return new Method\SetCounter();
+        return new Method\Secure_SendNotification($this->client, $this->defaultQuery);
     }
-    public function setUserLevel() : Method\SetUserLevel
+    public function setCounter() : Method\Secure_SetCounter
     {
-        return new Method\SetUserLevel();
+        return new Method\Secure_SetCounter($this->client, $this->defaultQuery);
     }
-    public function getUserLevel() : Method\GetUserLevel
+    public function setUserLevel() : Method\Secure_SetUserLevel
     {
-        return new Method\GetUserLevel();
+        return new Method\Secure_SetUserLevel($this->client, $this->defaultQuery);
     }
-    public function addAppEvent() : Method\AddAppEvent
+    public function getUserLevel() : Method\Secure_GetUserLevel
     {
-        return new Method\AddAppEvent();
+        return new Method\Secure_GetUserLevel($this->client, $this->defaultQuery);
     }
-    public function checkToken() : Method\CheckToken
+    public function addAppEvent() : Method\Secure_AddAppEvent
     {
-        return new Method\CheckToken();
+        return new Method\Secure_AddAppEvent($this->client, $this->defaultQuery);
+    }
+    public function checkToken() : Method\Secure_CheckToken
+    {
+        return new Method\Secure_CheckToken($this->client, $this->defaultQuery);
     }
 }

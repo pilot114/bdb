@@ -30,31 +30,67 @@ foreach ($methods as $method) {
             ->makePublic()
             ->setReturnType('Domain\\' . ucfirst($method->domain))
             ->addStmt(new Node\Stmt\Return_(
-                new Node\Expr\New_(new Node\Name('Domain\\' . ucfirst($method->domain)))
+                new Node\Expr\New_(new Node\Name('Domain\\' . ucfirst($method->domain)), [
+                    new Node\Arg( new Node\Expr\PropertyFetch( new Node\Expr\Variable('this'), 'client') ),
+                    new Node\Arg( new Node\Expr\PropertyFetch( new Node\Expr\Variable('this'), 'defaultQuery') ),
+                ])
             ));
     }
 }
 
 $node = $factory->namespace('Bdb\Addons\VK')
+    ->addStmt($factory->use('GuzzleHttp\Client'))
     ->addStmt($factory->class('Api')
-        ->addStmt(new Node\Stmt\Property(
-            Node\Stmt\Class_::MODIFIER_PROTECTED,
-            [
-                new Node\Stmt\PropertyProperty('authToken')
-            ]
-        ))
         ->addStmt(new Node\Stmt\ClassConst([
             new Node\Const_('VERSION', new Node\Scalar\DNumber(5.67))
         ]))
-        ->addStmt($factory->method('setAuthToken')
+        ->addStmt(new Node\Stmt\Property(
+            Node\Stmt\Class_::MODIFIER_PROTECTED, [
+                new Node\Stmt\PropertyProperty('client')
+            ]
+        ))
+        ->addStmt(new Node\Stmt\Property(
+            Node\Stmt\Class_::MODIFIER_PROTECTED, [
+                new Node\Stmt\PropertyProperty('defaultQuery')
+            ]
+        ))
+        ->addStmt($factory->method('__construct')
             ->makePublic()
-            ->addParam(new Node\Param('authToken', null, 'string'))
+            ->addParam($factory->param('accessToken')->setTypeHint('string'))
+            ->addStmt(new Node\Expr\Assign(
+                    new Node\Expr\PropertyFetch(
+                        new Node\Expr\Variable('this'), 'defaultQuery'
+                    ),
+                    new Node\Expr\Array_([
+                        new PhpParser\Node\Expr\ArrayItem(
+                            new Node\Expr\ClassConstFetch(
+                                new Node\Name('self'),
+                                'VERSION'
+                            ),
+                            new Node\Scalar\String_('v')
+                        ),
+                        new PhpParser\Node\Expr\ArrayItem(
+                            new Node\Expr\Variable('accessToken'),
+                            new Node\Scalar\String_('access_token')
+                        ),
+                    ])
+            ))
             ->addStmt(new Node\Expr\Assign(
                 new Node\Expr\PropertyFetch(
-                    new Node\Expr\Variable('this'), 'authToken'
+                    new Node\Expr\Variable('this'), 'client'
                 ),
-                new Node\Expr\Variable('authToken')
-        )))
+                new Node\Expr\New_(new Node\Name('Client'), [
+                    new PhpParser\Node\Arg(
+                        new Node\Expr\Array_([
+                            new Node\Expr\ArrayItem(
+                                new Node\Scalar\String_('https://api.vk.com/method/'),
+                                new Node\Scalar\String_('base_uri')
+                            )
+                        ])
+                    )
+                ])
+            ))
+        )
         ->addStmts($methodsStatements)
     )
     ->getNode()
@@ -78,9 +114,12 @@ foreach ($methods as $method) {
 
     $domainsStatements[$method->domain][] = $factory->method($method->name)
         ->makePublic()
-        ->setReturnType('Method\\' . ucfirst($method->name))
+        ->setReturnType('Method\\' . ucfirst($method->domain) . '_' . ucfirst($method->name))
         ->addStmt(new Node\Stmt\Return_(
-            new Node\Expr\New_(new Node\Name('Method\\' . ucfirst($method->name)))
+            new Node\Expr\New_(new Node\Name('Method\\' . ucfirst($method->domain) . '_' . ucfirst($method->name)), [
+                new Node\Arg( new Node\Expr\PropertyFetch( new Node\Expr\Variable('this'), 'client') ),
+                new Node\Arg( new Node\Expr\PropertyFetch( new Node\Expr\Variable('this'), 'defaultQuery') ),
+            ])
         ));
 }
 
@@ -89,6 +128,33 @@ foreach ($domainsStatements as $domainName => $domainStatements) {
         ->namespace('Bdb\Addons\VK\Domain')
         ->addStmt($factory->use('Bdb\Addons\VK\Method'))
         ->addStmt($factory->class(ucfirst($domainName))
+            ->addStmt(new Node\Stmt\Property(
+                Node\Stmt\Class_::MODIFIER_PROTECTED, [
+                    new Node\Stmt\PropertyProperty('client')
+                ]
+            ))
+            ->addStmt(new Node\Stmt\Property(
+                Node\Stmt\Class_::MODIFIER_PROTECTED, [
+                    new Node\Stmt\PropertyProperty('defaultQuery')
+                ]
+            ))
+            ->addStmt($factory->method('__construct')
+                ->makePublic()
+                ->addParam($factory->param('client'))
+                ->addParam($factory->param('defaultQuery'))
+                ->addStmt(new Node\Expr\Assign(
+                    new Node\Expr\PropertyFetch(
+                        new Node\Expr\Variable('this'), 'client'
+                    ),
+                    new Node\Expr\Variable('client')
+                ))
+                ->addStmt(new Node\Expr\Assign(
+                    new Node\Expr\PropertyFetch(
+                        new Node\Expr\Variable('this'), 'defaultQuery'
+                    ),
+                    new Node\Expr\Variable('defaultQuery')
+                ))
+            )
             ->addStmts($domainStatements)
         )
     ->getNode()
@@ -106,14 +172,8 @@ $methodsStatements = [];
 foreach ($methods as $method) {
     $method = (object)($method);
 
-    $parameters = [];
-
-    // parameters responses errors - могут отсутствовать
-//    var_dump($method);
-//    die();
-
-    $class = $factory
-        ->class(ucfirst($method->name))
+    $class = $factory->class(ucfirst($method->domain) . '_' . ucfirst($method->name))
+        ->extend('\Bdb\Addons\VK\BaseMethod')
         ->addStmt(new Node\Stmt\Property(
             Node\Stmt\Class_::MODIFIER_PROTECTED,
             [
@@ -139,14 +199,48 @@ foreach ($methods as $method) {
         ))
     );
 
+    $class->addStmt($factory->method('__construct')
+        ->makePublic()
+        ->addParam($factory->param('client'))
+        ->addParam($factory->param('defaultQuery'))
+        ->addStmt(new Node\Expr\StaticCall(
+            new Node\Name('parent'),
+            '__construct',
+            [
+                new Node\Arg(new Node\Expr\Variable('client')),
+                new Node\Arg(new Node\Expr\Variable('defaultQuery')),
+            ]
+        ))
+    );
+
+    $class->addStmt($factory->method('call')
+        ->makePublic()
+        ->addStmt(new Node\Stmt\Return_(new Node\Expr\MethodCall(
+            new Node\Expr\Variable('this'),
+            'onCall',
+            [
+                new Node\Arg( new Node\Scalar\String_($method->domain . '.' . $method->name)),
+            ]
+        )))
+    );
+
+    // TODO: add optional responses&errors in method object
+    // TODO: add POST support for tipical upload flow
+
     if (isset($method->parameters)) {
 
         $parameters = [];
         foreach ($method->parameters as $parameter) {
             $parameter = (object)($parameter);
 
-            $name = isset($parameter->required) && $parameter->required ? $parameter->name : '_' . $parameter->name;
+            $name = $parameter->name;
+            $nameUnderscore = isset($parameter->required) && $parameter->required ? $parameter->name : '_' . $parameter->name;
             $description = isset($parameter->description) ? $parameter->description : 'not description';
+
+            // fix typing for php
+            if ($parameter->type === 'number') {
+                $parameter->type = 'float';
+            }
 
             unset($parameter->required);
             unset($parameter->name);
@@ -163,11 +257,11 @@ foreach ($methods as $method) {
                 json_encode($parameter)
             );
 
-            $parameters[] = $factory->method($name)
+            $parameters[] = $factory->method($nameUnderscore)
                 ->setDocComment($docBlock)
                 ->makePublic()
                 ->addParam($factory->param($name)->setTypeHint($parameter->type))
-                ->setReturnType(ucfirst($method->name))
+                ->setReturnType(ucfirst($method->domain) . '_' . ucfirst($method->name))
                 ->addStmt(
                     new Node\Expr\Assign(
                         new Node\Expr\ArrayDimFetch(
@@ -194,5 +288,5 @@ foreach ($methods as $method) {
     ;
 
     $code = $prettyPrinter->prettyPrintFile([$node]);
-    file_put_contents(sprintf('./src/Addons/VK/Method/%s.php', ucfirst($method->name)), $code);
+    file_put_contents(sprintf('./src/Addons/VK/Method/%s.php', ucfirst($method->domain) . '_' . ucfirst($method->name)), $code);
 }

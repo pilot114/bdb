@@ -5,80 +5,87 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Friends
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getOnline() : Method\GetOnline
+    public function get() : Method\Friends_Get
     {
-        return new Method\GetOnline();
+        return new Method\Friends_Get($this->client, $this->defaultQuery);
     }
-    public function getMutual() : Method\GetMutual
+    public function getOnline() : Method\Friends_GetOnline
     {
-        return new Method\GetMutual();
+        return new Method\Friends_GetOnline($this->client, $this->defaultQuery);
     }
-    public function getRecent() : Method\GetRecent
+    public function getMutual() : Method\Friends_GetMutual
     {
-        return new Method\GetRecent();
+        return new Method\Friends_GetMutual($this->client, $this->defaultQuery);
     }
-    public function getRequests() : Method\GetRequests
+    public function getRecent() : Method\Friends_GetRecent
     {
-        return new Method\GetRequests();
+        return new Method\Friends_GetRecent($this->client, $this->defaultQuery);
     }
-    public function add() : Method\Add
+    public function getRequests() : Method\Friends_GetRequests
     {
-        return new Method\Add();
+        return new Method\Friends_GetRequests($this->client, $this->defaultQuery);
     }
-    public function edit() : Method\Edit
+    public function add() : Method\Friends_Add
     {
-        return new Method\Edit();
+        return new Method\Friends_Add($this->client, $this->defaultQuery);
     }
-    public function delete() : Method\Delete
+    public function edit() : Method\Friends_Edit
     {
-        return new Method\Delete();
+        return new Method\Friends_Edit($this->client, $this->defaultQuery);
     }
-    public function getLists() : Method\GetLists
+    public function delete() : Method\Friends_Delete
     {
-        return new Method\GetLists();
+        return new Method\Friends_Delete($this->client, $this->defaultQuery);
     }
-    public function addList() : Method\AddList
+    public function getLists() : Method\Friends_GetLists
     {
-        return new Method\AddList();
+        return new Method\Friends_GetLists($this->client, $this->defaultQuery);
     }
-    public function editList() : Method\EditList
+    public function addList() : Method\Friends_AddList
     {
-        return new Method\EditList();
+        return new Method\Friends_AddList($this->client, $this->defaultQuery);
     }
-    public function deleteList() : Method\DeleteList
+    public function editList() : Method\Friends_EditList
     {
-        return new Method\DeleteList();
+        return new Method\Friends_EditList($this->client, $this->defaultQuery);
     }
-    public function getAppUsers() : Method\GetAppUsers
+    public function deleteList() : Method\Friends_DeleteList
     {
-        return new Method\GetAppUsers();
+        return new Method\Friends_DeleteList($this->client, $this->defaultQuery);
     }
-    public function getByPhones() : Method\GetByPhones
+    public function getAppUsers() : Method\Friends_GetAppUsers
     {
-        return new Method\GetByPhones();
+        return new Method\Friends_GetAppUsers($this->client, $this->defaultQuery);
     }
-    public function deleteAllRequests() : Method\DeleteAllRequests
+    public function getByPhones() : Method\Friends_GetByPhones
     {
-        return new Method\DeleteAllRequests();
+        return new Method\Friends_GetByPhones($this->client, $this->defaultQuery);
     }
-    public function getSuggestions() : Method\GetSuggestions
+    public function deleteAllRequests() : Method\Friends_DeleteAllRequests
     {
-        return new Method\GetSuggestions();
+        return new Method\Friends_DeleteAllRequests($this->client, $this->defaultQuery);
     }
-    public function areFriends() : Method\AreFriends
+    public function getSuggestions() : Method\Friends_GetSuggestions
     {
-        return new Method\AreFriends();
+        return new Method\Friends_GetSuggestions($this->client, $this->defaultQuery);
     }
-    public function getAvailableForCall() : Method\GetAvailableForCall
+    public function areFriends() : Method\Friends_AreFriends
     {
-        return new Method\GetAvailableForCall();
+        return new Method\Friends_AreFriends($this->client, $this->defaultQuery);
     }
-    public function search() : Method\Search
+    public function getAvailableForCall() : Method\Friends_GetAvailableForCall
     {
-        return new Method\Search();
+        return new Method\Friends_GetAvailableForCall($this->client, $this->defaultQuery);
+    }
+    public function search() : Method\Friends_Search
+    {
+        return new Method\Friends_Search($this->client, $this->defaultQuery);
     }
 }

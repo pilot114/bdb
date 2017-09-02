@@ -5,20 +5,27 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Auth
 {
-    public function checkPhone() : Method\CheckPhone
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\CheckPhone();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function signup() : Method\Signup
+    public function checkPhone() : Method\Auth_CheckPhone
     {
-        return new Method\Signup();
+        return new Method\Auth_CheckPhone($this->client, $this->defaultQuery);
     }
-    public function confirm() : Method\Confirm
+    public function signup() : Method\Auth_Signup
     {
-        return new Method\Confirm();
+        return new Method\Auth_Signup($this->client, $this->defaultQuery);
     }
-    public function restore() : Method\Restore
+    public function confirm() : Method\Auth_Confirm
     {
-        return new Method\Restore();
+        return new Method\Auth_Confirm($this->client, $this->defaultQuery);
+    }
+    public function restore() : Method\Auth_Restore
+    {
+        return new Method\Auth_Restore($this->client, $this->defaultQuery);
     }
 }

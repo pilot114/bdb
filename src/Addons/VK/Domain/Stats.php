@@ -5,16 +5,23 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Stats
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function trackVisitor() : Method\TrackVisitor
+    public function get() : Method\Stats_Get
     {
-        return new Method\TrackVisitor();
+        return new Method\Stats_Get($this->client, $this->defaultQuery);
     }
-    public function getPostReach() : Method\GetPostReach
+    public function trackVisitor() : Method\Stats_TrackVisitor
     {
-        return new Method\GetPostReach();
+        return new Method\Stats_TrackVisitor($this->client, $this->defaultQuery);
+    }
+    public function getPostReach() : Method\Stats_GetPostReach
+    {
+        return new Method\Stats_GetPostReach($this->client, $this->defaultQuery);
     }
 }

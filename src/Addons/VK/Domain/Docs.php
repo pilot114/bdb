@@ -5,44 +5,51 @@ namespace Bdb\Addons\VK\Domain;
 use Bdb\Addons\VK\Method;
 class Docs
 {
-    public function get() : Method\Get
+    protected $client;
+    protected $defaultQuery;
+    public function __construct($client, $defaultQuery)
     {
-        return new Method\Get();
+        $this->client = $client;
+        $this->defaultQuery = $defaultQuery;
     }
-    public function getById() : Method\GetById
+    public function get() : Method\Docs_Get
     {
-        return new Method\GetById();
+        return new Method\Docs_Get($this->client, $this->defaultQuery);
     }
-    public function getUploadServer() : Method\GetUploadServer
+    public function getById() : Method\Docs_GetById
     {
-        return new Method\GetUploadServer();
+        return new Method\Docs_GetById($this->client, $this->defaultQuery);
     }
-    public function getWallUploadServer() : Method\GetWallUploadServer
+    public function getUploadServer() : Method\Docs_GetUploadServer
     {
-        return new Method\GetWallUploadServer();
+        return new Method\Docs_GetUploadServer($this->client, $this->defaultQuery);
     }
-    public function save() : Method\Save
+    public function getWallUploadServer() : Method\Docs_GetWallUploadServer
     {
-        return new Method\Save();
+        return new Method\Docs_GetWallUploadServer($this->client, $this->defaultQuery);
     }
-    public function delete() : Method\Delete
+    public function save() : Method\Docs_Save
     {
-        return new Method\Delete();
+        return new Method\Docs_Save($this->client, $this->defaultQuery);
     }
-    public function add() : Method\Add
+    public function delete() : Method\Docs_Delete
     {
-        return new Method\Add();
+        return new Method\Docs_Delete($this->client, $this->defaultQuery);
     }
-    public function getTypes() : Method\GetTypes
+    public function add() : Method\Docs_Add
     {
-        return new Method\GetTypes();
+        return new Method\Docs_Add($this->client, $this->defaultQuery);
     }
-    public function search() : Method\Search
+    public function getTypes() : Method\Docs_GetTypes
     {
-        return new Method\Search();
+        return new Method\Docs_GetTypes($this->client, $this->defaultQuery);
     }
-    public function edit() : Method\Edit
+    public function search() : Method\Docs_Search
     {
-        return new Method\Edit();
+        return new Method\Docs_Search($this->client, $this->defaultQuery);
+    }
+    public function edit() : Method\Docs_Edit
+    {
+        return new Method\Docs_Edit($this->client, $this->defaultQuery);
     }
 }

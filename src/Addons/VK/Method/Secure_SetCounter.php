@@ -1,0 +1,53 @@
+<?php
+
+namespace Bdb\Addons\VK\Method;
+
+/**
+ * Sets a counter which is shown to the user in bold in the left menu.
+ */
+class Secure_SetCounter extends \Bdb\Addons\VK\BaseMethod
+{
+    protected $params = array();
+    public function isOpen() : boolean
+    {
+        return false;
+    }
+    public function __construct($client, $defaultQuery)
+    {
+        parent::__construct($client, $defaultQuery);
+    }
+    public function call()
+    {
+        return $this->onCall('secure.setCounter');
+    }
+    /**
+     * not description
+     *
+     * {"type":"array","items":{"type":"string"}}
+     */
+    public function _counters(array $counters) : Secure_SetCounter
+    {
+        $this->params['counters'] = $counters;
+        return $this;
+    }
+    /**
+     * not description
+     *
+     * {"type":"integer","minimum":0}
+     */
+    public function _user_id(integer $user_id) : Secure_SetCounter
+    {
+        $this->params['user_id'] = $user_id;
+        return $this;
+    }
+    /**
+     * counter value.
+     *
+     * {"type":"integer"}
+     */
+    public function _counter(integer $counter) : Secure_SetCounter
+    {
+        $this->params['counter'] = $counter;
+        return $this;
+    }
+}
