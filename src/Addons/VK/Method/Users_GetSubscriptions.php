@@ -23,9 +23,9 @@ class Users_GetSubscriptions extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Users_GetSubscriptions
+    public function _user_id(int $user_id) : Users_GetSubscriptions
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -43,9 +43,9 @@ class Users_GetSubscriptions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of subscriptions.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Users_GetSubscriptions
+    public function _offset(int $offset) : Users_GetSubscriptions
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Users_GetSubscriptions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of users and communities to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Users_GetSubscriptions
+    public function _count(int $count) : Users_GetSubscriptions
     {
         $this->params['count'] = $count;
         return $this;

@@ -23,9 +23,9 @@ class Audio_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio file. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Audio_Get
+    public function _owner_id(int $owner_id) : Audio_Get
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Audio album ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Audio_Get
+    public function _album_id(int $album_id) : Audio_Get
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -63,9 +63,9 @@ class Audio_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of audio files.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Audio_Get
+    public function _offset(int $offset) : Audio_Get
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Audio_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of audio files to return.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _count(integer $count) : Audio_Get
+    public function _count(int $count) : Audio_Get
     {
         $this->params['count'] = $count;
         return $this;

@@ -23,9 +23,9 @@ class Groups_GetBanned extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_GetBanned
+    public function group_id(int $group_id) : Groups_GetBanned
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Groups_GetBanned extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of users.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Groups_GetBanned
+    public function _offset(int $offset) : Groups_GetBanned
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Groups_GetBanned extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of users to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Groups_GetBanned
+    public function _count(int $count) : Groups_GetBanned
     {
         $this->params['count'] = $count;
         return $this;
@@ -63,9 +63,9 @@ class Groups_GetBanned extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Groups_GetBanned
+    public function _user_id(int $user_id) : Groups_GetBanned
     {
         $this->params['user_id'] = $user_id;
         return $this;

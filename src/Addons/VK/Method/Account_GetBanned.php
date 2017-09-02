@@ -23,9 +23,9 @@ class Account_GetBanned extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Account_GetBanned
+    public function _offset(int $offset) : Account_GetBanned
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Account_GetBanned extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Account_GetBanned
+    public function _count(int $count) : Account_GetBanned
     {
         $this->params['count'] = $count;
         return $this;

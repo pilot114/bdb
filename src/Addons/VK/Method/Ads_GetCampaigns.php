@@ -23,9 +23,9 @@ class Ads_GetCampaigns extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_GetCampaigns
+    public function account_id(int $account_id) : Ads_GetCampaigns
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -33,9 +33,9 @@ class Ads_GetCampaigns extends \Bdb\Addons\VK\BaseMethod
     /**
      * 'For advertising agencies'. ID of the client advertising campaigns are retrieved from.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _client_id(integer $client_id) : Ads_GetCampaigns
+    public function _client_id(int $client_id) : Ads_GetCampaigns
     {
         $this->params['client_id'] = $client_id;
         return $this;

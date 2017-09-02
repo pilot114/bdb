@@ -23,9 +23,9 @@ class Orders_GetById extends \Bdb\Addons\VK\BaseMethod
     /**
      * order ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _order_id(integer $order_id) : Orders_GetById
+    public function _order_id(int $order_id) : Orders_GetById
     {
         $this->params['order_id'] = $order_id;
         return $this;

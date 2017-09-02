@@ -23,9 +23,9 @@ class Account_GetAppPermissions extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID whose settings information shall be got. By default: current user.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Account_GetAppPermissions
+    public function user_id(int $user_id) : Account_GetAppPermissions
     {
         $this->params['user_id'] = $user_id;
         return $this;

@@ -23,9 +23,9 @@ class Market_ReorderAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_ReorderAlbums
+    public function owner_id(int $owner_id) : Market_ReorderAlbums
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_ReorderAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Collection ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function album_id(integer $album_id) : Market_ReorderAlbums
+    public function album_id(int $album_id) : Market_ReorderAlbums
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -43,9 +43,9 @@ class Market_ReorderAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a collection to place current collection before it.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _before(integer $before) : Market_ReorderAlbums
+    public function _before(int $before) : Market_ReorderAlbums
     {
         $this->params['before'] = $before;
         return $this;
@@ -53,9 +53,9 @@ class Market_ReorderAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a collection to place current collection after it.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _after(integer $after) : Market_ReorderAlbums
+    public function _after(int $after) : Market_ReorderAlbums
     {
         $this->params['after'] = $after;
         return $this;

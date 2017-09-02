@@ -23,9 +23,9 @@ class Polls_AddVote extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the poll. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Polls_AddVote
+    public function _owner_id(int $owner_id) : Polls_AddVote
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Polls_AddVote extends \Bdb\Addons\VK\BaseMethod
     /**
      * Poll ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function poll_id(integer $poll_id) : Polls_AddVote
+    public function poll_id(int $poll_id) : Polls_AddVote
     {
         $this->params['poll_id'] = $poll_id;
         return $this;
@@ -43,9 +43,9 @@ class Polls_AddVote extends \Bdb\Addons\VK\BaseMethod
     /**
      * Answer ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function answer_id(integer $answer_id) : Polls_AddVote
+    public function answer_id(int $answer_id) : Polls_AddVote
     {
         $this->params['answer_id'] = $answer_id;
         return $this;

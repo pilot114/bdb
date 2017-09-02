@@ -23,9 +23,9 @@ class Ads_GetTargetingStats extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_GetTargetingStats
+    public function account_id(int $account_id) : Ads_GetTargetingStats
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -43,9 +43,9 @@ class Ads_GetTargetingStats extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an ad which targeting parameters shall be analyzed.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _ad_id(integer $ad_id) : Ads_GetTargetingStats
+    public function _ad_id(int $ad_id) : Ads_GetTargetingStats
     {
         $this->params['ad_id'] = $ad_id;
         return $this;
@@ -53,9 +53,9 @@ class Ads_GetTargetingStats extends \Bdb\Addons\VK\BaseMethod
     /**
      * Ad format. Possible values:; *'1' — image and text;; *'2' — big image;; *'3' — exclusive format;; *'4' — community, square image;; *'7' — special app format;; *'8' — special community format;; *'9' — post in community;; *'10' — app board.
      *
-     * {"type":"integer","enum":[1,2,3,4,7,8,9,10],"enumNames":["image and text","big image","exclusive format","community square image","special app format","special community format","post in community","app board"]}
+     * {"type":"int","enum":[1,2,3,4,7,8,9,10],"enumNames":["image and text","big image","exclusive format","community square image","special app format","special community format","post in community","app board"]}
      */
-    public function _ad_format(integer $ad_format) : Ads_GetTargetingStats
+    public function _ad_format(int $ad_format) : Ads_GetTargetingStats
     {
         $this->params['ad_format'] = $ad_format;
         return $this;

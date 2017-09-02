@@ -23,9 +23,9 @@ class Ads_UpdateTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_UpdateTargetGroup
+    public function account_id(int $account_id) : Ads_UpdateTargetGroup
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -33,9 +33,9 @@ class Ads_UpdateTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * 'Only for advertising agencies.' ; ID of the client with the advertising account where the group will be created.;
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _client_id(integer $client_id) : Ads_UpdateTargetGroup
+    public function _client_id(int $client_id) : Ads_UpdateTargetGroup
     {
         $this->params['client_id'] = $client_id;
         return $this;
@@ -43,9 +43,9 @@ class Ads_UpdateTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * Group ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function target_group_id(integer $target_group_id) : Ads_UpdateTargetGroup
+    public function target_group_id(int $target_group_id) : Ads_UpdateTargetGroup
     {
         $this->params['target_group_id'] = $target_group_id;
         return $this;
@@ -73,9 +73,9 @@ class Ads_UpdateTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * 'Only for the groups that get audience from sites with user accounting code.'; Time in days when users added to a retarget group will be automatically excluded from it. ; '0' – automatic exclusion is off.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _lifetime(integer $lifetime) : Ads_UpdateTargetGroup
+    public function _lifetime(int $lifetime) : Ads_UpdateTargetGroup
     {
         $this->params['lifetime'] = $lifetime;
         return $this;

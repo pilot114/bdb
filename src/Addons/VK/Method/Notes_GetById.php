@@ -23,9 +23,9 @@ class Notes_GetById extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function note_id(integer $note_id) : Notes_GetById
+    public function note_id(int $note_id) : Notes_GetById
     {
         $this->params['note_id'] = $note_id;
         return $this;
@@ -33,9 +33,9 @@ class Notes_GetById extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note owner ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _owner_id(integer $owner_id) : Notes_GetById
+    public function _owner_id(int $owner_id) : Notes_GetById
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

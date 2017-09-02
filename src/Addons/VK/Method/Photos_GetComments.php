@@ -23,9 +23,9 @@ class Photos_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_GetComments
+    public function _owner_id(int $owner_id) : Photos_GetComments
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function photo_id(integer $photo_id) : Photos_GetComments
+    public function photo_id(int $photo_id) : Photos_GetComments
     {
         $this->params['photo_id'] = $photo_id;
         return $this;
@@ -53,9 +53,9 @@ class Photos_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_comment_id(integer $start_comment_id) : Photos_GetComments
+    public function _start_comment_id(int $start_comment_id) : Photos_GetComments
     {
         $this->params['start_comment_id'] = $start_comment_id;
         return $this;
@@ -63,9 +63,9 @@ class Photos_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of comments. By default, '0'.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Photos_GetComments
+    public function _offset(int $offset) : Photos_GetComments
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Photos_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of comments to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Photos_GetComments
+    public function _count(int $count) : Photos_GetComments
     {
         $this->params['count'] = $count;
         return $this;

@@ -23,9 +23,9 @@ class Newsfeed_SaveList extends \Bdb\Addons\VK\BaseMethod
     /**
      * numeric list identifier (if not sent, will be set automatically).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _list_id(integer $list_id) : Newsfeed_SaveList
+    public function _list_id(int $list_id) : Newsfeed_SaveList
     {
         $this->params['list_id'] = $list_id;
         return $this;

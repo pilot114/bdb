@@ -23,9 +23,9 @@ class Photos_Copy extends \Bdb\Addons\VK\BaseMethod
     /**
      * photo's owner ID
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Photos_Copy
+    public function owner_id(int $owner_id) : Photos_Copy
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_Copy extends \Bdb\Addons\VK\BaseMethod
     /**
      * photo ID
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function photo_id(integer $photo_id) : Photos_Copy
+    public function photo_id(int $photo_id) : Photos_Copy
     {
         $this->params['photo_id'] = $photo_id;
         return $this;

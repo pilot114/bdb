@@ -23,9 +23,9 @@ class Board_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the discussion board.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Board_CreateComment
+    public function group_id(int $group_id) : Board_CreateComment
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Board_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the topic to be commented on.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function topic_id(integer $topic_id) : Board_CreateComment
+    public function topic_id(int $topic_id) : Board_CreateComment
     {
         $this->params['topic_id'] = $topic_id;
         return $this;
@@ -73,9 +73,9 @@ class Board_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sticker ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _sticker_id(integer $sticker_id) : Board_CreateComment
+    public function _sticker_id(int $sticker_id) : Board_CreateComment
     {
         $this->params['sticker_id'] = $sticker_id;
         return $this;

@@ -23,9 +23,9 @@ class Users_GetFollowers extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Users_GetFollowers
+    public function _user_id(int $user_id) : Users_GetFollowers
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Users_GetFollowers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of followers.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Users_GetFollowers
+    public function _offset(int $offset) : Users_GetFollowers
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Users_GetFollowers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of followers to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Users_GetFollowers
+    public function _count(int $count) : Users_GetFollowers
     {
         $this->params['count'] = $count;
         return $this;

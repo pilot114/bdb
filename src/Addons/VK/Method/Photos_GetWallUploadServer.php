@@ -23,9 +23,9 @@ class Photos_GetWallUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of community to whose wall the photo will be uploaded.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Photos_GetWallUploadServer
+    public function _group_id(int $group_id) : Photos_GetWallUploadServer
     {
         $this->params['group_id'] = $group_id;
         return $this;

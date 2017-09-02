@@ -23,9 +23,9 @@ class Leads_CheckUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Lead ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function lead_id(integer $lead_id) : Leads_CheckUser
+    public function lead_id(int $lead_id) : Leads_CheckUser
     {
         $this->params['lead_id'] = $lead_id;
         return $this;
@@ -33,9 +33,9 @@ class Leads_CheckUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Value to be return in 'result' field when test mode is used.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _test_result(integer $test_result) : Leads_CheckUser
+    public function _test_result(int $test_result) : Leads_CheckUser
     {
         $this->params['test_result'] = $test_result;
         return $this;
@@ -43,9 +43,9 @@ class Leads_CheckUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * User age.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _age(integer $age) : Leads_CheckUser
+    public function _age(int $age) : Leads_CheckUser
     {
         $this->params['age'] = $age;
         return $this;

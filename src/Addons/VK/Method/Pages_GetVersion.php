@@ -23,9 +23,9 @@ class Pages_GetVersion extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function version_id(integer $version_id) : Pages_GetVersion
+    public function version_id(int $version_id) : Pages_GetVersion
     {
         $this->params['version_id'] = $version_id;
         return $this;
@@ -33,9 +33,9 @@ class Pages_GetVersion extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the wiki page.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Pages_GetVersion
+    public function _group_id(int $group_id) : Pages_GetVersion
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Pages_GetVersion extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Pages_GetVersion
+    public function _user_id(int $user_id) : Pages_GetVersion
     {
         $this->params['user_id'] = $user_id;
         return $this;

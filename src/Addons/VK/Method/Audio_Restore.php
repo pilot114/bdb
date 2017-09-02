@@ -23,9 +23,9 @@ class Audio_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * Audio file ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function audio_id(integer $audio_id) : Audio_Restore
+    public function audio_id(int $audio_id) : Audio_Restore
     {
         $this->params['audio_id'] = $audio_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio file.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Audio_Restore
+    public function _owner_id(int $owner_id) : Audio_Restore
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

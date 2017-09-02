@@ -23,9 +23,9 @@ class Messages_GetHistoryAttachments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Peer ID.; ; "; For group chat:; '2000000000 + chat ID' ; ; For community:; '-community ID'"
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function peer_id(integer $peer_id) : Messages_GetHistoryAttachments
+    public function peer_id(int $peer_id) : Messages_GetHistoryAttachments
     {
         $this->params['peer_id'] = $peer_id;
         return $this;
@@ -53,9 +53,9 @@ class Messages_GetHistoryAttachments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of objects to return.
      *
-     * {"type":"integer","minimum":0,"maximum":200,"default":30}
+     * {"type":"int","minimum":0,"maximum":200,"default":30}
      */
-    public function _count(integer $count) : Messages_GetHistoryAttachments
+    public function _count(int $count) : Messages_GetHistoryAttachments
     {
         $this->params['count'] = $count;
         return $this;

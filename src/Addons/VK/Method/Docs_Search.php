@@ -33,9 +33,9 @@ class Docs_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _count(integer $count) : Docs_Search
+    public function _count(int $count) : Docs_Search
     {
         $this->params['count'] = $count;
         return $this;
@@ -43,9 +43,9 @@ class Docs_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Docs_Search
+    public function _offset(int $offset) : Docs_Search
     {
         $this->params['offset'] = $offset;
         return $this;

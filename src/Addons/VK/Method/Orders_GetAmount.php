@@ -23,9 +23,9 @@ class Orders_GetAmount extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Orders_GetAmount
+    public function user_id(int $user_id) : Orders_GetAmount
     {
         $this->params['user_id'] = $user_id;
         return $this;

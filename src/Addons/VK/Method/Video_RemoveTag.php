@@ -23,9 +23,9 @@ class Video_RemoveTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * Tag ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function tag_id(integer $tag_id) : Video_RemoveTag
+    public function tag_id(int $tag_id) : Video_RemoveTag
     {
         $this->params['tag_id'] = $tag_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_RemoveTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _owner_id(integer $owner_id) : Video_RemoveTag
+    public function _owner_id(int $owner_id) : Video_RemoveTag
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Video_RemoveTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * Video ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function video_id(integer $video_id) : Video_RemoveTag
+    public function video_id(int $video_id) : Video_RemoveTag
     {
         $this->params['video_id'] = $video_id;
         return $this;

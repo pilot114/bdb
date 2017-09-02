@@ -23,9 +23,9 @@ class Groups_DeleteLink extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_DeleteLink
+    public function group_id(int $group_id) : Groups_DeleteLink
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Groups_DeleteLink extends \Bdb\Addons\VK\BaseMethod
     /**
      * Link ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function link_id(integer $link_id) : Groups_DeleteLink
+    public function link_id(int $link_id) : Groups_DeleteLink
     {
         $this->params['link_id'] = $link_id;
         return $this;

@@ -33,9 +33,9 @@ class Photos_SaveMessagesPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _server(integer $server) : Photos_SaveMessagesPhoto
+    public function _server(int $server) : Photos_SaveMessagesPhoto
     {
         $this->params['server'] = $server;
         return $this;

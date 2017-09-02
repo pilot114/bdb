@@ -23,9 +23,9 @@ class Market_DeleteAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an collection owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_DeleteAlbum
+    public function owner_id(int $owner_id) : Market_DeleteAlbum
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_DeleteAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * Collection ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function album_id(integer $album_id) : Market_DeleteAlbum
+    public function album_id(int $album_id) : Market_DeleteAlbum
     {
         $this->params['album_id'] = $album_id;
         return $this;

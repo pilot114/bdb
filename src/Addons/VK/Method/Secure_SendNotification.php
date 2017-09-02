@@ -33,9 +33,9 @@ class Secure_SendNotification extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Secure_SendNotification
+    public function _user_id(int $user_id) : Secure_SendNotification
     {
         $this->params['user_id'] = $user_id;
         return $this;

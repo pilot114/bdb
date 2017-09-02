@@ -43,9 +43,9 @@ class Places_GetCheckins extends \Bdb\Addons\VK\BaseMethod
     /**
      * Location ID of check-ins to return. (Ignored if 'latitude' and 'longitude' are specified.)
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _place(integer $place) : Places_GetCheckins
+    public function _place(int $place) : Places_GetCheckins
     {
         $this->params['place'] = $place;
         return $this;
@@ -53,9 +53,9 @@ class Places_GetCheckins extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Places_GetCheckins
+    public function _user_id(int $user_id) : Places_GetCheckins
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -63,9 +63,9 @@ class Places_GetCheckins extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of check-ins. (Ignored if 'timestamp' is not null.)
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Places_GetCheckins
+    public function _offset(int $offset) : Places_GetCheckins
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Places_GetCheckins extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of check-ins to return. (Ignored if 'timestamp' is not null.)
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Places_GetCheckins
+    public function _count(int $count) : Places_GetCheckins
     {
         $this->params['count'] = $count;
         return $this;
@@ -83,9 +83,9 @@ class Places_GetCheckins extends \Bdb\Addons\VK\BaseMethod
     /**
      * Specifies that only those check-ins created after the specified timestamp will be returned.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _timestamp(integer $timestamp) : Places_GetCheckins
+    public function _timestamp(int $timestamp) : Places_GetCheckins
     {
         $this->params['timestamp'] = $timestamp;
         return $this;

@@ -43,9 +43,9 @@ class Database_GetCountries extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of countries.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetCountries
+    public function _offset(int $offset) : Database_GetCountries
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Database_GetCountries extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of countries to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Database_GetCountries
+    public function _count(int $count) : Database_GetCountries
     {
         $this->params['count'] = $count;
         return $this;

@@ -23,9 +23,9 @@ class Photos_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_RestoreComment
+    public function _owner_id(int $owner_id) : Photos_RestoreComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the deleted comment.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function comment_id(integer $comment_id) : Photos_RestoreComment
+    public function comment_id(int $comment_id) : Photos_RestoreComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;

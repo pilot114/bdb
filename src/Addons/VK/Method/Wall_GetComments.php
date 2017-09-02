@@ -23,9 +23,9 @@ class Wall_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_GetComments
+    public function _owner_id(int $owner_id) : Wall_GetComments
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Post ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function post_id(integer $post_id) : Wall_GetComments
+    public function post_id(int $post_id) : Wall_GetComments
     {
         $this->params['post_id'] = $post_id;
         return $this;
@@ -53,9 +53,9 @@ class Wall_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_comment_id(integer $start_comment_id) : Wall_GetComments
+    public function _start_comment_id(int $start_comment_id) : Wall_GetComments
     {
         $this->params['start_comment_id'] = $start_comment_id;
         return $this;
@@ -63,9 +63,9 @@ class Wall_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of comments.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Wall_GetComments
+    public function _offset(int $offset) : Wall_GetComments
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Wall_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of comments to return (maximum 100).
      *
-     * {"type":"integer","minimum":0,"maximum":100}
+     * {"type":"int","minimum":0,"maximum":100}
      */
-    public function _count(integer $count) : Wall_GetComments
+    public function _count(int $count) : Wall_GetComments
     {
         $this->params['count'] = $count;
         return $this;
@@ -93,9 +93,9 @@ class Wall_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of characters at which to truncate comments when previewed. By default, '90'. Specify '0' if you do not want to truncate comments.;
      *
-     * {"type":"integer","minimum":0,"default":90}
+     * {"type":"int","minimum":0,"default":90}
      */
-    public function _preview_length(integer $preview_length) : Wall_GetComments
+    public function _preview_length(int $preview_length) : Wall_GetComments
     {
         $this->params['preview_length'] = $preview_length;
         return $this;

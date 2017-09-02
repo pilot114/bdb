@@ -23,9 +23,9 @@ class Polls_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * poll owner id
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Polls_Edit
+    public function owner_id(int $owner_id) : Polls_Edit
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Polls_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * edited poll's id
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function poll_id(integer $poll_id) : Polls_Edit
+    public function poll_id(int $poll_id) : Polls_Edit
     {
         $this->params['poll_id'] = $poll_id;
         return $this;

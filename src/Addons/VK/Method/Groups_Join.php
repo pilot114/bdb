@@ -23,9 +23,9 @@ class Groups_Join extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID or screen name of the community.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Groups_Join
+    public function _group_id(int $group_id) : Groups_Join
     {
         $this->params['group_id'] = $group_id;
         return $this;

@@ -23,9 +23,9 @@ class Leads_GetStats extends \Bdb\Addons\VK\BaseMethod
     /**
      * Lead ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function lead_id(integer $lead_id) : Leads_GetStats
+    public function lead_id(int $lead_id) : Leads_GetStats
     {
         $this->params['lead_id'] = $lead_id;
         return $this;

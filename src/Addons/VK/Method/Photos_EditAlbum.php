@@ -23,9 +23,9 @@ class Photos_EditAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the photo album to be edited.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function album_id(integer $album_id) : Photos_EditAlbum
+    public function album_id(int $album_id) : Photos_EditAlbum
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -53,9 +53,9 @@ class Photos_EditAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the album.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_EditAlbum
+    public function _owner_id(int $owner_id) : Photos_EditAlbum
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

@@ -23,9 +23,9 @@ class Messages_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a previously-deleted message to restore.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function message_id(integer $message_id) : Messages_Restore
+    public function message_id(int $message_id) : Messages_Restore
     {
         $this->params['message_id'] = $message_id;
         return $this;

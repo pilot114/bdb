@@ -23,9 +23,9 @@ class Docs_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Docs_Edit
+    public function owner_id(int $owner_id) : Docs_Edit
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Docs_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Document ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function doc_id(integer $doc_id) : Docs_Edit
+    public function doc_id(int $doc_id) : Docs_Edit
     {
         $this->params['doc_id'] = $doc_id;
         return $this;

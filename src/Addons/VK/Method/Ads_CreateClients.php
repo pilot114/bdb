@@ -23,9 +23,9 @@ class Ads_CreateClients extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_CreateClients
+    public function account_id(int $account_id) : Ads_CreateClients
     {
         $this->params['account_id'] = $account_id;
         return $this;

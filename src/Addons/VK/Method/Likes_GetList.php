@@ -33,9 +33,9 @@ class Likes_GetList extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user, community, or application that owns the object. If the 'type' parameter is set as 'sitepage', the application ID is passed as 'owner_id'. Use negative value for a community id. If the 'type' parameter is not set, the 'owner_id' is assumed to be either the current user or the same application ID as if the 'type' parameter was set to 'sitepage'.; ;
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Likes_GetList
+    public function _owner_id(int $owner_id) : Likes_GetList
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Likes_GetList extends \Bdb\Addons\VK\BaseMethod
     /**
      * Object ID. If 'type' is set as 'sitepage', 'item_id' can include the 'page_id' parameter value used during initialization of the [vk.com/dev/Like|Like widget].
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _item_id(integer $item_id) : Likes_GetList
+    public function _item_id(int $item_id) : Likes_GetList
     {
         $this->params['item_id'] = $item_id;
         return $this;
@@ -93,9 +93,9 @@ class Likes_GetList extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to select a specific subset of users.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Likes_GetList
+    public function _offset(int $offset) : Likes_GetList
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -103,9 +103,9 @@ class Likes_GetList extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of user IDs to return (maximum '1000').; Default is '100' if 'friends_only' is set to '0'; otherwise, the default is '10' if 'friends_only' is set to '1'.;
      *
-     * {"type":"integer","minimum":0,"maximum":1000}
+     * {"type":"int","minimum":0,"maximum":1000}
      */
-    public function _count(integer $count) : Likes_GetList
+    public function _count(int $count) : Likes_GetList
     {
         $this->params['count'] = $count;
         return $this;

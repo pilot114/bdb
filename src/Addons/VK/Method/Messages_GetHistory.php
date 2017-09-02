@@ -23,9 +23,9 @@ class Messages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of messages.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Messages_GetHistory
+    public function _offset(int $offset) : Messages_GetHistory
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Messages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of messages to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Messages_GetHistory
+    public function _count(int $count) : Messages_GetHistory
     {
         $this->params['count'] = $count;
         return $this;
@@ -53,9 +53,9 @@ class Messages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _peer_id(integer $peer_id) : Messages_GetHistory
+    public function _peer_id(int $peer_id) : Messages_GetHistory
     {
         $this->params['peer_id'] = $peer_id;
         return $this;
@@ -63,9 +63,9 @@ class Messages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * Starting message ID from which to return history.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _start_message_id(integer $start_message_id) : Messages_GetHistory
+    public function _start_message_id(int $start_message_id) : Messages_GetHistory
     {
         $this->params['start_message_id'] = $start_message_id;
         return $this;
@@ -73,9 +73,9 @@ class Messages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order:; '1' — return messages in chronological order.; '0' — return messages in reverse chronological order.
      *
-     * {"type":"integer","enum":[1,0],"enumNames":["chronological","reverse chronological"]}
+     * {"type":"int","enum":[1,0],"enumNames":["chronological","reverse chronological"]}
      */
-    public function _rev(integer $rev) : Messages_GetHistory
+    public function _rev(int $rev) : Messages_GetHistory
     {
         $this->params['rev'] = $rev;
         return $this;

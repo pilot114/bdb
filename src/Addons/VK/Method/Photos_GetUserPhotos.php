@@ -23,9 +23,9 @@ class Photos_GetUserPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Photos_GetUserPhotos
+    public function _user_id(int $user_id) : Photos_GetUserPhotos
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetUserPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of photos. By default, '0'.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Photos_GetUserPhotos
+    public function _offset(int $offset) : Photos_GetUserPhotos
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Photos_GetUserPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of photos to return. Maximum value is 1000.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":1000}
+     * {"type":"int","minimum":0,"default":20,"maximum":1000}
      */
-    public function _count(integer $count) : Photos_GetUserPhotos
+    public function _count(int $count) : Photos_GetUserPhotos
     {
         $this->params['count'] = $count;
         return $this;

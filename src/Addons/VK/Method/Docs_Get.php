@@ -23,9 +23,9 @@ class Docs_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of documents to return. By default, all documents.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _count(integer $count) : Docs_Get
+    public function _count(int $count) : Docs_Get
     {
         $this->params['count'] = $count;
         return $this;
@@ -33,9 +33,9 @@ class Docs_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of documents.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Docs_Get
+    public function _offset(int $offset) : Docs_Get
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Docs_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the documents. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Docs_Get
+    public function _owner_id(int $owner_id) : Docs_Get
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

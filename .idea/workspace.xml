@@ -2,323 +2,369 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78217b3c-5e04-4962-963e-d116f758e615" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Add.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddAppEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddBan.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddChatUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddLink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddOfficeUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddToAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AddVote.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AllowMessagesFromGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ApproveRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/AreFriends.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/BanUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ChangePassword.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ChangeState.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckLink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckPhone.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CheckUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Checkin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ClearCache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CloseTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Complete.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Confirm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ConfirmTag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Copy.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Create.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateAds.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateCampaigns.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateChat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateClients.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateComment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/CreateTargetGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Delete.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAds.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAllRequests.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteAppRequests.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteBan.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteCampaigns.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteChatPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteClients.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteComment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteDialog.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteLink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteTargetGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DeleteVote.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/DenyMessagesFromGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Edit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditChat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditComment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditLink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditManager.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditPlace.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/EditTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/FixTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Get.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAccounts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetActiveOffers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAds.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAdsLayout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAdsPostsReach.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAdsTargeting.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbumById.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbums.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbumsByVideo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAlbumsCount.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAll.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAllComments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAmount.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAppBalance.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAppPermissions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAppUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetAvailableForCall.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetBanned.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetBroadcastList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetBudget.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetById.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetByPhones.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCallbackConfirmationCode.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCallbackServerSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCallbackSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCampaigns.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCatalog.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCatalogInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCatalogSection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCategories.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChairs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChat.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChatUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetChatUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCheckins.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCities.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCitiesById.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetClients.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetComments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCount.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCounters.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCountries.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetCountriesById.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetDemographics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetDialogs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFaculties.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFloodStats.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFollowers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetFriendsList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetHints.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetHistory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetHistoryAttachments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetInvitedUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetInvites.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetKeys.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLastActivity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLeaderboard.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLinks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLists.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLongPollHistory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLongPollServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetLyrics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMarketAlbumUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMarketItems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMarketUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMembers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMentions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMessagesUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetMutual.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetNearby.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetNewTags.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetOfficeUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetOnline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetOwnerPhotoUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPages.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPhotos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPopular.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPostReach.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPosts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetProfileInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetPushSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRecent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRecommendations.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRecommended.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRegions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRejectionReason.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetReposts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetRequests.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSMSHistory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSchoolClasses.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSchools.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetScore.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetServerTime.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetStatistics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetStats.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetStreetsById.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSubscriptions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSuggestedSources.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetSuggestions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTags.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTargetGroups.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTargetingStats.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTitles.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTopics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTransactionsHistory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetTypes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUniversities.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUploadURL.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUserLevel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUserPhotos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUserVideos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVersion.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVideoUploadURL.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVideos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetVoters.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/GetWallUploadServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/HideCatalogSection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IgnoreItem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ImportTargetContacts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Invite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsAppUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsLiked.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsMember.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/IsMessagesFromGroupAllowed.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Join.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Leave.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/LookupContacts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MakeCover.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MarkAsImportant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MarkAsRead.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MarkAsViewed.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MetricHit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Move.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/MoveToAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/OpenTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ParseWiki.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Post.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/PutTag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RegisterDevice.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveChatUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveFromAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveGroup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveLink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveOfficeUsers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveTag.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RemoveUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Reorder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderAlbums.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderItems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderLink.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderPhotos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReorderVideos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Report.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReportComment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ReportPost.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Repost.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/ResolveScreenName.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Restore.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/RestoreComment.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Save.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveAccess.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveList.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveMarketAlbumPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveMarketPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveMessagesPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveOwnerPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveProfileInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SaveWallPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Search.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SearchDialogs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Send.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SendNotification.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SendRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SendSMSNotification.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Set.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetActivity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetBroadcast.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCallbackServer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCallbackServerSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCallbackSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetChatPhoto.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetCounter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetNameInMenu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetOffline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetOnline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetPushSettings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetSilenceMode.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/SetUserLevel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Signup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Start.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/TrackVisitor.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnbanUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnfixTopic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnignoreItem.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Unpin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UnregisterDevice.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Unsubscribe.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateAds.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateCampaigns.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateClients.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/UpdateTargetGroup.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vkapi.jane" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Example.php" afterPath="$PROJECT_DIR$/bin/Example.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/gen.php" afterPath="$PROJECT_DIR$/bin/gen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/parse.php" afterPath="$PROJECT_DIR$/bin/parse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/test.php" afterPath="$PROJECT_DIR$/bin/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Api.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Account.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Ads.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Ads.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Apps.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Apps.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Auth.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Board.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Board.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Database.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Docs.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Docs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Fave.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Fave.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Friends.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Friends.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Gifts.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Gifts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Groups.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Groups.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Leads.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Leads.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Likes.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Likes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Market.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Market.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Messages.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Messages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Newsfeed.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Newsfeed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Notes.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Notes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Notifications.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Notifications.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Orders.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Orders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Pages.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Photos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Photos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Places.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Places.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Polls.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Polls.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Secure.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Secure.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Stats.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Stats.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Status.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Storage.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Storage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Utils.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Utils.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Video.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Wall.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Wall.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Domain/Widgets.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Domain/Widgets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/vk.php" afterPath="$PROJECT_DIR$/bin/vk.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_GetActiveOffers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_GetActiveOffers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_GetAppPermissions.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_GetAppPermissions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_GetBanned.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_GetBanned.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_RegisterDevice.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_RegisterDevice.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_SaveProfileInfo.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_SaveProfileInfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_SetNameInMenu.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_SetNameInMenu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_SetSilenceMode.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_SetSilenceMode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_UnbanUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_UnbanUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_AddOfficeUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_AddOfficeUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CheckLink.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CheckLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateAds.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateAds.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateCampaigns.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateCampaigns.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateClients.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateClients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateTargetGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_CreateTargetGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteAds.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteAds.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteCampaigns.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteCampaigns.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteClients.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteClients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteTargetGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_DeleteTargetGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAds.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAds.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAdsLayout.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAdsLayout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAdsPostsReach.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAdsPostsReach.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAdsTargeting.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetAdsTargeting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetBudget.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetBudget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetCampaigns.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetCampaigns.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetClients.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetClients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetDemographics.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetDemographics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetFloodStats.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetFloodStats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetOfficeUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetOfficeUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetRejectionReason.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetRejectionReason.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetStatistics.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetStatistics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetSuggestions.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetSuggestions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetTargetGroups.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetTargetGroups.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetTargetingStats.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetTargetingStats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetUploadURL.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetUploadURL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_ImportTargetContacts.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_ImportTargetContacts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_RemoveOfficeUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_RemoveOfficeUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateAds.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateAds.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateCampaigns.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateCampaigns.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateClients.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateClients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateTargetGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Ads_UpdateTargetGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_GetCatalog.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_GetCatalog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_GetFriendsList.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_GetFriendsList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_GetScore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_GetScore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_SendRequest.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Apps_SendRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_AddAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_AddAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_DeleteAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_DeleteAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_EditAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_EditAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetLyrics.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetLyrics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetPopular.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetPopular.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetRecommendations.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetRecommendations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_MoveToAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_MoveToAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Reorder.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Reorder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Restore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Save.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Save.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Audio_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Auth_CheckPhone.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Auth_CheckPhone.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Auth_Confirm.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Auth_Confirm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Auth_Signup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Auth_Signup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_AddTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_AddTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_CloseTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_CloseTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_CreateComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_CreateComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_DeleteComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_DeleteComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_DeleteTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_DeleteTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_EditComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_EditComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_EditTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_EditTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_FixTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_FixTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_GetTopics.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_GetTopics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_OpenTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_OpenTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_RestoreComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_RestoreComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Board_UnfixTopic.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Board_UnfixTopic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetChairs.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetChairs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetCities.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetCities.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetCountries.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetCountries.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetFaculties.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetFaculties.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetRegions.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetRegions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetSchoolClasses.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetSchoolClasses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetSchools.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetSchools.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetUniversities.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Database_GetUniversities.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_GetTypes.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_GetTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_GetUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_GetUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_GetWallUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_GetWallUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Docs_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_AddGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_AddGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_AddUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_AddUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetLinks.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetLinks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetMarketItems.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetMarketItems.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetPhotos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetPhotos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetPosts.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetPosts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetVideos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_GetVideos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_RemoveGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_RemoveGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_RemoveUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Fave_RemoveUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_DeleteList.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_DeleteList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_EditList.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_EditList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetLists.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetLists.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetMutual.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetMutual.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetOnline.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetOnline.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetRecent.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetRecent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetRequests.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetRequests.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetSuggestions.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_GetSuggestions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Friends_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Gifts_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Gifts_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_AddLink.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_AddLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_ApproveRequest.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_ApproveRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_BanUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_BanUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Create.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_DeleteLink.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_DeleteLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_EditLink.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_EditLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_EditManager.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_EditManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_EditPlace.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_EditPlace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetBanned.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetBanned.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCallbackConfirmationCode.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCallbackConfirmationCode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCallbackServerSettings.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCallbackServerSettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCallbackSettings.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCallbackSettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCatalog.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetCatalog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetInvitedUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetInvitedUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetInvites.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetInvites.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetMembers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetMembers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetRequests.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetRequests.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetSettings.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_GetSettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Invite.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Invite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_IsMember.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_IsMember.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Join.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Join.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Leave.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Leave.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_RemoveUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_RemoveUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_ReorderLink.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_ReorderLink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_SetCallbackServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_SetCallbackServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_SetCallbackServerSettings.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_SetCallbackServerSettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_SetCallbackSettings.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_SetCallbackSettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_UnbanUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Groups_UnbanUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_CheckUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_CheckUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_GetStats.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_GetStats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_GetUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_GetUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_Start.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Leads_Start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_GetList.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_GetList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_IsLiked.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Likes_IsLiked.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_AddAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_AddAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_AddToAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_AddToAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_CreateComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_CreateComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_DeleteAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_DeleteAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_DeleteComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_DeleteComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_EditAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_EditAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_EditComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_EditComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetAlbumById.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetAlbumById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetCategories.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetCategories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_RemoveFromAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_RemoveFromAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_ReorderAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_ReorderAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_ReorderItems.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_ReorderItems.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Report.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_ReportComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_ReportComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Restore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_RestoreComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_RestoreComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Market_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_AddChatUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_AddChatUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_AllowMessagesFromGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_AllowMessagesFromGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_DeleteChatPhoto.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_DeleteChatPhoto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_DeleteDialog.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_DeleteDialog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_DenyMessagesFromGroup.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_DenyMessagesFromGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_EditChat.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_EditChat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetChat.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetChat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetChatUsers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetChatUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetDialogs.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetDialogs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetHistory.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetHistory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetHistoryAttachments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetHistoryAttachments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetLastActivity.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetLastActivity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetLongPollHistory.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_GetLongPollHistory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_IsMessagesFromGroupAllowed.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_IsMessagesFromGroupAllowed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_MarkAsImportant.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_MarkAsImportant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_MarkAsRead.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_MarkAsRead.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_RemoveChatUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_RemoveChatUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Restore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_SearchDialogs.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_SearchDialogs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Send.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_Send.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_SetActivity.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Messages_SetActivity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_DeleteList.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_DeleteList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetMentions.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetMentions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetRecommended.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetRecommended.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetSuggestedSources.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_GetSuggestedSources.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_IgnoreItem.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_IgnoreItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_SaveList.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_SaveList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_UnignoreItem.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_UnignoreItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_Unsubscribe.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Newsfeed_Unsubscribe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_CreateComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_CreateComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_DeleteComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_DeleteComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_EditComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_EditComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_GetById.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_GetById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_RestoreComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notes_RestoreComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Notifications_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Notifications_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_ChangeState.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_ChangeState.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_GetAmount.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_GetAmount.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_GetById.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Orders_GetById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_GetHistory.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_GetHistory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_GetTitles.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_GetTitles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_GetVersion.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_GetVersion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_ParseWiki.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_ParseWiki.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_Save.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_Save.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_SaveAccess.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Pages_SaveAccess.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ConfirmTag.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ConfirmTag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Copy.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Copy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_CreateAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_CreateAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_CreateComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_CreateComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_DeleteAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_DeleteAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_DeleteComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_DeleteComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_EditAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_EditAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_EditComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_EditComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAlbumsCount.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAlbumsCount.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAll.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAll.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAllComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetAllComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetChatUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetChatUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetMarketAlbumUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetMarketAlbumUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetMarketUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetMarketUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetNewTags.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetNewTags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetOwnerPhotoUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetOwnerPhotoUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetTags.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetTags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetUserPhotos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetUserPhotos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetWallUploadServer.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_GetWallUploadServer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_MakeCover.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_MakeCover.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Move.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Move.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_PutTag.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_PutTag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_RemoveTag.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_RemoveTag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ReorderAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ReorderAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ReorderPhotos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ReorderPhotos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Report.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ReportComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_ReportComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Restore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_RestoreComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_RestoreComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Save.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Save.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveMarketAlbumPhoto.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveMarketAlbumPhoto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveMarketPhoto.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveMarketPhoto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveMessagesPhoto.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveMessagesPhoto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveWallPhoto.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_SaveWallPhoto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Photos_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Places_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Places_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Places_Checkin.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Places_Checkin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Places_GetCheckins.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Places_GetCheckins.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Places_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Places_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_AddVote.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_AddVote.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_Create.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_Create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_DeleteVote.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_DeleteVote.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_GetById.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_GetById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_GetVoters.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Polls_GetVoters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Search_GetHints.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Search_GetHints.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_AddAppEvent.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_AddAppEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_GetSMSHistory.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_GetSMSHistory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SendNotification.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SendNotification.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SendSMSNotification.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SendSMSNotification.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SetCounter.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SetCounter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SetUserLevel.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Secure_SetUserLevel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Stats_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Stats_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Stats_GetPostReach.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Stats_GetPostReach.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Status_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Status_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Status_Set.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Status_Set.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Storage_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Storage_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Storage_GetKeys.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Storage_GetKeys.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Storage_Set.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Storage_Set.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Users_GetFollowers.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Users_GetFollowers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Users_GetNearby.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Users_GetNearby.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Users_GetSubscriptions.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Users_GetSubscriptions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Users_IsAppUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Users_IsAppUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Users_Report.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Users_Report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Users_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Users_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Add.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_AddAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_AddAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_AddToAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_AddToAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_CreateComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_CreateComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_DeleteAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_DeleteAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_DeleteComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_DeleteComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_EditAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_EditAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_EditComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_EditComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetAlbumById.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetAlbumById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetAlbumsByVideo.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetAlbumsByVideo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetCatalog.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetCatalog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetCatalogSection.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetCatalogSection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetNewTags.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetNewTags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetTags.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetTags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetUserVideos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_GetUserVideos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_HideCatalogSection.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_HideCatalogSection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_PutTag.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_PutTag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_RemoveFromAlbum.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_RemoveFromAlbum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_RemoveTag.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_RemoveTag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_ReorderAlbums.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_ReorderAlbums.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_ReorderVideos.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_ReorderVideos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Report.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_ReportComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_ReportComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Restore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_RestoreComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_RestoreComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Save.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Save.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Video_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_CreateComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_CreateComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Delete.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Delete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_DeleteComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_DeleteComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Edit.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_EditComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_EditComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Get.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Get.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_GetById.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_GetById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_GetReposts.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_GetReposts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Pin.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Pin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Post.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_ReportComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_ReportComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_ReportPost.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_ReportPost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Repost.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Repost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Restore.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Restore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_RestoreComment.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_RestoreComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Search.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Unpin.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Wall_Unpin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Widgets_GetComments.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Widgets_GetComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Widgets_GetPages.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Widgets_GetPages.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -335,11 +381,10 @@
       <file leaf-file-name="gen.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/gen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="221" column="91" lean-forward="false" selection-start-line="221" selection-start-column="91" selection-end-line="221" selection-end-column="91" />
+            <state relative-caret-position="518">
+              <caret line="242" column="13" lean-forward="true" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
               <folding>
                 <element signature="e#41#70#0#PHP" expanded="true" />
-                <element signature="e#8231#10184#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -358,18 +403,18 @@
       <file leaf-file-name="vk.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/vk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="160">
+              <caret line="10" column="135" lean-forward="true" selection-start-line="10" selection-start-column="135" selection-end-line="10" selection-end-column="135" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Users_Search.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Users_Search.php">
+      <file leaf-file-name="Friends_Get.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Friends_Get.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="63" column="120" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="120" />
+            <state relative-caret-position="481">
+              <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="139" />
               <folding />
             </state>
           </provider>
@@ -421,18 +466,19 @@
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/BaseMethod.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_RegisterDevice.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" />
-        <option value="$PROJECT_DIR$/src/Addons/VK/BaseMethod.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Api.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/bin/parse.php" />
         <option value="$PROJECT_DIR$/bin/Example.php" />
-        <option value="$PROJECT_DIR$/bin/gen.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Users_Get.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetSuggestions.php" />
         <option value="$PROJECT_DIR$/at.txt" />
-        <option value="$PROJECT_DIR$/bin/vk.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/BaseMethod.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php" />
+        <option value="$PROJECT_DIR$/bin/gen.php" />
+        <option value="$PROJECT_DIR$/bin/vk.php" />
       </list>
     </option>
   </component>
@@ -518,12 +564,12 @@
       <workItem from="1504111250563" duration="2541000" />
       <workItem from="1504196438332" duration="7629000" />
       <workItem from="1504277229220" duration="22145000" />
-      <workItem from="1504328818591" duration="21241000" />
+      <workItem from="1504328818591" duration="22165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53556000" />
+    <option name="totallyTimeSpent" value="54480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -578,14 +624,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Property.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/PropertyProperty.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -905,33 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/Example.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/gen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="221" column="91" lean-forward="false" selection-start-line="221" selection-start-column="91" selection-end-line="221" selection-end-column="91" />
-          <folding>
-            <element signature="e#41#70#0#PHP" expanded="true" />
-            <element signature="e#8231#10184#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Users_Get.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -952,22 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="63" column="120" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="94" column="20" lean-forward="false" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -996,10 +991,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/Example.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/gen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="242" column="13" lean-forward="true" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+          <folding>
+            <element signature="e#41#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Domain/Audio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Friends_Get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/vk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="160">
+          <caret line="10" column="135" lean-forward="true" selection-start-line="10" selection-start-column="135" selection-end-line="10" selection-end-column="135" />
           <folding />
         </state>
       </provider>

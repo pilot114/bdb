@@ -23,9 +23,9 @@ class Notifications_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of notifications to return.
      *
-     * {"type":"integer","minimum":0,"default":30,"maximum":100}
+     * {"type":"int","minimum":0,"default":30,"maximum":100}
      */
-    public function _count(integer $count) : Notifications_Get
+    public function _count(int $count) : Notifications_Get
     {
         $this->params['count'] = $count;
         return $this;
@@ -53,9 +53,9 @@ class Notifications_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Earliest timestamp (in Unix time) of a notification to return. By default, 24 hours ago.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _start_time(integer $start_time) : Notifications_Get
+    public function _start_time(int $start_time) : Notifications_Get
     {
         $this->params['start_time'] = $start_time;
         return $this;
@@ -63,9 +63,9 @@ class Notifications_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Latest timestamp (in Unix time) of a notification to return. By default, the current time.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _end_time(integer $end_time) : Notifications_Get
+    public function _end_time(int $end_time) : Notifications_Get
     {
         $this->params['end_time'] = $end_time;
         return $this;

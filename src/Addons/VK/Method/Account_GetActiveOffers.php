@@ -23,9 +23,9 @@ class Account_GetActiveOffers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":100}
+     * {"type":"int","minimum":0,"default":100,"maximum":100}
      */
-    public function _count(integer $count) : Account_GetActiveOffers
+    public function _count(int $count) : Account_GetActiveOffers
     {
         $this->params['count'] = $count;
         return $this;

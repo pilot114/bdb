@@ -23,9 +23,9 @@ class Status_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Status_Get
+    public function _user_id(int $user_id) : Status_Get
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Status_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Status_Get
+    public function _group_id(int $group_id) : Status_Get
     {
         $this->params['group_id'] = $group_id;
         return $this;

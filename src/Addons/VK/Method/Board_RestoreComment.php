@@ -23,9 +23,9 @@ class Board_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the discussion board.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Board_RestoreComment
+    public function group_id(int $group_id) : Board_RestoreComment
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Board_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Topic ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function topic_id(integer $topic_id) : Board_RestoreComment
+    public function topic_id(int $topic_id) : Board_RestoreComment
     {
         $this->params['topic_id'] = $topic_id;
         return $this;
@@ -43,9 +43,9 @@ class Board_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Comment ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Board_RestoreComment
+    public function comment_id(int $comment_id) : Board_RestoreComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;

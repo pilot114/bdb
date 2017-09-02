@@ -23,9 +23,9 @@ class Pages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * Wiki page ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function page_id(integer $page_id) : Pages_GetHistory
+    public function page_id(int $page_id) : Pages_GetHistory
     {
         $this->params['page_id'] = $page_id;
         return $this;
@@ -33,9 +33,9 @@ class Pages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the wiki page.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Pages_GetHistory
+    public function _group_id(int $group_id) : Pages_GetHistory
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Pages_GetHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Pages_GetHistory
+    public function _user_id(int $user_id) : Pages_GetHistory
     {
         $this->params['user_id'] = $user_id;
         return $this;

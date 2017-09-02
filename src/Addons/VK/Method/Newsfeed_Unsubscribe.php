@@ -33,9 +33,9 @@ class Newsfeed_Unsubscribe extends \Bdb\Addons\VK\BaseMethod
     /**
      * Object owner ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Newsfeed_Unsubscribe
+    public function _owner_id(int $owner_id) : Newsfeed_Unsubscribe
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Newsfeed_Unsubscribe extends \Bdb\Addons\VK\BaseMethod
     /**
      * Object ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Newsfeed_Unsubscribe
+    public function item_id(int $item_id) : Newsfeed_Unsubscribe
     {
         $this->params['item_id'] = $item_id;
         return $this;

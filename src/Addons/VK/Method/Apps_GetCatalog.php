@@ -33,9 +33,9 @@ class Apps_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset required to return a specific subset of apps.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Apps_GetCatalog
+    public function _offset(int $offset) : Apps_GetCatalog
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Apps_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of apps to return.
      *
-     * {"type":"integer","minimum":0,"default":100}
+     * {"type":"int","minimum":0,"default":100}
      */
-    public function count(integer $count) : Apps_GetCatalog
+    public function count(int $count) : Apps_GetCatalog
     {
         $this->params['count'] = $count;
         return $this;
@@ -113,9 +113,9 @@ class Apps_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _genre_id(integer $genre_id) : Apps_GetCatalog
+    public function _genre_id(int $genre_id) : Apps_GetCatalog
     {
         $this->params['genre_id'] = $genre_id;
         return $this;

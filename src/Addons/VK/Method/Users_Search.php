@@ -33,9 +33,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order:; '1' — by date registered; '0' — by rating
      *
-     * {"type":"integer","enum":[0,1],"enumNames":["by rating","by date registered"]}
+     * {"type":"int","enum":[0,1],"enumNames":["by rating","by date registered"]}
      */
-    public function _sort(integer $sort) : Users_Search
+    public function _sort(int $sort) : Users_Search
     {
         $this->params['sort'] = $sort;
         return $this;
@@ -43,9 +43,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of users.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Users_Search
+    public function _offset(int $offset) : Users_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of users to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":1000}
+     * {"type":"int","minimum":0,"default":20,"maximum":1000}
      */
-    public function _count(integer $count) : Users_Search
+    public function _count(int $count) : Users_Search
     {
         $this->params['count'] = $count;
         return $this;
@@ -73,9 +73,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * City ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city(integer $city) : Users_Search
+    public function _city(int $city) : Users_Search
     {
         $this->params['city'] = $city;
         return $this;
@@ -83,9 +83,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country(integer $country) : Users_Search
+    public function _country(int $country) : Users_Search
     {
         $this->params['country'] = $country;
         return $this;
@@ -103,9 +103,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the country where the user graduated.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _university_country(integer $university_country) : Users_Search
+    public function _university_country(int $university_country) : Users_Search
     {
         $this->params['university_country'] = $university_country;
         return $this;
@@ -113,9 +113,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the institution of higher education.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _university(integer $university) : Users_Search
+    public function _university(int $university) : Users_Search
     {
         $this->params['university'] = $university;
         return $this;
@@ -123,9 +123,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Year of graduation from an institution of higher education.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _university_year(integer $university_year) : Users_Search
+    public function _university_year(int $university_year) : Users_Search
     {
         $this->params['university_year'] = $university_year;
         return $this;
@@ -133,9 +133,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Faculty ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _university_faculty(integer $university_faculty) : Users_Search
+    public function _university_faculty(int $university_faculty) : Users_Search
     {
         $this->params['university_faculty'] = $university_faculty;
         return $this;
@@ -143,9 +143,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Chair ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _university_chair(integer $university_chair) : Users_Search
+    public function _university_chair(int $university_chair) : Users_Search
     {
         $this->params['university_chair'] = $university_chair;
         return $this;
@@ -153,9 +153,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * '1' — female; '2' — male; '0' — any (default)
      *
-     * {"type":"integer","minimum":0,"default":0,"enum":[0,1,2],"enumNames":["any","female","male"]}
+     * {"type":"int","minimum":0,"default":0,"enum":[0,1,2],"enumNames":["any","female","male"]}
      */
-    public function _sex(integer $sex) : Users_Search
+    public function _sex(int $sex) : Users_Search
     {
         $this->params['sex'] = $sex;
         return $this;
@@ -163,9 +163,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Relationship status:; '1' — Not married; '2' — In a relationship; '3' — Engaged; '4' — Married; '5' — It's complicated; '6' — Actively searching; '7' — In love
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2,3,4,5,6,7],"enumNames":["not specified","not married","relationship","engaged","married","complicated","actively searching","in love"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2,3,4,5,6,7],"enumNames":["not specified","not married","relationship","engaged","married","complicated","actively searching","in love"]}
      */
-    public function _status(integer $status) : Users_Search
+    public function _status(int $status) : Users_Search
     {
         $this->params['status'] = $status;
         return $this;
@@ -173,9 +173,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Minimum age.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _age_from(integer $age_from) : Users_Search
+    public function _age_from(int $age_from) : Users_Search
     {
         $this->params['age_from'] = $age_from;
         return $this;
@@ -183,9 +183,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Maximum age.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _age_to(integer $age_to) : Users_Search
+    public function _age_to(int $age_to) : Users_Search
     {
         $this->params['age_to'] = $age_to;
         return $this;
@@ -193,9 +193,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Day of birth.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _birth_day(integer $birth_day) : Users_Search
+    public function _birth_day(int $birth_day) : Users_Search
     {
         $this->params['birth_day'] = $birth_day;
         return $this;
@@ -203,9 +203,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Month of birth.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _birth_month(integer $birth_month) : Users_Search
+    public function _birth_month(int $birth_month) : Users_Search
     {
         $this->params['birth_month'] = $birth_month;
         return $this;
@@ -213,9 +213,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Year of birth.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _birth_year(integer $birth_year) : Users_Search
+    public function _birth_year(int $birth_year) : Users_Search
     {
         $this->params['birth_year'] = $birth_year;
         return $this;
@@ -243,9 +243,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the country where users finished school.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _school_country(integer $school_country) : Users_Search
+    public function _school_country(int $school_country) : Users_Search
     {
         $this->params['school_country'] = $school_country;
         return $this;
@@ -253,9 +253,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the city where users finished school.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _school_city(integer $school_city) : Users_Search
+    public function _school_city(int $school_city) : Users_Search
     {
         $this->params['school_city'] = $school_city;
         return $this;
@@ -263,9 +263,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _school_class(integer $school_class) : Users_Search
+    public function _school_class(int $school_class) : Users_Search
     {
         $this->params['school_class'] = $school_class;
         return $this;
@@ -273,9 +273,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the school.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _school(integer $school) : Users_Search
+    public function _school(int $school) : Users_Search
     {
         $this->params['school'] = $school;
         return $this;
@@ -283,9 +283,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * School graduation year.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _school_year(integer $school_year) : Users_Search
+    public function _school_year(int $school_year) : Users_Search
     {
         $this->params['school_year'] = $school_year;
         return $this;
@@ -333,9 +333,9 @@ class Users_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a community to search in communities.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Users_Search
+    public function _group_id(int $group_id) : Users_Search
     {
         $this->params['group_id'] = $group_id;
         return $this;

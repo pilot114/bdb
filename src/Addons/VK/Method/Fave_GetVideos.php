@@ -23,9 +23,9 @@ class Fave_GetVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of videos.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Fave_GetVideos
+    public function _offset(int $offset) : Fave_GetVideos
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Fave_GetVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of videos to return.
      *
-     * {"type":"integer","minimum":0,"default":50}
+     * {"type":"int","minimum":0,"default":50}
      */
-    public function _count(integer $count) : Fave_GetVideos
+    public function _count(int $count) : Fave_GetVideos
     {
         $this->params['count'] = $count;
         return $this;

@@ -23,9 +23,9 @@ class Polls_GetVoters extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the poll. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Polls_GetVoters
+    public function _owner_id(int $owner_id) : Polls_GetVoters
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Polls_GetVoters extends \Bdb\Addons\VK\BaseMethod
     /**
      * Poll ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function poll_id(integer $poll_id) : Polls_GetVoters
+    public function poll_id(int $poll_id) : Polls_GetVoters
     {
         $this->params['poll_id'] = $poll_id;
         return $this;
@@ -73,9 +73,9 @@ class Polls_GetVoters extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of voters.; '0' — (default)
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Polls_GetVoters
+    public function _offset(int $offset) : Polls_GetVoters
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -83,9 +83,9 @@ class Polls_GetVoters extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of user IDs to return (if the 'friends_only' parameter is not set, maximum '1000'; otherwise '10').; '100' — (default)
      *
-     * {"type":"integer","minimum":0,"default":100}
+     * {"type":"int","minimum":0,"default":100}
      */
-    public function _count(integer $count) : Polls_GetVoters
+    public function _count(int $count) : Polls_GetVoters
     {
         $this->params['count'] = $count;
         return $this;

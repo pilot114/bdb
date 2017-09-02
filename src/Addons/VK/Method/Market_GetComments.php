@@ -23,9 +23,9 @@ class Market_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_GetComments
+    public function owner_id(int $owner_id) : Market_GetComments
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Item ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Market_GetComments
+    public function item_id(int $item_id) : Market_GetComments
     {
         $this->params['item_id'] = $item_id;
         return $this;
@@ -53,9 +53,9 @@ class Market_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a comment to start a list from (details below).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_comment_id(integer $start_comment_id) : Market_GetComments
+    public function _start_comment_id(int $start_comment_id) : Market_GetComments
     {
         $this->params['start_comment_id'] = $start_comment_id;
         return $this;
@@ -63,9 +63,9 @@ class Market_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Market_GetComments
+    public function _count(int $count) : Market_GetComments
     {
         $this->params['count'] = $count;
         return $this;

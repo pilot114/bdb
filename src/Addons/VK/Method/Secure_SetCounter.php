@@ -33,9 +33,9 @@ class Secure_SetCounter extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Secure_SetCounter
+    public function _user_id(int $user_id) : Secure_SetCounter
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -43,9 +43,9 @@ class Secure_SetCounter extends \Bdb\Addons\VK\BaseMethod
     /**
      * counter value.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _counter(integer $counter) : Secure_SetCounter
+    public function _counter(int $counter) : Secure_SetCounter
     {
         $this->params['counter'] = $counter;
         return $this;

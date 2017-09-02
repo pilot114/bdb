@@ -33,9 +33,9 @@ class Messages_DeleteDialog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Destination ID.; ; "For user:; 'User ID', e.g. '12345'.; ; For chat:; '2000000000' + 'chat_id', e.g. '2000000001'.; ; For community:; '- community ID', e.g. '-12345'.; "
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _peer_id(integer $peer_id) : Messages_DeleteDialog
+    public function _peer_id(int $peer_id) : Messages_DeleteDialog
     {
         $this->params['peer_id'] = $peer_id;
         return $this;
@@ -43,9 +43,9 @@ class Messages_DeleteDialog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of messages.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Messages_DeleteDialog
+    public function _offset(int $offset) : Messages_DeleteDialog
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Messages_DeleteDialog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of messages to delete.; "NOTE: If the number of messages exceeds the maximum, the method shall be called several times."
      *
-     * {"type":"integer","minimum":0,"maximum":10000}
+     * {"type":"int","minimum":0,"maximum":10000}
      */
-    public function _count(integer $count) : Messages_DeleteDialog
+    public function _count(int $count) : Messages_DeleteDialog
     {
         $this->params['count'] = $count;
         return $this;

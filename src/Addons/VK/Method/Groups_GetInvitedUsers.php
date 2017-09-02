@@ -23,9 +23,9 @@ class Groups_GetInvitedUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Group ID to return invited users for.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_GetInvitedUsers
+    public function group_id(int $group_id) : Groups_GetInvitedUsers
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Groups_GetInvitedUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Groups_GetInvitedUsers
+    public function _offset(int $offset) : Groups_GetInvitedUsers
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Groups_GetInvitedUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0,"default":20}
+     * {"type":"int","minimum":0,"default":20}
      */
-    public function _count(integer $count) : Groups_GetInvitedUsers
+    public function _count(int $count) : Groups_GetInvitedUsers
     {
         $this->params['count'] = $count;
         return $this;

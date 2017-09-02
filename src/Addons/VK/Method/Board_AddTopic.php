@@ -23,9 +23,9 @@ class Board_AddTopic extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the discussion board.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Board_AddTopic
+    public function group_id(int $group_id) : Board_AddTopic
     {
         $this->params['group_id'] = $group_id;
         return $this;

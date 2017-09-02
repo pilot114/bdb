@@ -23,9 +23,9 @@ class Orders_ChangeState extends \Bdb\Addons\VK\BaseMethod
     /**
      * order ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function order_id(integer $order_id) : Orders_ChangeState
+    public function order_id(int $order_id) : Orders_ChangeState
     {
         $this->params['order_id'] = $order_id;
         return $this;
@@ -43,9 +43,9 @@ class Orders_ChangeState extends \Bdb\Addons\VK\BaseMethod
     /**
      * internal ID of the order in the application.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _app_order_id(integer $app_order_id) : Orders_ChangeState
+    public function _app_order_id(int $app_order_id) : Orders_ChangeState
     {
         $this->params['app_order_id'] = $app_order_id;
         return $this;

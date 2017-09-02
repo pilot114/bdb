@@ -23,9 +23,9 @@ class Photos_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the albums.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_GetAlbums
+    public function _owner_id(int $owner_id) : Photos_GetAlbums
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of albums.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Photos_GetAlbums
+    public function _offset(int $offset) : Photos_GetAlbums
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Photos_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of albums to return.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _count(integer $count) : Photos_GetAlbums
+    public function _count(int $count) : Photos_GetAlbums
     {
         $this->params['count'] = $count;
         return $this;

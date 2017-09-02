@@ -23,9 +23,9 @@ class Audio_GetCount extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio files. By default, current user ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Audio_GetCount
+    public function owner_id(int $owner_id) : Audio_GetCount
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

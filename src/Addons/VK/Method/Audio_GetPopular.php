@@ -33,9 +33,9 @@ class Audio_GetPopular extends \Bdb\Addons\VK\BaseMethod
     /**
      * Genre ID. See the list of [vk.com/dev/audio_genres|audio genres].
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _genre_id(integer $genre_id) : Audio_GetPopular
+    public function _genre_id(int $genre_id) : Audio_GetPopular
     {
         $this->params['genre_id'] = $genre_id;
         return $this;
@@ -43,9 +43,9 @@ class Audio_GetPopular extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of audio files.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Audio_GetPopular
+    public function _offset(int $offset) : Audio_GetPopular
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Audio_GetPopular extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of audio files to return.
      *
-     * {"type":"integer","minimum":0,"maximum":1000,"default":100}
+     * {"type":"int","minimum":0,"maximum":1000,"default":100}
      */
-    public function _count(integer $count) : Audio_GetPopular
+    public function _count(int $count) : Audio_GetPopular
     {
         $this->params['count'] = $count;
         return $this;

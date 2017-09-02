@@ -23,9 +23,9 @@ class Audio_MoveToAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community where the audio files are located. By default, current user ID.;
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Audio_MoveToAlbum
+    public function _group_id(int $group_id) : Audio_MoveToAlbum
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_MoveToAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the album to which the audio files will be moved.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _album_id(integer $album_id) : Audio_MoveToAlbum
+    public function _album_id(int $album_id) : Audio_MoveToAlbum
     {
         $this->params['album_id'] = $album_id;
         return $this;

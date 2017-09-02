@@ -23,9 +23,9 @@ class Photos_DeleteAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function album_id(integer $album_id) : Photos_DeleteAlbum
+    public function album_id(int $album_id) : Photos_DeleteAlbum
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_DeleteAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the album.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Photos_DeleteAlbum
+    public function _group_id(int $group_id) : Photos_DeleteAlbum
     {
         $this->params['group_id'] = $group_id;
         return $this;

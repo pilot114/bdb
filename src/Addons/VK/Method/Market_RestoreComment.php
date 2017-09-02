@@ -23,9 +23,9 @@ class Market_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * identifier of an item owner community; "Note that community id in the 'owner_id' parameter should be negative number. For example 'owner_id'=-1 matches the [vk.com/apiclub|VK API] community "
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_RestoreComment
+    public function owner_id(int $owner_id) : Market_RestoreComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_RestoreComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * deleted comment id
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Market_RestoreComment
+    public function comment_id(int $comment_id) : Market_RestoreComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;

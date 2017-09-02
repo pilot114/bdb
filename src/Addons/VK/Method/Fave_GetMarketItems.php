@@ -23,9 +23,9 @@ class Fave_GetMarketItems extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return. ;
      *
-     * {"type":"integer","minimum":0,"default":50}
+     * {"type":"int","minimum":0,"default":50}
      */
-    public function _count(integer $count) : Fave_GetMarketItems
+    public function _count(int $count) : Fave_GetMarketItems
     {
         $this->params['count'] = $count;
         return $this;

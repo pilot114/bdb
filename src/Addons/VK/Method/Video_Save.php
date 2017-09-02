@@ -73,9 +73,9 @@ class Video_Save extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community in which the video will be saved. By default, the current user's page.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Video_Save
+    public function _group_id(int $group_id) : Video_Save
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -83,9 +83,9 @@ class Video_Save extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the album to which the saved video will be added.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _album_id(integer $album_id) : Video_Save
+    public function _album_id(int $album_id) : Video_Save
     {
         $this->params['album_id'] = $album_id;
         return $this;

@@ -23,9 +23,9 @@ class Messages_AllowMessagesFromGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * Group ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Messages_AllowMessagesFromGroup
+    public function group_id(int $group_id) : Messages_AllowMessagesFromGroup
     {
         $this->params['group_id'] = $group_id;
         return $this;

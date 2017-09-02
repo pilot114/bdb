@@ -23,9 +23,9 @@ class Video_HideCatalogSection extends \Bdb\Addons\VK\BaseMethod
     /**
      * 'id' value returned with a block to hide by the '' method.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function section_id(integer $section_id) : Video_HideCatalogSection
+    public function section_id(int $section_id) : Video_HideCatalogSection
     {
         $this->params['section_id'] = $section_id;
         return $this;

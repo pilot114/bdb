@@ -23,9 +23,9 @@ class Market_GetCategories extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0,"maximum":1000,"default":10}
+     * {"type":"int","minimum":0,"maximum":1000,"default":10}
      */
-    public function _count(integer $count) : Market_GetCategories
+    public function _count(int $count) : Market_GetCategories
     {
         $this->params['count'] = $count;
         return $this;
@@ -33,9 +33,9 @@ class Market_GetCategories extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Market_GetCategories
+    public function _offset(int $offset) : Market_GetCategories
     {
         $this->params['offset'] = $offset;
         return $this;

@@ -43,9 +43,9 @@ class Messages_MarkAsRead extends \Bdb\Addons\VK\BaseMethod
     /**
      * Message ID to start from.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_message_id(integer $start_message_id) : Messages_MarkAsRead
+    public function _start_message_id(int $start_message_id) : Messages_MarkAsRead
     {
         $this->params['start_message_id'] = $start_message_id;
         return $this;

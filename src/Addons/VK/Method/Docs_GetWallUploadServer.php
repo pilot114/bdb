@@ -23,9 +23,9 @@ class Docs_GetWallUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID (if the document will be uploaded to the community).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Docs_GetWallUploadServer
+    public function _group_id(int $group_id) : Docs_GetWallUploadServer
     {
         $this->params['group_id'] = $group_id;
         return $this;

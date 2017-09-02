@@ -23,9 +23,9 @@ class Newsfeed_GetSuggestedSources extends \Bdb\Addons\VK\BaseMethod
     /**
      * offset required to choose a particular subset of communities or users.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Newsfeed_GetSuggestedSources
+    public function _offset(int $offset) : Newsfeed_GetSuggestedSources
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Newsfeed_GetSuggestedSources extends \Bdb\Addons\VK\BaseMethod
     /**
      * amount of communities or users to return.
      *
-     * {"type":"integer","minimum":0,"maximum":1000,"default":20}
+     * {"type":"int","minimum":0,"maximum":1000,"default":20}
      */
-    public function _count(integer $count) : Newsfeed_GetSuggestedSources
+    public function _count(int $count) : Newsfeed_GetSuggestedSources
     {
         $this->params['count'] = $count;
         return $this;

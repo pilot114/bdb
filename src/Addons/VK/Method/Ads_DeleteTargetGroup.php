@@ -23,9 +23,9 @@ class Ads_DeleteTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_DeleteTargetGroup
+    public function account_id(int $account_id) : Ads_DeleteTargetGroup
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -33,9 +33,9 @@ class Ads_DeleteTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * 'Only for advertising agencies.' ; ID of the client with the advertising account where the group will be created.;
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _client_id(integer $client_id) : Ads_DeleteTargetGroup
+    public function _client_id(int $client_id) : Ads_DeleteTargetGroup
     {
         $this->params['client_id'] = $client_id;
         return $this;
@@ -43,9 +43,9 @@ class Ads_DeleteTargetGroup extends \Bdb\Addons\VK\BaseMethod
     /**
      * Group ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function target_group_id(integer $target_group_id) : Ads_DeleteTargetGroup
+    public function target_group_id(int $target_group_id) : Ads_DeleteTargetGroup
     {
         $this->params['target_group_id'] = $target_group_id;
         return $this;

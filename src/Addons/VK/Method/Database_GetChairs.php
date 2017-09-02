@@ -23,9 +23,9 @@ class Database_GetChairs extends \Bdb\Addons\VK\BaseMethod
     /**
      * id of the faculty to get chairs from
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function faculty_id(integer $faculty_id) : Database_GetChairs
+    public function faculty_id(int $faculty_id) : Database_GetChairs
     {
         $this->params['faculty_id'] = $faculty_id;
         return $this;
@@ -33,9 +33,9 @@ class Database_GetChairs extends \Bdb\Addons\VK\BaseMethod
     /**
      * offset required to get a certain subset of chairs
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetChairs
+    public function _offset(int $offset) : Database_GetChairs
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Database_GetChairs extends \Bdb\Addons\VK\BaseMethod
     /**
      * amount of chairs to get
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":10000}
+     * {"type":"int","minimum":0,"default":100,"maximum":10000}
      */
-    public function _count(integer $count) : Database_GetChairs
+    public function _count(int $count) : Database_GetChairs
     {
         $this->params['count'] = $count;
         return $this;

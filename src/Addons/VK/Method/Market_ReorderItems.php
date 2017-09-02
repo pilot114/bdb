@@ -23,9 +23,9 @@ class Market_ReorderItems extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_ReorderItems
+    public function owner_id(int $owner_id) : Market_ReorderItems
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_ReorderItems extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a collection to reorder items in. Set 0 to reorder full items list.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Market_ReorderItems
+    public function _album_id(int $album_id) : Market_ReorderItems
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -43,9 +43,9 @@ class Market_ReorderItems extends \Bdb\Addons\VK\BaseMethod
     /**
      * Item ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Market_ReorderItems
+    public function item_id(int $item_id) : Market_ReorderItems
     {
         $this->params['item_id'] = $item_id;
         return $this;
@@ -53,9 +53,9 @@ class Market_ReorderItems extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item to place current item before it.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _before(integer $before) : Market_ReorderItems
+    public function _before(int $before) : Market_ReorderItems
     {
         $this->params['before'] = $before;
         return $this;
@@ -63,9 +63,9 @@ class Market_ReorderItems extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item to place current item after it.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _after(integer $after) : Market_ReorderItems
+    public function _after(int $after) : Market_ReorderItems
     {
         $this->params['after'] = $after;
         return $this;

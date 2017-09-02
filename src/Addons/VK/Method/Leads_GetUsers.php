@@ -23,9 +23,9 @@ class Leads_GetUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offer ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function offer_id(integer $offer_id) : Leads_GetUsers
+    public function offer_id(int $offer_id) : Leads_GetUsers
     {
         $this->params['offer_id'] = $offer_id;
         return $this;
@@ -43,9 +43,9 @@ class Leads_GetUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Leads_GetUsers
+    public function _offset(int $offset) : Leads_GetUsers
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Leads_GetUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of results to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Leads_GetUsers
+    public function _count(int $count) : Leads_GetUsers
     {
         $this->params['count'] = $count;
         return $this;
@@ -63,9 +63,9 @@ class Leads_GetUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Action type. Possible values:; *'0' — start;; *'1' — finish;; *'2' — blocking users;; *'3' — start in a test mode;; *'4' — finish in a test mode.;
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2,3,4],"enumNames":["start","finish","blocking users","start in test mode","finish in test mode"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2,3,4],"enumNames":["start","finish","blocking users","start in test mode","finish in test mode"]}
      */
-    public function _status(integer $status) : Leads_GetUsers
+    public function _status(int $status) : Leads_GetUsers
     {
         $this->params['status'] = $status;
         return $this;

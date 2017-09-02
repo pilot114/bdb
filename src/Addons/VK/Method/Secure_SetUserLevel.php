@@ -33,9 +33,9 @@ class Secure_SetUserLevel extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Secure_SetUserLevel
+    public function _user_id(int $user_id) : Secure_SetUserLevel
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -43,9 +43,9 @@ class Secure_SetUserLevel extends \Bdb\Addons\VK\BaseMethod
     /**
      * level value.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _level(integer $level) : Secure_SetUserLevel
+    public function _level(int $level) : Secure_SetUserLevel
     {
         $this->params['level'] = $level;
         return $this;

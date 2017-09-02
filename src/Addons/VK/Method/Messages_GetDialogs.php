@@ -23,9 +23,9 @@ class Messages_GetDialogs extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of messages.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Messages_GetDialogs
+    public function _offset(int $offset) : Messages_GetDialogs
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Messages_GetDialogs extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of messages to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Messages_GetDialogs
+    public function _count(int $count) : Messages_GetDialogs
     {
         $this->params['count'] = $count;
         return $this;
@@ -43,9 +43,9 @@ class Messages_GetDialogs extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the message from what to return dialogs.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_message_id(integer $start_message_id) : Messages_GetDialogs
+    public function _start_message_id(int $start_message_id) : Messages_GetDialogs
     {
         $this->params['start_message_id'] = $start_message_id;
         return $this;
@@ -53,9 +53,9 @@ class Messages_GetDialogs extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of characters after which to truncate a previewed message. To preview the full message, specify '0'.; "NOTE: Messages are not truncated by default. Messages are truncated by words."
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _preview_length(integer $preview_length) : Messages_GetDialogs
+    public function _preview_length(int $preview_length) : Messages_GetDialogs
     {
         $this->params['preview_length'] = $preview_length;
         return $this;

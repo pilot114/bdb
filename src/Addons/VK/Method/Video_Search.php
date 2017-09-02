@@ -33,9 +33,9 @@ class Video_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order:; '1' — by duration; '2' — by relevance; '0' — by date added
      *
-     * {"type":"integer","enum":[1,2,0],"enumNames":["duration","relevance","date added"]}
+     * {"type":"int","enum":[1,2,0],"enumNames":["duration","relevance","date added"]}
      */
-    public function _sort(integer $sort) : Video_Search
+    public function _sort(int $sort) : Video_Search
     {
         $this->params['sort'] = $sort;
         return $this;
@@ -43,9 +43,9 @@ class Video_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * If not null, only searches for high-definition videos.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _hd(integer $hd) : Video_Search
+    public function _hd(int $hd) : Video_Search
     {
         $this->params['hd'] = $hd;
         return $this;
@@ -83,9 +83,9 @@ class Video_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of videos.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Video_Search
+    public function _offset(int $offset) : Video_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -93,9 +93,9 @@ class Video_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _longer(integer $longer) : Video_Search
+    public function _longer(int $longer) : Video_Search
     {
         $this->params['longer'] = $longer;
         return $this;
@@ -103,9 +103,9 @@ class Video_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _shorter(integer $shorter) : Video_Search
+    public function _shorter(int $shorter) : Video_Search
     {
         $this->params['shorter'] = $shorter;
         return $this;
@@ -113,9 +113,9 @@ class Video_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of videos to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Video_Search
+    public function _count(int $count) : Video_Search
     {
         $this->params['count'] = $count;
         return $this;

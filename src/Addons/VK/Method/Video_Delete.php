@@ -23,9 +23,9 @@ class Video_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * Video ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function video_id(integer $video_id) : Video_Delete
+    public function video_id(int $video_id) : Video_Delete
     {
         $this->params['video_id'] = $video_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Video_Delete
+    public function _owner_id(int $owner_id) : Video_Delete
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Video_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _target_id(integer $target_id) : Video_Delete
+    public function _target_id(int $target_id) : Video_Delete
     {
         $this->params['target_id'] = $target_id;
         return $this;

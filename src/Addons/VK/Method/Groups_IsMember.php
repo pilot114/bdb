@@ -33,9 +33,9 @@ class Groups_IsMember extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Groups_IsMember
+    public function _user_id(int $user_id) : Groups_IsMember
     {
         $this->params['user_id'] = $user_id;
         return $this;

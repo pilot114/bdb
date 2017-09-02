@@ -43,9 +43,9 @@ class Wall_GetById extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sets the number of parent elements to include in the array 'copy_history' that is returned if the post is a repost from another wall.
      *
-     * {"type":"integer","default":2}
+     * {"type":"int","default":2}
      */
-    public function _copy_history_depth(integer $copy_history_depth) : Wall_GetById
+    public function _copy_history_depth(int $copy_history_depth) : Wall_GetById
     {
         $this->params['copy_history_depth'] = $copy_history_depth;
         return $this;

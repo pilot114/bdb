@@ -23,9 +23,9 @@ class Account_UnbanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Account_UnbanUser
+    public function user_id(int $user_id) : Account_UnbanUser
     {
         $this->params['user_id'] = $user_id;
         return $this;

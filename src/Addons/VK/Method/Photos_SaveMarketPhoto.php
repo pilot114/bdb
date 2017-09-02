@@ -23,9 +23,9 @@ class Photos_SaveMarketPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Photos_SaveMarketPhoto
+    public function _group_id(int $group_id) : Photos_SaveMarketPhoto
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_SaveMarketPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * Parameter returned when photos are [vk.com/dev/upload_files|uploaded to server].
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function server(integer $server) : Photos_SaveMarketPhoto
+    public function server(int $server) : Photos_SaveMarketPhoto
     {
         $this->params['server'] = $server;
         return $this;

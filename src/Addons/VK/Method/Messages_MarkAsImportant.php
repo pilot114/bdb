@@ -33,9 +33,9 @@ class Messages_MarkAsImportant extends \Bdb\Addons\VK\BaseMethod
     /**
      * '1' — to add a star (mark as important); '0' — to remove the star
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _important(integer $important) : Messages_MarkAsImportant
+    public function _important(int $important) : Messages_MarkAsImportant
     {
         $this->params['important'] = $important;
         return $this;

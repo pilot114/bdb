@@ -23,9 +23,9 @@ class Ads_GetOfficeUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_GetOfficeUsers
+    public function account_id(int $account_id) : Ads_GetOfficeUsers
     {
         $this->params['account_id'] = $account_id;
         return $this;

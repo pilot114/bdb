@@ -23,9 +23,9 @@ class Audio_DeleteAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community where the album is located.;
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Audio_DeleteAlbum
+    public function _group_id(int $group_id) : Audio_DeleteAlbum
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_DeleteAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function album_id(integer $album_id) : Audio_DeleteAlbum
+    public function album_id(int $album_id) : Audio_DeleteAlbum
     {
         $this->params['album_id'] = $album_id;
         return $this;

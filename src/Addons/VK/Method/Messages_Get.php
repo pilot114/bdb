@@ -33,9 +33,9 @@ class Messages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of messages.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Messages_Get
+    public function _offset(int $offset) : Messages_Get
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Messages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of messages to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Messages_Get
+    public function _count(int $count) : Messages_Get
     {
         $this->params['count'] = $count;
         return $this;
@@ -53,9 +53,9 @@ class Messages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Maximum time since a message was sent, in seconds. To return messages without a time limitation, set as '0'.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _time_offset(integer $time_offset) : Messages_Get
+    public function _time_offset(int $time_offset) : Messages_Get
     {
         $this->params['time_offset'] = $time_offset;
         return $this;
@@ -63,9 +63,9 @@ class Messages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of characters after which to truncate a previewed message. To preview the full message, specify '0'.; "NOTE: Messages are not truncated by default. Messages are truncated by words."
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _preview_length(integer $preview_length) : Messages_Get
+    public function _preview_length(int $preview_length) : Messages_Get
     {
         $this->params['preview_length'] = $preview_length;
         return $this;
@@ -73,9 +73,9 @@ class Messages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the message received before the message that will be returned last (provided that no more than 'count' messages were received before it; otherwise 'offset' parameter shall be used).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _last_message_id(integer $last_message_id) : Messages_Get
+    public function _last_message_id(int $last_message_id) : Messages_Get
     {
         $this->params['last_message_id'] = $last_message_id;
         return $this;

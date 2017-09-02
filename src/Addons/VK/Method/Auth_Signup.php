@@ -43,9 +43,9 @@ class Auth_Signup extends \Bdb\Addons\VK\BaseMethod
     /**
      * Your application ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function client_id(integer $client_id) : Auth_Signup
+    public function client_id(int $client_id) : Auth_Signup
     {
         $this->params['client_id'] = $client_id;
         return $this;
@@ -103,9 +103,9 @@ class Auth_Signup extends \Bdb\Addons\VK\BaseMethod
     /**
      * '1' — female; '2' — male
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["undefined","female","male"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["undefined","female","male"]}
      */
-    public function _sex(integer $sex) : Auth_Signup
+    public function _sex(int $sex) : Auth_Signup
     {
         $this->params['sex'] = $sex;
         return $this;

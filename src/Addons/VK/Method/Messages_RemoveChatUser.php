@@ -23,9 +23,9 @@ class Messages_RemoveChatUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Chat ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function chat_id(integer $chat_id) : Messages_RemoveChatUser
+    public function chat_id(int $chat_id) : Messages_RemoveChatUser
     {
         $this->params['chat_id'] = $chat_id;
         return $this;

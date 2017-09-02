@@ -23,9 +23,9 @@ class Orders_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * number of returned orders.
      *
-     * {"type":"integer","minimum":0,"maximum":1000,"default":100}
+     * {"type":"int","minimum":0,"maximum":1000,"default":100}
      */
-    public function _count(integer $count) : Orders_Get
+    public function _count(int $count) : Orders_Get
     {
         $this->params['count'] = $count;
         return $this;

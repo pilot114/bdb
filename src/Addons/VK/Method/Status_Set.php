@@ -33,9 +33,9 @@ class Status_Set extends \Bdb\Addons\VK\BaseMethod
     /**
      * Identifier of a community to set a status in. If left blank the status is set to current user.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Status_Set
+    public function _group_id(int $group_id) : Status_Set
     {
         $this->params['group_id'] = $group_id;
         return $this;

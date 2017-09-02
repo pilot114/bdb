@@ -23,9 +23,9 @@ class Secure_GetSMSHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Secure_GetSMSHistory
+    public function _user_id(int $user_id) : Secure_GetSMSHistory
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Secure_GetSMSHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * filter by start date. It is set as UNIX-time.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _date_from(integer $date_from) : Secure_GetSMSHistory
+    public function _date_from(int $date_from) : Secure_GetSMSHistory
     {
         $this->params['date_from'] = $date_from;
         return $this;
@@ -43,9 +43,9 @@ class Secure_GetSMSHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * filter by end date. It is set as UNIX-time.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _date_to(integer $date_to) : Secure_GetSMSHistory
+    public function _date_to(int $date_to) : Secure_GetSMSHistory
     {
         $this->params['date_to'] = $date_to;
         return $this;
@@ -53,9 +53,9 @@ class Secure_GetSMSHistory extends \Bdb\Addons\VK\BaseMethod
     /**
      * number of returned posts. By default — 1000.
      *
-     * {"type":"integer","minimum":0,"default":1000,"maximum":1000}
+     * {"type":"int","minimum":0,"default":1000,"maximum":1000}
      */
-    public function _limit(integer $limit) : Secure_GetSMSHistory
+    public function _limit(int $limit) : Secure_GetSMSHistory
     {
         $this->params['limit'] = $limit;
         return $this;

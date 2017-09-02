@@ -53,9 +53,9 @@ class Photos_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_time(integer $start_time) : Photos_Search
+    public function _start_time(int $start_time) : Photos_Search
     {
         $this->params['start_time'] = $start_time;
         return $this;
@@ -63,9 +63,9 @@ class Photos_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _end_time(integer $end_time) : Photos_Search
+    public function _end_time(int $end_time) : Photos_Search
     {
         $this->params['end_time'] = $end_time;
         return $this;
@@ -73,9 +73,9 @@ class Photos_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order:
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _sort(integer $sort) : Photos_Search
+    public function _sort(int $sort) : Photos_Search
     {
         $this->params['sort'] = $sort;
         return $this;
@@ -83,9 +83,9 @@ class Photos_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of photos.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Photos_Search
+    public function _offset(int $offset) : Photos_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -93,9 +93,9 @@ class Photos_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of photos to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Photos_Search
+    public function _count(int $count) : Photos_Search
     {
         $this->params['count'] = $count;
         return $this;
@@ -103,9 +103,9 @@ class Photos_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Radius of search in meters (works very approximately). Available values: '10', '100', '800', '6000', '50000'.
      *
-     * {"type":"integer","minimum":0,"default":5000}
+     * {"type":"int","minimum":0,"default":5000}
      */
-    public function _radius(integer $radius) : Photos_Search
+    public function _radius(int $radius) : Photos_Search
     {
         $this->params['radius'] = $radius;
         return $this;

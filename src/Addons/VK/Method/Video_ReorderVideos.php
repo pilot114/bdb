@@ -23,9 +23,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the album with videos.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _target_id(integer $target_id) : Video_ReorderVideos
+    public function _target_id(int $target_id) : Video_ReorderVideos
     {
         $this->params['target_id'] = $target_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the video album.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Video_ReorderVideos
+    public function _album_id(int $album_id) : Video_ReorderVideos
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -43,9 +43,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Video_ReorderVideos
+    public function owner_id(int $owner_id) : Video_ReorderVideos
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -53,9 +53,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the video.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function video_id(integer $video_id) : Video_ReorderVideos
+    public function video_id(int $video_id) : Video_ReorderVideos
     {
         $this->params['video_id'] = $video_id;
         return $this;
@@ -63,9 +63,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video before which the video in question shall be placed.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _before_owner_id(integer $before_owner_id) : Video_ReorderVideos
+    public function _before_owner_id(int $before_owner_id) : Video_ReorderVideos
     {
         $this->params['before_owner_id'] = $before_owner_id;
         return $this;
@@ -73,9 +73,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the video before which the video in question shall be placed.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _before_video_id(integer $before_video_id) : Video_ReorderVideos
+    public function _before_video_id(int $before_video_id) : Video_ReorderVideos
     {
         $this->params['before_video_id'] = $before_video_id;
         return $this;
@@ -83,9 +83,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video after which the photo in question shall be placed.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _after_owner_id(integer $after_owner_id) : Video_ReorderVideos
+    public function _after_owner_id(int $after_owner_id) : Video_ReorderVideos
     {
         $this->params['after_owner_id'] = $after_owner_id;
         return $this;
@@ -93,9 +93,9 @@ class Video_ReorderVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the video after which the photo in question shall be placed.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _after_video_id(integer $after_video_id) : Video_ReorderVideos
+    public function _after_video_id(int $after_video_id) : Video_ReorderVideos
     {
         $this->params['after_video_id'] = $after_video_id;
         return $this;

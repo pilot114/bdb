@@ -33,9 +33,9 @@ class Friends_EditList extends \Bdb\Addons\VK\BaseMethod
     /**
      * Friend list ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function list_id(integer $list_id) : Friends_EditList
+    public function list_id(int $list_id) : Friends_EditList
     {
         $this->params['list_id'] = $list_id;
         return $this;

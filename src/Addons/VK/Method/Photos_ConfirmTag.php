@@ -23,9 +23,9 @@ class Photos_ConfirmTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_ConfirmTag
+    public function _owner_id(int $owner_id) : Photos_ConfirmTag
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_ConfirmTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * Tag ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function tag_id(integer $tag_id) : Photos_ConfirmTag
+    public function tag_id(int $tag_id) : Photos_ConfirmTag
     {
         $this->params['tag_id'] = $tag_id;
         return $this;

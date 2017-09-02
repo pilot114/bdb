@@ -23,9 +23,9 @@ class Video_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Video_Edit
+    public function _owner_id(int $owner_id) : Video_Edit
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Video ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function video_id(integer $video_id) : Video_Edit
+    public function video_id(int $video_id) : Video_Edit
     {
         $this->params['video_id'] = $video_id;
         return $this;

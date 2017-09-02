@@ -43,9 +43,9 @@ class Users_GetNearby extends \Bdb\Addons\VK\BaseMethod
     /**
      * current location accuracy in meters
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _accuracy(integer $accuracy) : Users_GetNearby
+    public function _accuracy(int $accuracy) : Users_GetNearby
     {
         $this->params['accuracy'] = $accuracy;
         return $this;
@@ -53,9 +53,9 @@ class Users_GetNearby extends \Bdb\Addons\VK\BaseMethod
     /**
      * time when a user disappears from location search results, in seconds
      *
-     * {"type":"integer","minimum":0,"default":7200}
+     * {"type":"int","minimum":0,"default":7200}
      */
-    public function _timeout(integer $timeout) : Users_GetNearby
+    public function _timeout(int $timeout) : Users_GetNearby
     {
         $this->params['timeout'] = $timeout;
         return $this;
@@ -63,9 +63,9 @@ class Users_GetNearby extends \Bdb\Addons\VK\BaseMethod
     /**
      * search zone radius type (1 to 4); :* 1 – 300 m;; :* 2 – 2400 m;; :* 3 – 18 km;; :* 4 – 150 km.
      *
-     * {"type":"integer","minimum":0,"default":1,"enum":[0,1,2,3,4],"enumNames":["any","300 m","2400 m","18 km","150 km."]}
+     * {"type":"int","minimum":0,"default":1,"enum":[0,1,2,3,4],"enumNames":["any","300 m","2400 m","18 km","150 km."]}
      */
-    public function _radius(integer $radius) : Users_GetNearby
+    public function _radius(int $radius) : Users_GetNearby
     {
         $this->params['radius'] = $radius;
         return $this;

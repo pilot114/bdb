@@ -33,9 +33,9 @@ class Pages_ParseWiki extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the group in the context of which this markup is interpreted.;
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Pages_ParseWiki
+    public function _group_id(int $group_id) : Pages_ParseWiki
     {
         $this->params['group_id'] = $group_id;
         return $this;

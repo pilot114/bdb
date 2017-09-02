@@ -23,9 +23,9 @@ class Audio_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * Audio file ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function audio_id(integer $audio_id) : Audio_Delete
+    public function audio_id(int $audio_id) : Audio_Delete
     {
         $this->params['audio_id'] = $audio_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio file. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Audio_Delete
+    public function owner_id(int $owner_id) : Audio_Delete
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

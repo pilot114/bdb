@@ -43,9 +43,9 @@ class Newsfeed_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Earliest timestamp (in Unix time) of a news item to return. By default, 24 hours ago.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_time(integer $start_time) : Newsfeed_Get
+    public function _start_time(int $start_time) : Newsfeed_Get
     {
         $this->params['start_time'] = $start_time;
         return $this;
@@ -53,9 +53,9 @@ class Newsfeed_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Latest timestamp (in Unix time) of a news item to return. By default, the current time.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _end_time(integer $end_time) : Newsfeed_Get
+    public function _end_time(int $end_time) : Newsfeed_Get
     {
         $this->params['end_time'] = $end_time;
         return $this;
@@ -63,9 +63,9 @@ class Newsfeed_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Maximum number of photos to return. By default, '5'.
      *
-     * {"type":"integer","minimum":0,"default":5}
+     * {"type":"int","minimum":0,"default":5}
      */
-    public function _max_photos(integer $max_photos) : Newsfeed_Get
+    public function _max_photos(int $max_photos) : Newsfeed_Get
     {
         $this->params['max_photos'] = $max_photos;
         return $this;
@@ -93,9 +93,9 @@ class Newsfeed_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of news items to return (default 50; maximum 100). For auto feed, you can use the 'new_offset' parameter returned by this method.
      *
-     * {"type":"integer","minimum":0,"maximum":100,"default":50}
+     * {"type":"int","minimum":0,"maximum":100,"default":50}
      */
-    public function _count(integer $count) : Newsfeed_Get
+    public function _count(int $count) : Newsfeed_Get
     {
         $this->params['count'] = $count;
         return $this;

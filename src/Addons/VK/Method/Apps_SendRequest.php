@@ -23,9 +23,9 @@ class Apps_SendRequest extends \Bdb\Addons\VK\BaseMethod
     /**
      * id of the user to send a request
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Apps_SendRequest
+    public function user_id(int $user_id) : Apps_SendRequest
     {
         $this->params['user_id'] = $user_id;
         return $this;

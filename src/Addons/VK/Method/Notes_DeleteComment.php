@@ -23,9 +23,9 @@ class Notes_DeleteComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Comment ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Notes_DeleteComment
+    public function comment_id(int $comment_id) : Notes_DeleteComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;
@@ -33,9 +33,9 @@ class Notes_DeleteComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note owner ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _owner_id(integer $owner_id) : Notes_DeleteComment
+    public function _owner_id(int $owner_id) : Notes_DeleteComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

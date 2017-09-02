@@ -23,9 +23,9 @@ class Friends_GetRecent extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of recently added friends to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Friends_GetRecent
+    public function _count(int $count) : Friends_GetRecent
     {
         $this->params['count'] = $count;
         return $this;

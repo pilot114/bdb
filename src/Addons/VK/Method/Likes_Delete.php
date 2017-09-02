@@ -33,9 +33,9 @@ class Likes_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the object.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Likes_Delete
+    public function _owner_id(int $owner_id) : Likes_Delete
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Likes_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * Object ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Likes_Delete
+    public function item_id(int $item_id) : Likes_Delete
     {
         $this->params['item_id'] = $item_id;
         return $this;

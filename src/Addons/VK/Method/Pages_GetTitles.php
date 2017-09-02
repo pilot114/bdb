@@ -23,9 +23,9 @@ class Pages_GetTitles extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the wiki page.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Pages_GetTitles
+    public function _group_id(int $group_id) : Pages_GetTitles
     {
         $this->params['group_id'] = $group_id;
         return $this;

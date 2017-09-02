@@ -23,9 +23,9 @@ class Friends_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Friends_Search
+    public function user_id(int $user_id) : Friends_Search
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -63,9 +63,9 @@ class Friends_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of friends.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Friends_Search
+    public function _offset(int $offset) : Friends_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Friends_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of friends to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":1000}
+     * {"type":"int","minimum":0,"default":20,"maximum":1000}
      */
-    public function _count(integer $count) : Friends_Search
+    public function _count(int $count) : Friends_Search
     {
         $this->params['count'] = $count;
         return $this;

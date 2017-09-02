@@ -23,9 +23,9 @@ class Groups_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Category id received from [vk.com/dev/groups.getCatalogInfo|groups.getCatalogInfo].
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _category_id(integer $category_id) : Groups_GetCatalog
+    public function _category_id(int $category_id) : Groups_GetCatalog
     {
         $this->params['category_id'] = $category_id;
         return $this;
@@ -33,9 +33,9 @@ class Groups_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * Subcategory id received from [vk.com/dev/groups.getCatalogInfo|groups.getCatalogInfo].
      *
-     * {"type":"integer","minimum":0,"maximum":99}
+     * {"type":"int","minimum":0,"maximum":99}
      */
-    public function _subcategory_id(integer $subcategory_id) : Groups_GetCatalog
+    public function _subcategory_id(int $subcategory_id) : Groups_GetCatalog
     {
         $this->params['subcategory_id'] = $subcategory_id;
         return $this;

@@ -23,9 +23,9 @@ class Photos_RemoveTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_RemoveTag
+    public function _owner_id(int $owner_id) : Photos_RemoveTag
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_RemoveTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function photo_id(integer $photo_id) : Photos_RemoveTag
+    public function photo_id(int $photo_id) : Photos_RemoveTag
     {
         $this->params['photo_id'] = $photo_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_RemoveTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * Tag ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function tag_id(integer $tag_id) : Photos_RemoveTag
+    public function tag_id(int $tag_id) : Photos_RemoveTag
     {
         $this->params['tag_id'] = $tag_id;
         return $this;

@@ -23,9 +23,9 @@ class Photos_GetAll extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a user or community that owns the photos.; Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_GetAll
+    public function _owner_id(int $owner_id) : Photos_GetAll
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_GetAll extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of photos. By default, '0'.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Photos_GetAll
+    public function _offset(int $offset) : Photos_GetAll
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Photos_GetAll extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of photos to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Photos_GetAll
+    public function _count(int $count) : Photos_GetAll
     {
         $this->params['count'] = $count;
         return $this;

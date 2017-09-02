@@ -23,9 +23,9 @@ class Video_GetUserVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Video_GetUserVideos
+    public function _user_id(int $user_id) : Video_GetUserVideos
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_GetUserVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of videos.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Video_GetUserVideos
+    public function _offset(int $offset) : Video_GetUserVideos
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Video_GetUserVideos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of videos to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Video_GetUserVideos
+    public function _count(int $count) : Video_GetUserVideos
     {
         $this->params['count'] = $count;
         return $this;

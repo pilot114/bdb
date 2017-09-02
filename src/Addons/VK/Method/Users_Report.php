@@ -23,9 +23,9 @@ class Users_Report extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user about whom a complaint is being made.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Users_Report
+    public function user_id(int $user_id) : Users_Report
     {
         $this->params['user_id'] = $user_id;
         return $this;

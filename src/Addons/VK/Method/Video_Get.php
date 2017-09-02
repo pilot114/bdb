@@ -23,9 +23,9 @@ class Video_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video(s).
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Video_Get
+    public function _owner_id(int $owner_id) : Video_Get
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Video_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the album containing the video(s).
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Video_Get
+    public function _album_id(int $album_id) : Video_Get
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -53,9 +53,9 @@ class Video_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of videos to return.
      *
-     * {"type":"integer","minimum":0,"maximum":200,"default":100}
+     * {"type":"int","minimum":0,"maximum":200,"default":100}
      */
-    public function _count(integer $count) : Video_Get
+    public function _count(int $count) : Video_Get
     {
         $this->params['count'] = $count;
         return $this;
@@ -63,9 +63,9 @@ class Video_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of videos.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Video_Get
+    public function _offset(int $offset) : Video_Get
     {
         $this->params['offset'] = $offset;
         return $this;

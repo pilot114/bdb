@@ -23,9 +23,9 @@ class Notes_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function note_id(integer $note_id) : Notes_CreateComment
+    public function note_id(int $note_id) : Notes_CreateComment
     {
         $this->params['note_id'] = $note_id;
         return $this;
@@ -33,9 +33,9 @@ class Notes_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note owner ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _owner_id(integer $owner_id) : Notes_CreateComment
+    public function _owner_id(int $owner_id) : Notes_CreateComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Notes_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user to whom the reply is addressed (if the comment is a reply to another comment).;
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _reply_to(integer $reply_to) : Notes_CreateComment
+    public function _reply_to(int $reply_to) : Notes_CreateComment
     {
         $this->params['reply_to'] = $reply_to;
         return $this;

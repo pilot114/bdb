@@ -33,9 +33,9 @@ class Photos_CreateAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community in which the album will be created.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Photos_CreateAlbum
+    public function _group_id(int $group_id) : Photos_CreateAlbum
     {
         $this->params['group_id'] = $group_id;
         return $this;

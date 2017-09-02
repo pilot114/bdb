@@ -23,9 +23,9 @@ class Messages_AddChatUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Chat ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function chat_id(integer $chat_id) : Messages_AddChatUser
+    public function chat_id(int $chat_id) : Messages_AddChatUser
     {
         $this->params['chat_id'] = $chat_id;
         return $this;
@@ -33,9 +33,9 @@ class Messages_AddChatUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user to be added to the chat.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Messages_AddChatUser
+    public function user_id(int $user_id) : Messages_AddChatUser
     {
         $this->params['user_id'] = $user_id;
         return $this;

@@ -23,9 +23,9 @@ class Video_GetAlbumsByVideo extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _target_id(integer $target_id) : Video_GetAlbumsByVideo
+    public function _target_id(int $target_id) : Video_GetAlbumsByVideo
     {
         $this->params['target_id'] = $target_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_GetAlbumsByVideo extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Video_GetAlbumsByVideo
+    public function owner_id(int $owner_id) : Video_GetAlbumsByVideo
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Video_GetAlbumsByVideo extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function video_id(integer $video_id) : Video_GetAlbumsByVideo
+    public function video_id(int $video_id) : Video_GetAlbumsByVideo
     {
         $this->params['video_id'] = $video_id;
         return $this;

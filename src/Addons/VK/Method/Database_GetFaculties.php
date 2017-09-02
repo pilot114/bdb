@@ -23,9 +23,9 @@ class Database_GetFaculties extends \Bdb\Addons\VK\BaseMethod
     /**
      * University ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function university_id(integer $university_id) : Database_GetFaculties
+    public function university_id(int $university_id) : Database_GetFaculties
     {
         $this->params['university_id'] = $university_id;
         return $this;
@@ -33,9 +33,9 @@ class Database_GetFaculties extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of faculties.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetFaculties
+    public function _offset(int $offset) : Database_GetFaculties
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Database_GetFaculties extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of faculties to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":10000}
+     * {"type":"int","minimum":0,"default":100,"maximum":10000}
      */
-    public function _count(integer $count) : Database_GetFaculties
+    public function _count(int $count) : Database_GetFaculties
     {
         $this->params['count'] = $count;
         return $this;

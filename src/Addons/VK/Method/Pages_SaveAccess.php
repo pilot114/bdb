@@ -23,9 +23,9 @@ class Pages_SaveAccess extends \Bdb\Addons\VK\BaseMethod
     /**
      * Wiki page ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function page_id(integer $page_id) : Pages_SaveAccess
+    public function page_id(int $page_id) : Pages_SaveAccess
     {
         $this->params['page_id'] = $page_id;
         return $this;
@@ -33,9 +33,9 @@ class Pages_SaveAccess extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the wiki page.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Pages_SaveAccess
+    public function _group_id(int $group_id) : Pages_SaveAccess
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Pages_SaveAccess extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Pages_SaveAccess
+    public function _user_id(int $user_id) : Pages_SaveAccess
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -53,9 +53,9 @@ class Pages_SaveAccess extends \Bdb\Addons\VK\BaseMethod
     /**
      * Who can view the wiki page:; '1' — only community members; '2' — all users can view the page; '0' — only community managers
      *
-     * {"type":"integer","enum":[0,1,2],"enumNames":["managers","members","all"]}
+     * {"type":"int","enum":[0,1,2],"enumNames":["managers","members","all"]}
      */
-    public function _view(integer $view) : Pages_SaveAccess
+    public function _view(int $view) : Pages_SaveAccess
     {
         $this->params['view'] = $view;
         return $this;
@@ -63,9 +63,9 @@ class Pages_SaveAccess extends \Bdb\Addons\VK\BaseMethod
     /**
      * Who can edit the wiki page:; '1' — only community members; '2' — all users can edit the page; '0' — only community managers
      *
-     * {"type":"integer","enum":[0,1,2],"enumNames":["managers","members","all"]}
+     * {"type":"int","enum":[0,1,2],"enumNames":["managers","members","all"]}
      */
-    public function _edit(integer $edit) : Pages_SaveAccess
+    public function _edit(int $edit) : Pages_SaveAccess
     {
         $this->params['edit'] = $edit;
         return $this;

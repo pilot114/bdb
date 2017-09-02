@@ -23,9 +23,9 @@ class Video_EditAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID (if the album edited is owned by a community).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Video_EditAlbum
+    public function _group_id(int $group_id) : Video_EditAlbum
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_EditAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function album_id(integer $album_id) : Video_EditAlbum
+    public function album_id(int $album_id) : Video_EditAlbum
     {
         $this->params['album_id'] = $album_id;
         return $this;

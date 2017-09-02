@@ -23,9 +23,9 @@ class Market_EditComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_EditComment
+    public function owner_id(int $owner_id) : Market_EditComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_EditComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Comment ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Market_EditComment
+    public function comment_id(int $comment_id) : Market_EditComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;

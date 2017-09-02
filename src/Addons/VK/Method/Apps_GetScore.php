@@ -23,9 +23,9 @@ class Apps_GetScore extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Apps_GetScore
+    public function user_id(int $user_id) : Apps_GetScore
     {
         $this->params['user_id'] = $user_id;
         return $this;

@@ -23,9 +23,9 @@ class Notes_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function note_id(integer $note_id) : Notes_Delete
+    public function note_id(int $note_id) : Notes_Delete
     {
         $this->params['note_id'] = $note_id;
         return $this;

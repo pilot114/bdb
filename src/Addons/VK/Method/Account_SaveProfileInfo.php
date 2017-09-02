@@ -63,9 +63,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the name change request to be canceled. If this parameter is sent, all the others are ignored.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _cancel_request_id(integer $cancel_request_id) : Account_SaveProfileInfo
+    public function _cancel_request_id(int $cancel_request_id) : Account_SaveProfileInfo
     {
         $this->params['cancel_request_id'] = $cancel_request_id;
         return $this;
@@ -73,9 +73,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * User sex. Possible values: ; * '1' – female;; * '2' – male.
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["undefined","female","male"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["undefined","female","male"]}
      */
-    public function _sex(integer $sex) : Account_SaveProfileInfo
+    public function _sex(int $sex) : Account_SaveProfileInfo
     {
         $this->params['sex'] = $sex;
         return $this;
@@ -83,9 +83,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * User relationship status. Possible values: ; * '1' – single;; * '2' – in a relationship;; * '3' – engaged;; * '4' – married;; * '5' – it's complicated;; * '6' – actively searching;; * '7' – in love;; * '0' – not specified.
      *
-     * {"type":"integer","minimum":0,"enum":[1,2,3,4,5,6,7,0],"enumNames":["single","relationship","engaged","married","complicated","actively searching","in love","not specified"]}
+     * {"type":"int","minimum":0,"enum":[1,2,3,4,5,6,7,0],"enumNames":["single","relationship","engaged","married","complicated","actively searching","in love","not specified"]}
      */
-    public function _relation(integer $relation) : Account_SaveProfileInfo
+    public function _relation(int $relation) : Account_SaveProfileInfo
     {
         $this->params['relation'] = $relation;
         return $this;
@@ -93,9 +93,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the relationship partner.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _relation_partner_id(integer $relation_partner_id) : Account_SaveProfileInfo
+    public function _relation_partner_id(int $relation_partner_id) : Account_SaveProfileInfo
     {
         $this->params['relation_partner_id'] = $relation_partner_id;
         return $this;
@@ -113,9 +113,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * Birth date visibility. Returned values: ; * '1' – show birth date;; * '2' – show only month and day;; * '0' – hide birth date.
      *
-     * {"type":"integer","minimum":0,"enum":[1,2,0],"enumNames":["show","hide year","hide"]}
+     * {"type":"int","minimum":0,"enum":[1,2,0],"enumNames":["show","hide year","hide"]}
      */
-    public function _bdate_visibility(integer $bdate_visibility) : Account_SaveProfileInfo
+    public function _bdate_visibility(int $bdate_visibility) : Account_SaveProfileInfo
     {
         $this->params['bdate_visibility'] = $bdate_visibility;
         return $this;
@@ -133,9 +133,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * User country.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country_id(integer $country_id) : Account_SaveProfileInfo
+    public function _country_id(int $country_id) : Account_SaveProfileInfo
     {
         $this->params['country_id'] = $country_id;
         return $this;
@@ -143,9 +143,9 @@ class Account_SaveProfileInfo extends \Bdb\Addons\VK\BaseMethod
     /**
      * User city.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city_id(integer $city_id) : Account_SaveProfileInfo
+    public function _city_id(int $city_id) : Account_SaveProfileInfo
     {
         $this->params['city_id'] = $city_id;
         return $this;

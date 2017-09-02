@@ -33,9 +33,9 @@ class Messages_SearchDialogs extends \Bdb\Addons\VK\BaseMethod
     /**
      * Maximum number of results.
      *
-     * {"type":"integer","minimum":0,"default":20}
+     * {"type":"int","minimum":0,"default":20}
      */
-    public function _limit(integer $limit) : Messages_SearchDialogs
+    public function _limit(int $limit) : Messages_SearchDialogs
     {
         $this->params['limit'] = $limit;
         return $this;

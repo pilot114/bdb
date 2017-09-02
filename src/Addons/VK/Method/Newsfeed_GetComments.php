@@ -23,9 +23,9 @@ class Newsfeed_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of comments to return. For auto feed, you can use the 'new_offset' parameter returned by this method.
      *
-     * {"type":"integer","minimum":0,"default":30,"maximum":100}
+     * {"type":"int","minimum":0,"default":30,"maximum":100}
      */
-    public function _count(integer $count) : Newsfeed_GetComments
+    public function _count(int $count) : Newsfeed_GetComments
     {
         $this->params['count'] = $count;
         return $this;
@@ -53,9 +53,9 @@ class Newsfeed_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Earliest timestamp (in Unix time) of a comment to return. By default, 24 hours ago.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_time(integer $start_time) : Newsfeed_GetComments
+    public function _start_time(int $start_time) : Newsfeed_GetComments
     {
         $this->params['start_time'] = $start_time;
         return $this;
@@ -63,9 +63,9 @@ class Newsfeed_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Latest timestamp (in Unix time) of a comment to return. By default, the current time.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _end_time(integer $end_time) : Newsfeed_GetComments
+    public function _end_time(int $end_time) : Newsfeed_GetComments
     {
         $this->params['end_time'] = $end_time;
         return $this;

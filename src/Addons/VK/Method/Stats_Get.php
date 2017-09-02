@@ -23,9 +23,9 @@ class Stats_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Stats_Get
+    public function _group_id(int $group_id) : Stats_Get
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Stats_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Application ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _app_id(integer $app_id) : Stats_Get
+    public function _app_id(int $app_id) : Stats_Get
     {
         $this->params['app_id'] = $app_id;
         return $this;

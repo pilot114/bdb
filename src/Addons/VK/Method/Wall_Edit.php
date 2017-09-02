@@ -23,9 +23,9 @@ class Wall_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_Edit
+    public function _owner_id(int $owner_id) : Wall_Edit
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Post ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function post_id(integer $post_id) : Wall_Edit
+    public function post_id(int $post_id) : Wall_Edit
     {
         $this->params['post_id'] = $post_id;
         return $this;
@@ -93,9 +93,9 @@ class Wall_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * (Applies only to a scheduled post.) Publication date (in Unix time). If used, posting will be delayed until the set time.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _publish_date(integer $publish_date) : Wall_Edit
+    public function _publish_date(int $publish_date) : Wall_Edit
     {
         $this->params['publish_date'] = $publish_date;
         return $this;
@@ -123,9 +123,9 @@ class Wall_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the location where the user was tagged.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _place_id(integer $place_id) : Wall_Edit
+    public function _place_id(int $place_id) : Wall_Edit
     {
         $this->params['place_id'] = $place_id;
         return $this;

@@ -23,9 +23,9 @@ class Friends_GetLists extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Friends_GetLists
+    public function _user_id(int $user_id) : Friends_GetLists
     {
         $this->params['user_id'] = $user_id;
         return $this;

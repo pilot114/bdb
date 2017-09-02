@@ -23,9 +23,9 @@ class Pages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Page owner ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Pages_Get
+    public function _owner_id(int $owner_id) : Pages_Get
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Pages_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Wiki page ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _page_id(integer $page_id) : Pages_Get
+    public function _page_id(int $page_id) : Pages_Get
     {
         $this->params['page_id'] = $page_id;
         return $this;

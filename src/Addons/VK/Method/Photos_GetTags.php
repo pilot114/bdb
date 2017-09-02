@@ -23,9 +23,9 @@ class Photos_GetTags extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_GetTags
+    public function _owner_id(int $owner_id) : Photos_GetTags
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetTags extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function photo_id(integer $photo_id) : Photos_GetTags
+    public function photo_id(int $photo_id) : Photos_GetTags
     {
         $this->params['photo_id'] = $photo_id;
         return $this;

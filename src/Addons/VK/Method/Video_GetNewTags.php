@@ -23,9 +23,9 @@ class Video_GetNewTags extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of videos.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Video_GetNewTags
+    public function _offset(int $offset) : Video_GetNewTags
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Video_GetNewTags extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of videos to return.
      *
-     * {"type":"integer","minimum":0,"maximum":100,"default":20}
+     * {"type":"int","minimum":0,"maximum":100,"default":20}
      */
-    public function _count(integer $count) : Video_GetNewTags
+    public function _count(int $count) : Video_GetNewTags
     {
         $this->params['count'] = $count;
         return $this;

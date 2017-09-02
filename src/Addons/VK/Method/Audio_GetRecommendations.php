@@ -33,9 +33,9 @@ class Audio_GetRecommendations extends \Bdb\Addons\VK\BaseMethod
     /**
      * Use to get recommendations based on a user's playlist. User ID. By default, the current user ID.;
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Audio_GetRecommendations
+    public function _user_id(int $user_id) : Audio_GetRecommendations
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -43,9 +43,9 @@ class Audio_GetRecommendations extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of audio files.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Audio_GetRecommendations
+    public function _offset(int $offset) : Audio_GetRecommendations
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Audio_GetRecommendations extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of audio files to return.
      *
-     * {"type":"integer","minimum":0,"maximum":1000,"default":100}
+     * {"type":"int","minimum":0,"maximum":1000,"default":100}
      */
-    public function _count(integer $count) : Audio_GetRecommendations
+    public function _count(int $count) : Audio_GetRecommendations
     {
         $this->params['count'] = $count;
         return $this;

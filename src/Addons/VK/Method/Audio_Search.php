@@ -63,9 +63,9 @@ class Audio_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order: ; '1' — by duration;; '2' — by popularity;; '0' — by date added.
      *
-     * {"type":"integer","enum":[0,1,2],"enumNames":["date added","duration","popularity"]}
+     * {"type":"int","enum":[0,1,2],"enumNames":["date added","duration","popularity"]}
      */
-    public function _sort(integer $sort) : Audio_Search
+    public function _sort(int $sort) : Audio_Search
     {
         $this->params['sort'] = $sort;
         return $this;
@@ -83,9 +83,9 @@ class Audio_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of audio files.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Audio_Search
+    public function _offset(int $offset) : Audio_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -93,9 +93,9 @@ class Audio_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of audio files to return.
      *
-     * {"type":"integer","minimum":0,"default":30,"maximum":300}
+     * {"type":"int","minimum":0,"default":30,"maximum":300}
      */
-    public function _count(integer $count) : Audio_Search
+    public function _count(int $count) : Audio_Search
     {
         $this->params['count'] = $count;
         return $this;

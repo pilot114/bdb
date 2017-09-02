@@ -23,9 +23,9 @@ class Secure_AddAppEvent extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a user to save the data
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Secure_AddAppEvent
+    public function user_id(int $user_id) : Secure_AddAppEvent
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Secure_AddAppEvent extends \Bdb\Addons\VK\BaseMethod
     /**
      * there are 2 default activities: ; * 1 – level. Works similar to ;; * 2 – points, saves points amount; Any other value is for saving completed missions
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function activity_id(integer $activity_id) : Secure_AddAppEvent
+    public function activity_id(int $activity_id) : Secure_AddAppEvent
     {
         $this->params['activity_id'] = $activity_id;
         return $this;
@@ -43,9 +43,9 @@ class Secure_AddAppEvent extends \Bdb\Addons\VK\BaseMethod
     /**
      * depends on activity_id:; * 1 – number, current level number;; * 2 – number, current user's points amount; ; Any other value is ignored
      *
-     * {"type":"integer","minimum":0,"maximum":10000}
+     * {"type":"int","minimum":0,"maximum":10000}
      */
-    public function _value(integer $value) : Secure_AddAppEvent
+    public function _value(int $value) : Secure_AddAppEvent
     {
         $this->params['value'] = $value;
         return $this;

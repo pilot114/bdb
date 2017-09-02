@@ -23,9 +23,9 @@ class Video_AddAlbum extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID (if the album will be created in a community).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Video_AddAlbum
+    public function _group_id(int $group_id) : Video_AddAlbum
     {
         $this->params['group_id'] = $group_id;
         return $this;

@@ -23,9 +23,9 @@ class Photos_GetUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Photos_GetUploadServer
+    public function _album_id(int $album_id) : Photos_GetUploadServer
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of community that owns the album (if the photo will be uploaded to a community album).
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Photos_GetUploadServer
+    public function _group_id(int $group_id) : Photos_GetUploadServer
     {
         $this->params['group_id'] = $group_id;
         return $this;

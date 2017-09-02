@@ -23,9 +23,9 @@ class Docs_GetTypes extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the documents. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Docs_GetTypes
+    public function owner_id(int $owner_id) : Docs_GetTypes
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

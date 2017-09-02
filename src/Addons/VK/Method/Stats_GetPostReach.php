@@ -23,9 +23,9 @@ class Stats_GetPostReach extends \Bdb\Addons\VK\BaseMethod
     /**
      * post owner community id. Specify with "-" sign.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Stats_GetPostReach
+    public function owner_id(int $owner_id) : Stats_GetPostReach
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Stats_GetPostReach extends \Bdb\Addons\VK\BaseMethod
     /**
      * wall post id. Note that stats are available only for '300' last (newest) posts on a community wall.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function post_id(integer $post_id) : Stats_GetPostReach
+    public function post_id(int $post_id) : Stats_GetPostReach
     {
         $this->params['post_id'] = $post_id;
         return $this;

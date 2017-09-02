@@ -23,9 +23,9 @@ class Photos_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photos. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_Get
+    public function _owner_id(int $owner_id) : Photos_Get
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -83,9 +83,9 @@ class Photos_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * unixtime, that can be obtained with [vk.com/dev/newsfeed.get|newsfeed.get] method in date field to get all photos uploaded by the user on a specific day, or photos the user has been tagged on. Also, 'uid' parameter of the user the event happened with shall be specified.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _feed(integer $feed) : Photos_Get
+    public function _feed(int $feed) : Photos_Get
     {
         $this->params['feed'] = $feed;
         return $this;
@@ -103,9 +103,9 @@ class Photos_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Photos_Get
+    public function _offset(int $offset) : Photos_Get
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -113,9 +113,9 @@ class Photos_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0,"maximum":1000}
+     * {"type":"int","minimum":0,"maximum":1000}
      */
-    public function _count(integer $count) : Photos_Get
+    public function _count(int $count) : Photos_Get
     {
         $this->params['count'] = $count;
         return $this;

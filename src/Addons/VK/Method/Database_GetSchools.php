@@ -33,9 +33,9 @@ class Database_GetSchools extends \Bdb\Addons\VK\BaseMethod
     /**
      * City ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function city_id(integer $city_id) : Database_GetSchools
+    public function city_id(int $city_id) : Database_GetSchools
     {
         $this->params['city_id'] = $city_id;
         return $this;
@@ -43,9 +43,9 @@ class Database_GetSchools extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of schools.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetSchools
+    public function _offset(int $offset) : Database_GetSchools
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Database_GetSchools extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of schools to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":10000}
+     * {"type":"int","minimum":0,"default":100,"maximum":10000}
      */
-    public function _count(integer $count) : Database_GetSchools
+    public function _count(int $count) : Database_GetSchools
     {
         $this->params['count'] = $count;
         return $this;

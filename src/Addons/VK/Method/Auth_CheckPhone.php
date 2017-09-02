@@ -33,9 +33,9 @@ class Auth_CheckPhone extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _client_id(integer $client_id) : Auth_CheckPhone
+    public function _client_id(int $client_id) : Auth_CheckPhone
     {
         $this->params['client_id'] = $client_id;
         return $this;

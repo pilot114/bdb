@@ -23,9 +23,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_Edit
+    public function group_id(int $group_id) : Groups_Edit
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -63,9 +63,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community type. Possible values:; *'0' – open;; *'1' – closed;; *'2' – private.
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["open","closed","private"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["open","closed","private"]}
      */
-    public function _access(integer $access) : Groups_Edit
+    public function _access(int $access) : Groups_Edit
     {
         $this->params['access'] = $access;
         return $this;
@@ -123,9 +123,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Event start date in Unixtime format.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _event_start_date(integer $event_start_date) : Groups_Edit
+    public function _event_start_date(int $event_start_date) : Groups_Edit
     {
         $this->params['event_start_date'] = $event_start_date;
         return $this;
@@ -133,9 +133,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Event finish date in Unixtime format.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _event_finish_date(integer $event_finish_date) : Groups_Edit
+    public function _event_finish_date(int $event_finish_date) : Groups_Edit
     {
         $this->params['event_finish_date'] = $event_finish_date;
         return $this;
@@ -143,9 +143,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Organizer community ID (for events only).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _event_group_id(integer $event_group_id) : Groups_Edit
+    public function _event_group_id(int $event_group_id) : Groups_Edit
     {
         $this->params['event_group_id'] = $event_group_id;
         return $this;
@@ -153,9 +153,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Public page category ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _public_category(integer $public_category) : Groups_Edit
+    public function _public_category(int $public_category) : Groups_Edit
     {
         $this->params['public_category'] = $public_category;
         return $this;
@@ -163,9 +163,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Public page subcategory ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _public_subcategory(integer $public_subcategory) : Groups_Edit
+    public function _public_subcategory(int $public_subcategory) : Groups_Edit
     {
         $this->params['public_subcategory'] = $public_subcategory;
         return $this;
@@ -183,9 +183,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Wall settings. Possible values:; *'0' – disabled;; *'1' – open;; *'2' – limited (groups and events only);; *'3' – closed (groups and events only).;
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2,3],"enumNames":["disabled","open","limited","closed"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2,3],"enumNames":["disabled","open","limited","closed"]}
      */
-    public function _wall(integer $wall) : Groups_Edit
+    public function _wall(int $wall) : Groups_Edit
     {
         $this->params['wall'] = $wall;
         return $this;
@@ -193,9 +193,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Board topics settings. Possbile values: ; *'0' – disabled;; *'1' – open;; *'2' – limited (for groups and events only).;
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
      */
-    public function _topics(integer $topics) : Groups_Edit
+    public function _topics(int $topics) : Groups_Edit
     {
         $this->params['topics'] = $topics;
         return $this;
@@ -203,9 +203,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photos settings. Possible values:; *'0' – disabled;; *'1' – open;; *'2' – limited (for groups and events only).;
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
      */
-    public function _photos(integer $photos) : Groups_Edit
+    public function _photos(int $photos) : Groups_Edit
     {
         $this->params['photos'] = $photos;
         return $this;
@@ -213,9 +213,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Video settings. Possible values:; *'0' – disabled;; *'1' – open;; *'2' – limited (for groups and events only).
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
      */
-    public function _video(integer $video) : Groups_Edit
+    public function _video(int $video) : Groups_Edit
     {
         $this->params['video'] = $video;
         return $this;
@@ -223,9 +223,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Audio settings. Possible values:; *'0' – disabled;; *'1' – open;; *'2' – limited (for groups and events only).
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
      */
-    public function _audio(integer $audio) : Groups_Edit
+    public function _audio(int $audio) : Groups_Edit
     {
         $this->params['audio'] = $audio;
         return $this;
@@ -273,9 +273,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Documents settings. Possible values:; *'0' – disabled;; *'1' – open;; *'2' – limited (for groups and events only).
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
      */
-    public function _docs(integer $docs) : Groups_Edit
+    public function _docs(int $docs) : Groups_Edit
     {
         $this->params['docs'] = $docs;
         return $this;
@@ -283,9 +283,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Wiki pages settings. Possible values:; *'0' – disabled;; *'1' – open;; *'2' – limited (for groups and events only).
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2],"enumNames":["disabled","open","limited"]}
      */
-    public function _wiki(integer $wiki) : Groups_Edit
+    public function _wiki(int $wiki) : Groups_Edit
     {
         $this->params['wiki'] = $wiki;
         return $this;
@@ -303,9 +303,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community age limits. Possible values:; *'1' — no limits;; *'2' — 16+;; *'3' — 18+.
      *
-     * {"type":"integer","minimum":0,"default":1,"enum":[1,2,3],"enumNames":["unlimited","16 plus","18 plus"]}
+     * {"type":"int","minimum":0,"default":1,"enum":[1,2,3],"enumNames":["unlimited","16 plus","18 plus"]}
      */
-    public function _age_limits(integer $age_limits) : Groups_Edit
+    public function _age_limits(int $age_limits) : Groups_Edit
     {
         $this->params['age_limits'] = $age_limits;
         return $this;
@@ -353,9 +353,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Market currency settings. Possbile values: ; *'643' – Russian rubles;; *'980' – Ukrainian hryvnia;; *'398' – Kazakh tenge;; *'978' – Euro;; *'840' – US dollars
      *
-     * {"type":"integer","minimum":0,"enum":[643,980,398,978,840],"enumNames":["russian rubles","ukrainian hryvnia","kazakh tenge","euro","us dollars"]}
+     * {"type":"int","minimum":0,"enum":[643,980,398,978,840],"enumNames":["russian rubles","ukrainian hryvnia","kazakh tenge","euro","us dollars"]}
      */
-    public function _market_currency(integer $market_currency) : Groups_Edit
+    public function _market_currency(int $market_currency) : Groups_Edit
     {
         $this->params['market_currency'] = $market_currency;
         return $this;
@@ -363,9 +363,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Seller contact for market.; Set '0' for community messages.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _market_contact(integer $market_contact) : Groups_Edit
+    public function _market_contact(int $market_contact) : Groups_Edit
     {
         $this->params['market_contact'] = $market_contact;
         return $this;
@@ -373,9 +373,9 @@ class Groups_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a wiki page with market description.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _market_wiki(integer $market_wiki) : Groups_Edit
+    public function _market_wiki(int $market_wiki) : Groups_Edit
     {
         $this->params['market_wiki'] = $market_wiki;
         return $this;

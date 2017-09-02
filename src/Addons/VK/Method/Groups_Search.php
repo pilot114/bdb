@@ -43,9 +43,9 @@ class Groups_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country_id(integer $country_id) : Groups_Search
+    public function _country_id(int $country_id) : Groups_Search
     {
         $this->params['country_id'] = $country_id;
         return $this;
@@ -53,9 +53,9 @@ class Groups_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * City ID. If this parameter is transmitted, country_id is ignored.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city_id(integer $city_id) : Groups_Search
+    public function _city_id(int $city_id) : Groups_Search
     {
         $this->params['city_id'] = $city_id;
         return $this;
@@ -83,9 +83,9 @@ class Groups_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order. Possible values:; *'0' — default sorting (similar the full version of the site);; *'1' — by growth speed;; *'2'— by the "day attendance/members number" ratio;; *'3' — by the "Likes number/members number" ratio;; *'4' — by the "comments number/members number" ratio;; *'5' — by the "boards entries number/members number" ratio.; ;
      *
-     * {"type":"integer","enum":[0,1,2,3,4,5],"enumNames":["default","growth","attendance","likes","comments","entries"]}
+     * {"type":"int","enum":[0,1,2,3,4,5],"enumNames":["default","growth","attendance","likes","comments","entries"]}
      */
-    public function _sort(integer $sort) : Groups_Search
+    public function _sort(int $sort) : Groups_Search
     {
         $this->params['sort'] = $sort;
         return $this;
@@ -93,9 +93,9 @@ class Groups_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Groups_Search
+    public function _offset(int $offset) : Groups_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -103,9 +103,9 @@ class Groups_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of communities to return.; "Note that you can not receive more than first thousand of results, regardless of 'count' and 'offset' values."
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":1000}
+     * {"type":"int","minimum":0,"default":20,"maximum":1000}
      */
-    public function _count(integer $count) : Groups_Search
+    public function _count(int $count) : Groups_Search
     {
         $this->params['count'] = $count;
         return $this;

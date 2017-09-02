@@ -23,9 +23,9 @@ class Wall_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * user or community id. ; "Remember that for a community 'owner_id' must be negative."
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_Search
+    public function _owner_id(int $owner_id) : Wall_Search
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -63,9 +63,9 @@ class Wall_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * count of posts to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Wall_Search
+    public function _count(int $count) : Wall_Search
     {
         $this->params['count'] = $count;
         return $this;
@@ -73,9 +73,9 @@ class Wall_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of posts.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Wall_Search
+    public function _offset(int $offset) : Wall_Search
     {
         $this->params['offset'] = $offset;
         return $this;

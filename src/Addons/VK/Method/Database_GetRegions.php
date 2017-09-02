@@ -23,9 +23,9 @@ class Database_GetRegions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID, received in [vk.com/dev/database.getCountries|database.getCountries] method.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function country_id(integer $country_id) : Database_GetRegions
+    public function country_id(int $country_id) : Database_GetRegions
     {
         $this->params['country_id'] = $country_id;
         return $this;
@@ -43,9 +43,9 @@ class Database_GetRegions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return specific subset of regions.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetRegions
+    public function _offset(int $offset) : Database_GetRegions
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Database_GetRegions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of regions to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Database_GetRegions
+    public function _count(int $count) : Database_GetRegions
     {
         $this->params['count'] = $count;
         return $this;

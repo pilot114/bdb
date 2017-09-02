@@ -23,9 +23,9 @@ class Wall_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_CreateComment
+    public function _owner_id(int $owner_id) : Wall_CreateComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Post ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function post_id(integer $post_id) : Wall_CreateComment
+    public function post_id(int $post_id) : Wall_CreateComment
     {
         $this->params['post_id'] = $post_id;
         return $this;
@@ -63,9 +63,9 @@ class Wall_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of comment to reply.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _reply_to_comment(integer $reply_to_comment) : Wall_CreateComment
+    public function _reply_to_comment(int $reply_to_comment) : Wall_CreateComment
     {
         $this->params['reply_to_comment'] = $reply_to_comment;
         return $this;
@@ -83,9 +83,9 @@ class Wall_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sticker ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _sticker_id(integer $sticker_id) : Wall_CreateComment
+    public function _sticker_id(int $sticker_id) : Wall_CreateComment
     {
         $this->params['sticker_id'] = $sticker_id;
         return $this;

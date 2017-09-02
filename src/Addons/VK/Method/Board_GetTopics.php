@@ -23,9 +23,9 @@ class Board_GetTopics extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the discussion board.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Board_GetTopics
+    public function group_id(int $group_id) : Board_GetTopics
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Board_GetTopics extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sort order:; '1' — by date updated in reverse chronological order.; '2' — by date created in reverse chronological order.; '-1' — by date updated in chronological order.; '-2' — by date created in chronological order.; ; If no sort order is specified, topics are returned in the order specified by the group administrator. Pinned topics are returned first, regardless of the sorting.
      *
-     * {"type":"integer","default":0,"enum":[1,2,-1,-2,0],"enumNames":["updated desc","created desc","updated asc","created asc","as by administrator"]}
+     * {"type":"int","default":0,"enum":[1,2,-1,-2,0],"enumNames":["updated desc","created desc","updated asc","created asc","as by administrator"]}
      */
-    public function _order(integer $order) : Board_GetTopics
+    public function _order(int $order) : Board_GetTopics
     {
         $this->params['order'] = $order;
         return $this;
@@ -53,9 +53,9 @@ class Board_GetTopics extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of topics.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Board_GetTopics
+    public function _offset(int $offset) : Board_GetTopics
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -63,9 +63,9 @@ class Board_GetTopics extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of topics to return.
      *
-     * {"type":"integer","minimum":0,"default":40,"maximum":100}
+     * {"type":"int","minimum":0,"default":40,"maximum":100}
      */
-    public function _count(integer $count) : Board_GetTopics
+    public function _count(int $count) : Board_GetTopics
     {
         $this->params['count'] = $count;
         return $this;
@@ -83,9 +83,9 @@ class Board_GetTopics extends \Bdb\Addons\VK\BaseMethod
     /**
      * '1' — to return the first comment in each topic;; '2' — to return the last comment in each topic;; '0' — to return no comments.; ; By default: '0'.
      *
-     * {"type":"integer","default":0,"enum":[1,2,0],"enumNames":["first","last","none"]}
+     * {"type":"int","default":0,"enum":[1,2,0],"enumNames":["first","last","none"]}
      */
-    public function _preview(integer $preview) : Board_GetTopics
+    public function _preview(int $preview) : Board_GetTopics
     {
         $this->params['preview'] = $preview;
         return $this;
@@ -93,9 +93,9 @@ class Board_GetTopics extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of characters after which to truncate the previewed comment. To preview the full comment, specify '0'.
      *
-     * {"type":"integer","minimum":0,"default":90}
+     * {"type":"int","minimum":0,"default":90}
      */
-    public function _preview_length(integer $preview_length) : Board_GetTopics
+    public function _preview_length(int $preview_length) : Board_GetTopics
     {
         $this->params['preview_length'] = $preview_length;
         return $this;

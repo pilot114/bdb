@@ -23,9 +23,9 @@ class Wall_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the wall. By default, current user ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_Get
+    public function _owner_id(int $owner_id) : Wall_Get
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Wall_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of posts.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Wall_Get
+    public function _offset(int $offset) : Wall_Get
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Wall_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of posts to return (maximum 100).
      *
-     * {"type":"integer","minimum":0,"maximum":100}
+     * {"type":"int","minimum":0,"maximum":100}
      */
-    public function _count(integer $count) : Wall_Get
+    public function _count(int $count) : Wall_Get
     {
         $this->params['count'] = $count;
         return $this;

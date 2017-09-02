@@ -23,9 +23,9 @@ class Groups_BanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_BanUser
+    public function group_id(int $group_id) : Groups_BanUser
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Groups_BanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Groups_BanUser
+    public function user_id(int $user_id) : Groups_BanUser
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -43,9 +43,9 @@ class Groups_BanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Date (in Unix time) when the user will be removed from the blacklist.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _end_date(integer $end_date) : Groups_BanUser
+    public function _end_date(int $end_date) : Groups_BanUser
     {
         $this->params['end_date'] = $end_date;
         return $this;
@@ -53,9 +53,9 @@ class Groups_BanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Reason for ban:; '1' — spam; '2' — verbal abuse; '3' — strong language; '4' — irrelevant messages; '0' — other (default)
      *
-     * {"type":"integer","minimum":0,"default":0,"enum":[0,1,2,3,4],"enumNames":["other","spam","verbal abuse","strong language","irrelevant messages"]}
+     * {"type":"int","minimum":0,"default":0,"enum":[0,1,2,3,4],"enumNames":["other","spam","verbal abuse","strong language","irrelevant messages"]}
      */
-    public function _reason(integer $reason) : Groups_BanUser
+    public function _reason(int $reason) : Groups_BanUser
     {
         $this->params['reason'] = $reason;
         return $this;

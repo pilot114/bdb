@@ -23,9 +23,9 @@ class Groups_GetInvites extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of invitations.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Groups_GetInvites
+    public function _offset(int $offset) : Groups_GetInvites
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Groups_GetInvites extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of invitations to return.
      *
-     * {"type":"integer","minimum":0,"default":20}
+     * {"type":"int","minimum":0,"default":20}
      */
-    public function _count(integer $count) : Groups_GetInvites
+    public function _count(int $count) : Groups_GetInvites
     {
         $this->params['count'] = $count;
         return $this;

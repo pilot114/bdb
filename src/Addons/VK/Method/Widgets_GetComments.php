@@ -23,9 +23,9 @@ class Widgets_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _widget_api_id(integer $widget_api_id) : Widgets_GetComments
+    public function _widget_api_id(int $widget_api_id) : Widgets_GetComments
     {
         $this->params['widget_api_id'] = $widget_api_id;
         return $this;
@@ -73,9 +73,9 @@ class Widgets_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":10,"default":10,"maximum":200}
+     * {"type":"int","minimum":10,"default":10,"maximum":200}
      */
-    public function _count(integer $count) : Widgets_GetComments
+    public function _count(int $count) : Widgets_GetComments
     {
         $this->params['count'] = $count;
         return $this;

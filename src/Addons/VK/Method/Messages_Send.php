@@ -23,9 +23,9 @@ class Messages_Send extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID (by default — current user).
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Messages_Send
+    public function _user_id(int $user_id) : Messages_Send
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Messages_Send extends \Bdb\Addons\VK\BaseMethod
     /**
      * Unique identifier to avoid resending the message.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _random_id(integer $random_id) : Messages_Send
+    public function _random_id(int $random_id) : Messages_Send
     {
         $this->params['random_id'] = $random_id;
         return $this;
@@ -43,9 +43,9 @@ class Messages_Send extends \Bdb\Addons\VK\BaseMethod
     /**
      * Destination ID.; ; "For user:; 'User ID', e.g. '12345'.; ; For chat:; '2000000000' + 'chat_id', e.g. '2000000001'.; ; For community:; '- community ID', e.g. '-12345'.; "
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _peer_id(integer $peer_id) : Messages_Send
+    public function _peer_id(int $peer_id) : Messages_Send
     {
         $this->params['peer_id'] = $peer_id;
         return $this;
@@ -63,9 +63,9 @@ class Messages_Send extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of conversation the message will relate to.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _chat_id(integer $chat_id) : Messages_Send
+    public function _chat_id(int $chat_id) : Messages_Send
     {
         $this->params['chat_id'] = $chat_id;
         return $this;
@@ -133,9 +133,9 @@ class Messages_Send extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sticker id.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _sticker_id(integer $sticker_id) : Messages_Send
+    public function _sticker_id(int $sticker_id) : Messages_Send
     {
         $this->params['sticker_id'] = $sticker_id;
         return $this;

@@ -23,9 +23,9 @@ class Database_GetCities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function country_id(integer $country_id) : Database_GetCities
+    public function country_id(int $country_id) : Database_GetCities
     {
         $this->params['country_id'] = $country_id;
         return $this;
@@ -33,9 +33,9 @@ class Database_GetCities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Region ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _region_id(integer $region_id) : Database_GetCities
+    public function _region_id(int $region_id) : Database_GetCities
     {
         $this->params['region_id'] = $region_id;
         return $this;
@@ -63,9 +63,9 @@ class Database_GetCities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of cities.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetCities
+    public function _offset(int $offset) : Database_GetCities
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Database_GetCities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of cities to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":1000}
+     * {"type":"int","minimum":0,"default":100,"maximum":1000}
      */
-    public function _count(integer $count) : Database_GetCities
+    public function _count(int $count) : Database_GetCities
     {
         $this->params['count'] = $count;
         return $this;

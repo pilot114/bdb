@@ -23,9 +23,9 @@ class Notes_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function note_id(integer $note_id) : Notes_GetComments
+    public function note_id(int $note_id) : Notes_GetComments
     {
         $this->params['note_id'] = $note_id;
         return $this;
@@ -33,9 +33,9 @@ class Notes_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Note owner ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _owner_id(integer $owner_id) : Notes_GetComments
+    public function _owner_id(int $owner_id) : Notes_GetComments
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Notes_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of comments to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Notes_GetComments
+    public function _count(int $count) : Notes_GetComments
     {
         $this->params['count'] = $count;
         return $this;

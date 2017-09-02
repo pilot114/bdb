@@ -23,9 +23,9 @@ class Widgets_GetPages extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _widget_api_id(integer $widget_api_id) : Widgets_GetPages
+    public function _widget_api_id(int $widget_api_id) : Widgets_GetPages
     {
         $this->params['widget_api_id'] = $widget_api_id;
         return $this;
@@ -53,9 +53,9 @@ class Widgets_GetPages extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":10,"default":10,"maximum":200}
+     * {"type":"int","minimum":10,"default":10,"maximum":200}
      */
-    public function _count(integer $count) : Widgets_GetPages
+    public function _count(int $count) : Widgets_GetPages
     {
         $this->params['count'] = $count;
         return $this;

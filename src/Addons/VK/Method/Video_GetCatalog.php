@@ -23,9 +23,9 @@ class Video_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * number of catalog blocks to return.
      *
-     * {"type":"integer","minimum":0,"default":10,"maximum":16}
+     * {"type":"int","minimum":0,"default":10,"maximum":16}
      */
-    public function _count(integer $count) : Video_GetCatalog
+    public function _count(int $count) : Video_GetCatalog
     {
         $this->params['count'] = $count;
         return $this;
@@ -33,9 +33,9 @@ class Video_GetCatalog extends \Bdb\Addons\VK\BaseMethod
     /**
      * number of videos in each block.
      *
-     * {"type":"integer","minimum":0,"default":10,"maximum":16}
+     * {"type":"int","minimum":0,"default":10,"maximum":16}
      */
-    public function _items_count(integer $items_count) : Video_GetCatalog
+    public function _items_count(int $items_count) : Video_GetCatalog
     {
         $this->params['items_count'] = $items_count;
         return $this;

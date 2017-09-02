@@ -23,9 +23,9 @@ class Board_OpenTopic extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the discussion board.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Board_OpenTopic
+    public function group_id(int $group_id) : Board_OpenTopic
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Board_OpenTopic extends \Bdb\Addons\VK\BaseMethod
     /**
      * Topic ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function topic_id(integer $topic_id) : Board_OpenTopic
+    public function topic_id(int $topic_id) : Board_OpenTopic
     {
         $this->params['topic_id'] = $topic_id;
         return $this;

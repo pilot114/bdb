@@ -23,9 +23,9 @@ class Audio_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio file.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Audio_Edit
+    public function owner_id(int $owner_id) : Audio_Edit
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Audio file ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function audio_id(integer $audio_id) : Audio_Edit
+    public function audio_id(int $audio_id) : Audio_Edit
     {
         $this->params['audio_id'] = $audio_id;
         return $this;
@@ -73,9 +73,9 @@ class Audio_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * Genre of the audio file. See the list of [vk.com/dev/audio_genres|audio genres].
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _genre_id(integer $genre_id) : Audio_Edit
+    public function _genre_id(int $genre_id) : Audio_Edit
     {
         $this->params['genre_id'] = $genre_id;
         return $this;

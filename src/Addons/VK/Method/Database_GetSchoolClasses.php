@@ -23,9 +23,9 @@ class Database_GetSchoolClasses extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country_id(integer $country_id) : Database_GetSchoolClasses
+    public function _country_id(int $country_id) : Database_GetSchoolClasses
     {
         $this->params['country_id'] = $country_id;
         return $this;

@@ -23,9 +23,9 @@ class Places_Checkin extends \Bdb\Addons\VK\BaseMethod
     /**
      * Location ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _place_id(integer $place_id) : Places_Checkin
+    public function _place_id(int $place_id) : Places_Checkin
     {
         $this->params['place_id'] = $place_id;
         return $this;

@@ -23,9 +23,9 @@ class Market_ReportComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_ReportComment
+    public function owner_id(int $owner_id) : Market_ReportComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_ReportComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Comment ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Market_ReportComment
+    public function comment_id(int $comment_id) : Market_ReportComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;
@@ -43,9 +43,9 @@ class Market_ReportComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Complaint reason. Possible values:; *'0' — spam;; *'1' — child porn;; *'2' — extremism;; *'3' — violence;; *'4' — drugs propaganda;; *'5' — adult materials;; *'6' — insult.
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2,3,4,5,6],"enumNames":["spam","child pornography","extremism","violence","drug propaganda","adult material","insult abuse"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2,3,4,5,6],"enumNames":["spam","child pornography","extremism","violence","drug propaganda","adult material","insult abuse"]}
      */
-    public function reason(integer $reason) : Market_ReportComment
+    public function reason(int $reason) : Market_ReportComment
     {
         $this->params['reason'] = $reason;
         return $this;

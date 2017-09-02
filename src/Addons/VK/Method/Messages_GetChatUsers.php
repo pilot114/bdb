@@ -23,9 +23,9 @@ class Messages_GetChatUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Chat ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _chat_id(integer $chat_id) : Messages_GetChatUsers
+    public function _chat_id(int $chat_id) : Messages_GetChatUsers
     {
         $this->params['chat_id'] = $chat_id;
         return $this;

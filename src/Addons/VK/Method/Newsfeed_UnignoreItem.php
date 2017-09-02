@@ -33,9 +33,9 @@ class Newsfeed_UnignoreItem extends \Bdb\Addons\VK\BaseMethod
     /**
      * Item owner's identifier (user or community); "Note that community id must be negative. ; 'owner_id=1' – user ; 'owner_id=-1' – community "
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Newsfeed_UnignoreItem
+    public function owner_id(int $owner_id) : Newsfeed_UnignoreItem
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Newsfeed_UnignoreItem extends \Bdb\Addons\VK\BaseMethod
     /**
      * Item identifier
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Newsfeed_UnignoreItem
+    public function item_id(int $item_id) : Newsfeed_UnignoreItem
     {
         $this->params['item_id'] = $item_id;
         return $this;

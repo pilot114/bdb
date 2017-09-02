@@ -23,9 +23,9 @@ class Friends_DeleteList extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the friend list to delete.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function list_id(integer $list_id) : Friends_DeleteList
+    public function list_id(int $list_id) : Friends_DeleteList
     {
         $this->params['list_id'] = $list_id;
         return $this;

@@ -23,9 +23,9 @@ class Photos_MakeCover extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_MakeCover
+    public function _owner_id(int $owner_id) : Photos_MakeCover
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_MakeCover extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function photo_id(integer $photo_id) : Photos_MakeCover
+    public function photo_id(int $photo_id) : Photos_MakeCover
     {
         $this->params['photo_id'] = $photo_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_MakeCover extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Photos_MakeCover
+    public function _album_id(int $album_id) : Photos_MakeCover
     {
         $this->params['album_id'] = $album_id;
         return $this;

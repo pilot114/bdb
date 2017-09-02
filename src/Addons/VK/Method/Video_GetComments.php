@@ -23,9 +23,9 @@ class Video_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the video.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Video_GetComments
+    public function _owner_id(int $owner_id) : Video_GetComments
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Video ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function video_id(integer $video_id) : Video_GetComments
+    public function video_id(int $video_id) : Video_GetComments
     {
         $this->params['video_id'] = $video_id;
         return $this;
@@ -53,9 +53,9 @@ class Video_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_comment_id(integer $start_comment_id) : Video_GetComments
+    public function _start_comment_id(int $start_comment_id) : Video_GetComments
     {
         $this->params['start_comment_id'] = $start_comment_id;
         return $this;
@@ -63,9 +63,9 @@ class Video_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of comments.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Video_GetComments
+    public function _offset(int $offset) : Video_GetComments
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Video_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of comments to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Video_GetComments
+    public function _count(int $count) : Video_GetComments
     {
         $this->params['count'] = $count;
         return $this;

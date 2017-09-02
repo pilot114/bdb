@@ -23,9 +23,9 @@ class Groups_UnbanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_UnbanUser
+    public function group_id(int $group_id) : Groups_UnbanUser
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Groups_UnbanUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Groups_UnbanUser
+    public function user_id(int $user_id) : Groups_UnbanUser
     {
         $this->params['user_id'] = $user_id;
         return $this;

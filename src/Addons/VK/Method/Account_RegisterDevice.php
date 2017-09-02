@@ -43,9 +43,9 @@ class Account_RegisterDevice extends \Bdb\Addons\VK\BaseMethod
     /**
      * Device year.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _device_year(integer $device_year) : Account_RegisterDevice
+    public function _device_year(int $device_year) : Account_RegisterDevice
     {
         $this->params['device_year'] = $device_year;
         return $this;

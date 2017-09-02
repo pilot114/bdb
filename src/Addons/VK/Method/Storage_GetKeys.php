@@ -23,9 +23,9 @@ class Storage_GetKeys extends \Bdb\Addons\VK\BaseMethod
     /**
      * user id, whose variables names are returned if they were requested with a server method.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Storage_GetKeys
+    public function _user_id(int $user_id) : Storage_GetKeys
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Storage_GetKeys extends \Bdb\Addons\VK\BaseMethod
     /**
      * amount of variable names the info needs to be collected from.
      *
-     * {"type":"integer","minimum":0,"maximum":1000,"default":100}
+     * {"type":"int","minimum":0,"maximum":1000,"default":100}
      */
-    public function _count(integer $count) : Storage_GetKeys
+    public function _count(int $count) : Storage_GetKeys
     {
         $this->params['count'] = $count;
         return $this;

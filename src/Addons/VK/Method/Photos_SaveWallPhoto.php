@@ -23,9 +23,9 @@ class Photos_SaveWallPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user on whose wall the photo will be saved.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Photos_SaveWallPhoto
+    public function _user_id(int $user_id) : Photos_SaveWallPhoto
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_SaveWallPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of community on whose wall the photo will be saved.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Photos_SaveWallPhoto
+    public function _group_id(int $group_id) : Photos_SaveWallPhoto
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -53,9 +53,9 @@ class Photos_SaveWallPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _server(integer $server) : Photos_SaveWallPhoto
+    public function _server(int $server) : Photos_SaveWallPhoto
     {
         $this->params['server'] = $server;
         return $this;

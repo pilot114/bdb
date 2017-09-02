@@ -23,9 +23,9 @@ class Auth_Confirm extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function client_id(integer $client_id) : Auth_Confirm
+    public function client_id(int $client_id) : Auth_Confirm
     {
         $this->params['client_id'] = $client_id;
         return $this;
@@ -83,9 +83,9 @@ class Auth_Confirm extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _intro(integer $intro) : Auth_Confirm
+    public function _intro(int $intro) : Auth_Confirm
     {
         $this->params['intro'] = $intro;
         return $this;

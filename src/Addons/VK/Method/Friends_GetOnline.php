@@ -23,9 +23,9 @@ class Friends_GetOnline extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Friends_GetOnline
+    public function _user_id(int $user_id) : Friends_GetOnline
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Friends_GetOnline extends \Bdb\Addons\VK\BaseMethod
     /**
      * Friend list ID. If this parameter is not set, information about all online friends is returned.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _list_id(integer $list_id) : Friends_GetOnline
+    public function _list_id(int $list_id) : Friends_GetOnline
     {
         $this->params['list_id'] = $list_id;
         return $this;
@@ -63,9 +63,9 @@ class Friends_GetOnline extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of friends to return.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _count(integer $count) : Friends_GetOnline
+    public function _count(int $count) : Friends_GetOnline
     {
         $this->params['count'] = $count;
         return $this;
@@ -73,9 +73,9 @@ class Friends_GetOnline extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of friends.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Friends_GetOnline
+    public function _offset(int $offset) : Friends_GetOnline
     {
         $this->params['offset'] = $offset;
         return $this;

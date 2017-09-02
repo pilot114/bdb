@@ -23,9 +23,9 @@ class Ads_RemoveOfficeUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_RemoveOfficeUsers
+    public function account_id(int $account_id) : Ads_RemoveOfficeUsers
     {
         $this->params['account_id'] = $account_id;
         return $this;

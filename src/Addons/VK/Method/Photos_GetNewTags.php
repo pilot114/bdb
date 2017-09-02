@@ -23,9 +23,9 @@ class Photos_GetNewTags extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of photos.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Photos_GetNewTags
+    public function _offset(int $offset) : Photos_GetNewTags
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetNewTags extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of photos to return.
      *
-     * {"type":"integer","minimum":0,"maximum":100,"default":20}
+     * {"type":"int","minimum":0,"maximum":100,"default":20}
      */
-    public function _count(integer $count) : Photos_GetNewTags
+    public function _count(int $count) : Photos_GetNewTags
     {
         $this->params['count'] = $count;
         return $this;

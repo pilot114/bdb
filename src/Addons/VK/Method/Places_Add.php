@@ -23,9 +23,9 @@ class Places_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the location's type (e.g., '1' — Home, '2' — Work). To get location type IDs, use the [vk.com/dev/places.getTypes|places.getTypes] method.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _type(integer $type) : Places_Add
+    public function _type(int $type) : Places_Add
     {
         $this->params['type'] = $type;
         return $this;
@@ -63,9 +63,9 @@ class Places_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the location's country. To get country IDs, use the [vk.com/dev/database.getCountries|database.getCountries] method.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country(integer $country) : Places_Add
+    public function _country(int $country) : Places_Add
     {
         $this->params['country'] = $country;
         return $this;
@@ -73,9 +73,9 @@ class Places_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the location's city. To get city IDs, use the [vk.com/dev/database.getCities|database.getCities] method.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city(integer $city) : Places_Add
+    public function _city(int $city) : Places_Add
     {
         $this->params['city'] = $city;
         return $this;

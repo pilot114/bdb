@@ -33,9 +33,9 @@ class Database_GetUniversities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country_id(integer $country_id) : Database_GetUniversities
+    public function _country_id(int $country_id) : Database_GetUniversities
     {
         $this->params['country_id'] = $country_id;
         return $this;
@@ -43,9 +43,9 @@ class Database_GetUniversities extends \Bdb\Addons\VK\BaseMethod
     /**
      * City ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city_id(integer $city_id) : Database_GetUniversities
+    public function _city_id(int $city_id) : Database_GetUniversities
     {
         $this->params['city_id'] = $city_id;
         return $this;
@@ -53,9 +53,9 @@ class Database_GetUniversities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of universities.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Database_GetUniversities
+    public function _offset(int $offset) : Database_GetUniversities
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -63,9 +63,9 @@ class Database_GetUniversities extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of universities to return.
      *
-     * {"type":"integer","minimum":0,"default":100,"maximum":10000}
+     * {"type":"int","minimum":0,"default":100,"maximum":10000}
      */
-    public function _count(integer $count) : Database_GetUniversities
+    public function _count(int $count) : Database_GetUniversities
     {
         $this->params['count'] = $count;
         return $this;

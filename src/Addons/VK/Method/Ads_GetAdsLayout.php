@@ -23,9 +23,9 @@ class Ads_GetAdsLayout extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_GetAdsLayout
+    public function account_id(int $account_id) : Ads_GetAdsLayout
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -33,9 +33,9 @@ class Ads_GetAdsLayout extends \Bdb\Addons\VK\BaseMethod
     /**
      * 'For advertising agencies.' ID of the client ads are retrieved from.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _client_id(integer $client_id) : Ads_GetAdsLayout
+    public function _client_id(int $client_id) : Ads_GetAdsLayout
     {
         $this->params['client_id'] = $client_id;
         return $this;
@@ -73,9 +73,9 @@ class Ads_GetAdsLayout extends \Bdb\Addons\VK\BaseMethod
     /**
      * Limit of number of returned ads. Used only if 'ad_ids' parameter is null, and 'campaign_ids' parameter contains ID of only one campaign.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _limit(integer $limit) : Ads_GetAdsLayout
+    public function _limit(int $limit) : Ads_GetAdsLayout
     {
         $this->params['limit'] = $limit;
         return $this;
@@ -83,9 +83,9 @@ class Ads_GetAdsLayout extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset. Used in the same cases as 'limit' parameter.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Ads_GetAdsLayout
+    public function _offset(int $offset) : Ads_GetAdsLayout
     {
         $this->params['offset'] = $offset;
         return $this;

@@ -23,9 +23,9 @@ class Photos_GetMarketUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Photos_GetMarketUploadServer
+    public function group_id(int $group_id) : Photos_GetMarketUploadServer
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_GetMarketUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * X coordinate of the crop left upper corner.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _crop_x(integer $crop_x) : Photos_GetMarketUploadServer
+    public function _crop_x(int $crop_x) : Photos_GetMarketUploadServer
     {
         $this->params['crop_x'] = $crop_x;
         return $this;
@@ -53,9 +53,9 @@ class Photos_GetMarketUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * Y coordinate of the crop left upper corner.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _crop_y(integer $crop_y) : Photos_GetMarketUploadServer
+    public function _crop_y(int $crop_y) : Photos_GetMarketUploadServer
     {
         $this->params['crop_y'] = $crop_y;
         return $this;
@@ -63,9 +63,9 @@ class Photos_GetMarketUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * Width of the cropped photo in px.
      *
-     * {"type":"integer","minimum":400}
+     * {"type":"int","minimum":400}
      */
-    public function _crop_width(integer $crop_width) : Photos_GetMarketUploadServer
+    public function _crop_width(int $crop_width) : Photos_GetMarketUploadServer
     {
         $this->params['crop_width'] = $crop_width;
         return $this;

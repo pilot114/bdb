@@ -23,9 +23,9 @@ class Photos_ReorderPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_ReorderPhotos
+    public function _owner_id(int $owner_id) : Photos_ReorderPhotos
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_ReorderPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function photo_id(integer $photo_id) : Photos_ReorderPhotos
+    public function photo_id(int $photo_id) : Photos_ReorderPhotos
     {
         $this->params['photo_id'] = $photo_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_ReorderPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the photo before which the photo in question shall be placed.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _before(integer $before) : Photos_ReorderPhotos
+    public function _before(int $before) : Photos_ReorderPhotos
     {
         $this->params['before'] = $before;
         return $this;
@@ -53,9 +53,9 @@ class Photos_ReorderPhotos extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the photo after which the photo in question shall be placed.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _after(integer $after) : Photos_ReorderPhotos
+    public function _after(int $after) : Photos_ReorderPhotos
     {
         $this->params['after'] = $after;
         return $this;

@@ -23,9 +23,9 @@ class Market_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_CreateComment
+    public function owner_id(int $owner_id) : Market_CreateComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Item ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Market_CreateComment
+    public function item_id(int $item_id) : Market_CreateComment
     {
         $this->params['item_id'] = $item_id;
         return $this;
@@ -73,9 +73,9 @@ class Market_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of a comment to reply with current comment to.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _reply_to_comment(integer $reply_to_comment) : Market_CreateComment
+    public function _reply_to_comment(int $reply_to_comment) : Market_CreateComment
     {
         $this->params['reply_to_comment'] = $reply_to_comment;
         return $this;
@@ -83,9 +83,9 @@ class Market_CreateComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Sticker ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _sticker_id(integer $sticker_id) : Market_CreateComment
+    public function _sticker_id(int $sticker_id) : Market_CreateComment
     {
         $this->params['sticker_id'] = $sticker_id;
         return $this;

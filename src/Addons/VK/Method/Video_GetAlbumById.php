@@ -23,9 +23,9 @@ class Video_GetAlbumById extends \Bdb\Addons\VK\BaseMethod
     /**
      * identifier of a user or community to add a video to. ; Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Video_GetAlbumById
+    public function _owner_id(int $owner_id) : Video_GetAlbumById
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Video_GetAlbumById extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function album_id(integer $album_id) : Video_GetAlbumById
+    public function album_id(int $album_id) : Video_GetAlbumById
     {
         $this->params['album_id'] = $album_id;
         return $this;

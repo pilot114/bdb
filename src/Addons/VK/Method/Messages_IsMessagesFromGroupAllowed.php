@@ -23,9 +23,9 @@ class Messages_IsMessagesFromGroupAllowed extends \Bdb\Addons\VK\BaseMethod
     /**
      * Group ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Messages_IsMessagesFromGroupAllowed
+    public function group_id(int $group_id) : Messages_IsMessagesFromGroupAllowed
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Messages_IsMessagesFromGroupAllowed extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Messages_IsMessagesFromGroupAllowed
+    public function user_id(int $user_id) : Messages_IsMessagesFromGroupAllowed
     {
         $this->params['user_id'] = $user_id;
         return $this;

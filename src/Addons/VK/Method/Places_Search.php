@@ -33,9 +33,9 @@ class Places_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * City ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city(integer $city) : Places_Search
+    public function _city(int $city) : Places_Search
     {
         $this->params['city'] = $city;
         return $this;
@@ -63,9 +63,9 @@ class Places_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Radius of the search zone:; '1' — 100 m. (default); '2' — 800 m.; '3' — 6 km.; '4' — 50 km.
      *
-     * {"type":"integer","minimum":0,"default":0,"enum":[1,2,3,4],"enumNames":["100 m","800 m","6 km","50 km"]}
+     * {"type":"int","minimum":0,"default":0,"enum":[1,2,3,4],"enumNames":["100 m","800 m","6 km","50 km"]}
      */
-    public function _radius(integer $radius) : Places_Search
+    public function _radius(int $radius) : Places_Search
     {
         $this->params['radius'] = $radius;
         return $this;
@@ -73,9 +73,9 @@ class Places_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of locations.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Places_Search
+    public function _offset(int $offset) : Places_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -83,9 +83,9 @@ class Places_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of locations to return.
      *
-     * {"type":"integer","minimum":0,"default":30,"maximum":1000}
+     * {"type":"int","minimum":0,"default":30,"maximum":1000}
      */
-    public function _count(integer $count) : Places_Search
+    public function _count(int $count) : Places_Search
     {
         $this->params['count'] = $count;
         return $this;

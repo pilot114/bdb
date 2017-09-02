@@ -23,9 +23,9 @@ class Wall_EditComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.; ;
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_EditComment
+    public function _owner_id(int $owner_id) : Wall_EditComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_EditComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Comment ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Wall_EditComment
+    public function comment_id(int $comment_id) : Wall_EditComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;

@@ -23,9 +23,9 @@ class Wall_GetReposts extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. By default, current user ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_GetReposts
+    public function _owner_id(int $owner_id) : Wall_GetReposts
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_GetReposts extends \Bdb\Addons\VK\BaseMethod
     /**
      * Post ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _post_id(integer $post_id) : Wall_GetReposts
+    public function _post_id(int $post_id) : Wall_GetReposts
     {
         $this->params['post_id'] = $post_id;
         return $this;
@@ -43,9 +43,9 @@ class Wall_GetReposts extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of reposts.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Wall_GetReposts
+    public function _offset(int $offset) : Wall_GetReposts
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Wall_GetReposts extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of reposts to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":1000}
+     * {"type":"int","minimum":0,"default":20,"maximum":1000}
      */
-    public function _count(integer $count) : Wall_GetReposts
+    public function _count(int $count) : Wall_GetReposts
     {
         $this->params['count'] = $count;
         return $this;

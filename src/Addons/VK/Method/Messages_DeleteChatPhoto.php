@@ -23,9 +23,9 @@ class Messages_DeleteChatPhoto extends \Bdb\Addons\VK\BaseMethod
     /**
      * Chat ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function chat_id(integer $chat_id) : Messages_DeleteChatPhoto
+    public function chat_id(int $chat_id) : Messages_DeleteChatPhoto
     {
         $this->params['chat_id'] = $chat_id;
         return $this;

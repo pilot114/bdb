@@ -23,9 +23,9 @@ class Ads_DeleteClients extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_DeleteClients
+    public function account_id(int $account_id) : Ads_DeleteClients
     {
         $this->params['account_id'] = $account_id;
         return $this;

@@ -23,9 +23,9 @@ class Audio_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * Audio file ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function audio_id(integer $audio_id) : Audio_Add
+    public function audio_id(int $audio_id) : Audio_Add
     {
         $this->params['audio_id'] = $audio_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio file. Use a negative value to designate a community ID. ; ;
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Audio_Add
+    public function owner_id(int $owner_id) : Audio_Add
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Audio_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID, needed when adding the audio file to a community (without minus).
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Audio_Add
+    public function _group_id(int $group_id) : Audio_Add
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -53,9 +53,9 @@ class Audio_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * Album ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _album_id(integer $album_id) : Audio_Add
+    public function _album_id(int $album_id) : Audio_Add
     {
         $this->params['album_id'] = $album_id;
         return $this;

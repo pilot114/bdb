@@ -23,9 +23,9 @@ class Ads_GetRejectionReason extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_GetRejectionReason
+    public function account_id(int $account_id) : Ads_GetRejectionReason
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -33,9 +33,9 @@ class Ads_GetRejectionReason extends \Bdb\Addons\VK\BaseMethod
     /**
      * Ad ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function ad_id(integer $ad_id) : Ads_GetRejectionReason
+    public function ad_id(int $ad_id) : Ads_GetRejectionReason
     {
         $this->params['ad_id'] = $ad_id;
         return $this;

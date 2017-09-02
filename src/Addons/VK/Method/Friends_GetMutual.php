@@ -23,9 +23,9 @@ class Friends_GetMutual extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user whose friends will be checked against the friends of the user specified in 'target_uid'.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _source_uid(integer $source_uid) : Friends_GetMutual
+    public function _source_uid(int $source_uid) : Friends_GetMutual
     {
         $this->params['source_uid'] = $source_uid;
         return $this;
@@ -33,9 +33,9 @@ class Friends_GetMutual extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user whose friends will be checked against the friends of the user specified in 'source_uid'.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _target_uid(integer $target_uid) : Friends_GetMutual
+    public function _target_uid(int $target_uid) : Friends_GetMutual
     {
         $this->params['target_uid'] = $target_uid;
         return $this;
@@ -63,9 +63,9 @@ class Friends_GetMutual extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of mutual friends to return.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _count(integer $count) : Friends_GetMutual
+    public function _count(int $count) : Friends_GetMutual
     {
         $this->params['count'] = $count;
         return $this;
@@ -73,9 +73,9 @@ class Friends_GetMutual extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of mutual friends.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Friends_GetMutual
+    public function _offset(int $offset) : Friends_GetMutual
     {
         $this->params['offset'] = $offset;
         return $this;

@@ -23,9 +23,9 @@ class Board_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community that owns the discussion board.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Board_GetComments
+    public function group_id(int $group_id) : Board_GetComments
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -33,9 +33,9 @@ class Board_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Topic ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function topic_id(integer $topic_id) : Board_GetComments
+    public function topic_id(int $topic_id) : Board_GetComments
     {
         $this->params['topic_id'] = $topic_id;
         return $this;
@@ -53,9 +53,9 @@ class Board_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _start_comment_id(integer $start_comment_id) : Board_GetComments
+    public function _start_comment_id(int $start_comment_id) : Board_GetComments
     {
         $this->params['start_comment_id'] = $start_comment_id;
         return $this;
@@ -63,9 +63,9 @@ class Board_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of comments.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _offset(integer $offset) : Board_GetComments
+    public function _offset(int $offset) : Board_GetComments
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Board_GetComments extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of comments to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":100}
+     * {"type":"int","minimum":0,"default":20,"maximum":100}
      */
-    public function _count(integer $count) : Board_GetComments
+    public function _count(int $count) : Board_GetComments
     {
         $this->params['count'] = $count;
         return $this;

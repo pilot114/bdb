@@ -23,9 +23,9 @@ class Photos_GetOwnerPhotoUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * identifier of a community or current user.; ; "Note that community id must be negative.; 'owner_id=1' – user; 'owner_id=-1' – community; "
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_GetOwnerPhotoUploadServer
+    public function _owner_id(int $owner_id) : Photos_GetOwnerPhotoUploadServer
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

@@ -53,9 +53,9 @@ class Groups_Create extends \Bdb\Addons\VK\BaseMethod
     /**
      * Category ID (for 'type' = 'public' only).
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _public_category(integer $public_category) : Groups_Create
+    public function _public_category(int $public_category) : Groups_Create
     {
         $this->params['public_category'] = $public_category;
         return $this;
@@ -63,9 +63,9 @@ class Groups_Create extends \Bdb\Addons\VK\BaseMethod
     /**
      * Public page subtype. Possible values:; *'1' – place or small business;; *'2' – company, organization or website;; *'3' – famous person or group of people;; *'4' – product or work of art.
      *
-     * {"type":"integer","minimum":0,"enum":[1,2,3,4],"enumNames":["place or business","company or website","person or group","product or art"]}
+     * {"type":"int","minimum":0,"enum":[1,2,3,4],"enumNames":["place or business","company or website","person or group","product or art"]}
      */
-    public function _subtype(integer $subtype) : Groups_Create
+    public function _subtype(int $subtype) : Groups_Create
     {
         $this->params['subtype'] = $subtype;
         return $this;

@@ -43,9 +43,9 @@ class Groups_GetMembers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of community members.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Groups_GetMembers
+    public function _offset(int $offset) : Groups_GetMembers
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -53,9 +53,9 @@ class Groups_GetMembers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of community members to return.
      *
-     * {"type":"integer","minimum":0,"default":1000,"maximum":1000}
+     * {"type":"int","minimum":0,"default":1000,"maximum":1000}
      */
-    public function _count(integer $count) : Groups_GetMembers
+    public function _count(int $count) : Groups_GetMembers
     {
         $this->params['count'] = $count;
         return $this;

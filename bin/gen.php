@@ -241,6 +241,9 @@ foreach ($methods as $method) {
             if ($parameter->type === 'number') {
                 $parameter->type = 'float';
             }
+            if ($parameter->type === 'integer') {
+                $parameter->type = 'int';
+            }
 
             unset($parameter->required);
             unset($parameter->name);

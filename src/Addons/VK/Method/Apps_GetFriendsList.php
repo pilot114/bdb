@@ -23,9 +23,9 @@ class Apps_GetFriendsList extends \Bdb\Addons\VK\BaseMethod
     /**
      * List size.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":5000}
+     * {"type":"int","minimum":0,"default":20,"maximum":5000}
      */
-    public function _count(integer $count) : Apps_GetFriendsList
+    public function _count(int $count) : Apps_GetFriendsList
     {
         $this->params['count'] = $count;
         return $this;

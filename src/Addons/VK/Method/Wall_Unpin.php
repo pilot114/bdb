@@ -23,9 +23,9 @@ class Wall_Unpin extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the wall. By default, current user ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_Unpin
+    public function _owner_id(int $owner_id) : Wall_Unpin
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_Unpin extends \Bdb\Addons\VK\BaseMethod
     /**
      * Post ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function post_id(integer $post_id) : Wall_Unpin
+    public function post_id(int $post_id) : Wall_Unpin
     {
         $this->params['post_id'] = $post_id;
         return $this;

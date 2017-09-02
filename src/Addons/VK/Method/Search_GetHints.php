@@ -33,9 +33,9 @@ class Search_GetHints extends \Bdb\Addons\VK\BaseMethod
     /**
      * Maximum number of results to return.
      *
-     * {"type":"integer","minimum":0,"maximum":200,"default":9}
+     * {"type":"int","minimum":0,"maximum":200,"default":9}
      */
-    public function _limit(integer $limit) : Search_GetHints
+    public function _limit(int $limit) : Search_GetHints
     {
         $this->params['limit'] = $limit;
         return $this;

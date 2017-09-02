@@ -23,9 +23,9 @@ class Wall_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID from whose wall the post was deleted. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_Restore
+    public function _owner_id(int $owner_id) : Wall_Restore
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the post to be restored.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _post_id(integer $post_id) : Wall_Restore
+    public function _post_id(int $post_id) : Wall_Restore
     {
         $this->params['post_id'] = $post_id;
         return $this;

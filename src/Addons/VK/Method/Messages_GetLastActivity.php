@@ -23,9 +23,9 @@ class Messages_GetLastActivity extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function user_id(integer $user_id) : Messages_GetLastActivity
+    public function user_id(int $user_id) : Messages_GetLastActivity
     {
         $this->params['user_id'] = $user_id;
         return $this;

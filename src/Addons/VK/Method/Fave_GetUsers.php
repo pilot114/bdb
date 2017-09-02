@@ -23,9 +23,9 @@ class Fave_GetUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of users.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Fave_GetUsers
+    public function _offset(int $offset) : Fave_GetUsers
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -33,9 +33,9 @@ class Fave_GetUsers extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of users to return.
      *
-     * {"type":"integer","minimum":0,"default":50}
+     * {"type":"int","minimum":0,"default":50}
      */
-    public function _count(integer $count) : Fave_GetUsers
+    public function _count(int $count) : Fave_GetUsers
     {
         $this->params['count'] = $count;
         return $this;

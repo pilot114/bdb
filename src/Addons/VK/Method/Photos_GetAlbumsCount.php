@@ -23,9 +23,9 @@ class Photos_GetAlbumsCount extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Photos_GetAlbumsCount
+    public function _user_id(int $user_id) : Photos_GetAlbumsCount
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetAlbumsCount extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Photos_GetAlbumsCount
+    public function _group_id(int $group_id) : Photos_GetAlbumsCount
     {
         $this->params['group_id'] = $group_id;
         return $this;

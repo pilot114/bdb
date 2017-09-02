@@ -23,9 +23,9 @@ class Market_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an item owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_Add
+    public function owner_id(int $owner_id) : Market_Add
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -53,9 +53,9 @@ class Market_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * Item category ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function category_id(integer $category_id) : Market_Add
+    public function category_id(int $category_id) : Market_Add
     {
         $this->params['category_id'] = $category_id;
         return $this;
@@ -83,9 +83,9 @@ class Market_Add extends \Bdb\Addons\VK\BaseMethod
     /**
      * Cover photo ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function main_photo_id(integer $main_photo_id) : Market_Add
+    public function main_photo_id(int $main_photo_id) : Market_Add
     {
         $this->params['main_photo_id'] = $main_photo_id;
         return $this;

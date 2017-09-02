@@ -23,9 +23,9 @@ class Market_GetAlbumById extends \Bdb\Addons\VK\BaseMethod
     /**
      * identifier of an album owner community; "Note that community id in the 'owner_id' parameter should be negative number. For example 'owner_id'=-1 matches the [vk.com/apiclub|VK API] community "
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_GetAlbumById
+    public function owner_id(int $owner_id) : Market_GetAlbumById
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

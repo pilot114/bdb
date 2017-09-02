@@ -23,9 +23,9 @@ class Photos_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_Restore
+    public function _owner_id(int $owner_id) : Photos_Restore
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_Restore extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function photo_id(integer $photo_id) : Photos_Restore
+    public function photo_id(int $photo_id) : Photos_Restore
     {
         $this->params['photo_id'] = $photo_id;
         return $this;

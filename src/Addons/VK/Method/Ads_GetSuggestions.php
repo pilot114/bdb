@@ -53,9 +53,9 @@ class Ads_GetSuggestions extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the country objects are searched in.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _country(integer $country) : Ads_GetSuggestions
+    public function _country(int $country) : Ads_GetSuggestions
     {
         $this->params['country'] = $country;
         return $this;

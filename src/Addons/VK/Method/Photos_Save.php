@@ -23,9 +23,9 @@ class Photos_Save extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the album to save photos to.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _album_id(integer $album_id) : Photos_Save
+    public function _album_id(int $album_id) : Photos_Save
     {
         $this->params['album_id'] = $album_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_Save extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the community to save photos to.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _group_id(integer $group_id) : Photos_Save
+    public function _group_id(int $group_id) : Photos_Save
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_Save extends \Bdb\Addons\VK\BaseMethod
     /**
      * Parameter returned when photos are [vk.com/dev/upload_files|uploaded to server].
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _server(integer $server) : Photos_Save
+    public function _server(int $server) : Photos_Save
     {
         $this->params['server'] = $server;
         return $this;

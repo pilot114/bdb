@@ -23,9 +23,9 @@ class Groups_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Groups_Get
+    public function _user_id(int $user_id) : Groups_Get
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -63,9 +63,9 @@ class Groups_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of communities.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Groups_Get
+    public function _offset(int $offset) : Groups_Get
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -73,9 +73,9 @@ class Groups_Get extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of communities to return.
      *
-     * {"type":"integer","minimum":0,"maximum":1000}
+     * {"type":"int","minimum":0,"maximum":1000}
      */
-    public function _count(integer $count) : Groups_Get
+    public function _count(int $count) : Groups_Get
     {
         $this->params['count'] = $count;
         return $this;

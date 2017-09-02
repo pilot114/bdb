@@ -23,9 +23,9 @@ class Photos_GetChatUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the chat for which you want to upload a cover photo.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function chat_id(integer $chat_id) : Photos_GetChatUploadServer
+    public function chat_id(int $chat_id) : Photos_GetChatUploadServer
     {
         $this->params['chat_id'] = $chat_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_GetChatUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _crop_x(integer $crop_x) : Photos_GetChatUploadServer
+    public function _crop_x(int $crop_x) : Photos_GetChatUploadServer
     {
         $this->params['crop_x'] = $crop_x;
         return $this;
@@ -43,9 +43,9 @@ class Photos_GetChatUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * 
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _crop_y(integer $crop_y) : Photos_GetChatUploadServer
+    public function _crop_y(int $crop_y) : Photos_GetChatUploadServer
     {
         $this->params['crop_y'] = $crop_y;
         return $this;
@@ -53,9 +53,9 @@ class Photos_GetChatUploadServer extends \Bdb\Addons\VK\BaseMethod
     /**
      * Width (in pixels) of the photo after cropping.
      *
-     * {"type":"integer","minimum":200}
+     * {"type":"int","minimum":200}
      */
-    public function _crop_width(integer $crop_width) : Photos_GetChatUploadServer
+    public function _crop_width(int $crop_width) : Photos_GetChatUploadServer
     {
         $this->params['crop_width'] = $crop_width;
         return $this;

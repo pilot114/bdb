@@ -23,9 +23,9 @@ class Wall_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID or community ID. Use a negative value to designate a community ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Wall_Delete
+    public function _owner_id(int $owner_id) : Wall_Delete
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_Delete extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the post to be deleted.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _post_id(integer $post_id) : Wall_Delete
+    public function _post_id(int $post_id) : Wall_Delete
     {
         $this->params['post_id'] = $post_id;
         return $this;

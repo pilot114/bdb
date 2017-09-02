@@ -23,9 +23,9 @@ class Audio_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the audio file.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Audio_GetAlbums
+    public function _owner_id(int $owner_id) : Audio_GetAlbums
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Audio_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of albums.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Audio_GetAlbums
+    public function _offset(int $offset) : Audio_GetAlbums
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Audio_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of albums to return.
      *
-     * {"type":"integer","minimum":0,"default":50,"maximum":100}
+     * {"type":"int","minimum":0,"default":50,"maximum":100}
      */
-    public function _count(integer $count) : Audio_GetAlbums
+    public function _count(int $count) : Audio_GetAlbums
     {
         $this->params['count'] = $count;
         return $this;

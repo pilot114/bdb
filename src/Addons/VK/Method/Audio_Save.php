@@ -23,9 +23,9 @@ class Audio_Save extends \Bdb\Addons\VK\BaseMethod
     /**
      * This parameter is returned when the audio file is [vk.com/dev/upload_files_2|uploaded to the server].
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function server(integer $server) : Audio_Save
+    public function server(int $server) : Audio_Save
     {
         $this->params['server'] = $server;
         return $this;

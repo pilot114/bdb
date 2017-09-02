@@ -33,9 +33,9 @@ class Friends_GetSuggestions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of suggestions to return.
      *
-     * {"type":"integer","minimum":0,"maximum":500,"default":500}
+     * {"type":"int","minimum":0,"maximum":500,"default":500}
      */
-    public function _count(integer $count) : Friends_GetSuggestions
+    public function _count(int $count) : Friends_GetSuggestions
     {
         $this->params['count'] = $count;
         return $this;
@@ -43,9 +43,9 @@ class Friends_GetSuggestions extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of suggestions.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Friends_GetSuggestions
+    public function _offset(int $offset) : Friends_GetSuggestions
     {
         $this->params['offset'] = $offset;
         return $this;

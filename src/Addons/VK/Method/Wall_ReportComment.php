@@ -23,9 +23,9 @@ class Wall_ReportComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the wall.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Wall_ReportComment
+    public function owner_id(int $owner_id) : Wall_ReportComment
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Wall_ReportComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Comment ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function comment_id(integer $comment_id) : Wall_ReportComment
+    public function comment_id(int $comment_id) : Wall_ReportComment
     {
         $this->params['comment_id'] = $comment_id;
         return $this;
@@ -43,9 +43,9 @@ class Wall_ReportComment extends \Bdb\Addons\VK\BaseMethod
     /**
      * Reason for the complaint:; '0' – spam; '1' – child pornography; '2' – extremism; '3' – violence; '4' – drug propaganda; '5' – adult material; '6' – insult; abuse
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2,3,4,5,6],"enumNames":["spam","child pornography","extremism","violence","drug propaganda","adult material","insult abuse"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2,3,4,5,6],"enumNames":["spam","child pornography","extremism","violence","drug propaganda","adult material","insult abuse"]}
      */
-    public function _reason(integer $reason) : Wall_ReportComment
+    public function _reason(int $reason) : Wall_ReportComment
     {
         $this->params['reason'] = $reason;
         return $this;

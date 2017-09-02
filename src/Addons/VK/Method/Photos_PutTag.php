@@ -23,9 +23,9 @@ class Photos_PutTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _owner_id(integer $owner_id) : Photos_PutTag
+    public function _owner_id(int $owner_id) : Photos_PutTag
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_PutTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function photo_id(integer $photo_id) : Photos_PutTag
+    public function photo_id(int $photo_id) : Photos_PutTag
     {
         $this->params['photo_id'] = $photo_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_PutTag extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user to be tagged.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function user_id(integer $user_id) : Photos_PutTag
+    public function user_id(int $user_id) : Photos_PutTag
     {
         $this->params['user_id'] = $user_id;
         return $this;

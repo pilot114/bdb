@@ -43,9 +43,9 @@ class Polls_Create extends \Bdb\Addons\VK\BaseMethod
     /**
      * If a poll will be added to a communty it is required to send a negative group identifier. Current user by default.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Polls_Create
+    public function _owner_id(int $owner_id) : Polls_Create
     {
         $this->params['owner_id'] = $owner_id;
         return $this;

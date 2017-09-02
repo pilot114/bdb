@@ -23,9 +23,9 @@ class Photos_Report extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Photos_Report
+    public function owner_id(int $owner_id) : Photos_Report
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_Report extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function photo_id(integer $photo_id) : Photos_Report
+    public function photo_id(int $photo_id) : Photos_Report
     {
         $this->params['photo_id'] = $photo_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_Report extends \Bdb\Addons\VK\BaseMethod
     /**
      * Reason for the complaint:; '0' – spam; '1' – child pornography; '2' – extremism; '3' – violence; '4' – drug propaganda; '5' – adult material; '6' – insult; abuse
      *
-     * {"type":"integer","minimum":0,"enum":[0,1,2,3,4,5,6],"enumNames":["spam","child pornography","extremism","violence","drug propaganda","adult material","insult abuse"]}
+     * {"type":"int","minimum":0,"enum":[0,1,2,3,4,5,6],"enumNames":["spam","child pornography","extremism","violence","drug propaganda","adult material","insult abuse"]}
      */
-    public function _reason(integer $reason) : Photos_Report
+    public function _reason(int $reason) : Photos_Report
     {
         $this->params['reason'] = $reason;
         return $this;

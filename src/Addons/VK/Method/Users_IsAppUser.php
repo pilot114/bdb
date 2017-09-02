@@ -23,9 +23,9 @@ class Users_IsAppUser extends \Bdb\Addons\VK\BaseMethod
     /**
      * not description
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _user_id(integer $user_id) : Users_IsAppUser
+    public function _user_id(int $user_id) : Users_IsAppUser
     {
         $this->params['user_id'] = $user_id;
         return $this;

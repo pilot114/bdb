@@ -23,9 +23,9 @@ class Market_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an items owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_GetAlbums
+    public function owner_id(int $owner_id) : Market_GetAlbums
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Market_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Market_GetAlbums
+    public function _offset(int $offset) : Market_GetAlbums
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -43,9 +43,9 @@ class Market_GetAlbums extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of items to return.
      *
-     * {"type":"integer","minimum":0,"default":50,"maximum":100}
+     * {"type":"int","minimum":0,"default":50,"maximum":100}
      */
-    public function _count(integer $count) : Market_GetAlbums
+    public function _count(int $count) : Market_GetAlbums
     {
         $this->params['count'] = $count;
         return $this;

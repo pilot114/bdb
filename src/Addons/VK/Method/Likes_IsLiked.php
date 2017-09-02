@@ -23,9 +23,9 @@ class Likes_IsLiked extends \Bdb\Addons\VK\BaseMethod
     /**
      * User ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _user_id(integer $user_id) : Likes_IsLiked
+    public function _user_id(int $user_id) : Likes_IsLiked
     {
         $this->params['user_id'] = $user_id;
         return $this;
@@ -43,9 +43,9 @@ class Likes_IsLiked extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the object.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Likes_IsLiked
+    public function _owner_id(int $owner_id) : Likes_IsLiked
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -53,9 +53,9 @@ class Likes_IsLiked extends \Bdb\Addons\VK\BaseMethod
     /**
      * Object ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function item_id(integer $item_id) : Likes_IsLiked
+    public function item_id(int $item_id) : Likes_IsLiked
     {
         $this->params['item_id'] = $item_id;
         return $this;

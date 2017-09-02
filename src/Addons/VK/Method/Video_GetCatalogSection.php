@@ -43,9 +43,9 @@ class Video_GetCatalogSection extends \Bdb\Addons\VK\BaseMethod
     /**
      * number of blocks to return.
      *
-     * {"type":"integer","minimum":0,"default":10,"maximum":16}
+     * {"type":"int","minimum":0,"default":10,"maximum":16}
      */
-    public function _count(integer $count) : Video_GetCatalogSection
+    public function _count(int $count) : Video_GetCatalogSection
     {
         $this->params['count'] = $count;
         return $this;

@@ -23,9 +23,9 @@ class Groups_EditPlace extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_EditPlace
+    public function group_id(int $group_id) : Groups_EditPlace
     {
         $this->params['group_id'] = $group_id;
         return $this;
@@ -53,9 +53,9 @@ class Groups_EditPlace extends \Bdb\Addons\VK\BaseMethod
     /**
      * Country ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _country_id(integer $country_id) : Groups_EditPlace
+    public function _country_id(int $country_id) : Groups_EditPlace
     {
         $this->params['country_id'] = $country_id;
         return $this;
@@ -63,9 +63,9 @@ class Groups_EditPlace extends \Bdb\Addons\VK\BaseMethod
     /**
      * City ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _city_id(integer $city_id) : Groups_EditPlace
+    public function _city_id(int $city_id) : Groups_EditPlace
     {
         $this->params['city_id'] = $city_id;
         return $this;

@@ -23,9 +23,9 @@ class Ads_CheckLink extends \Bdb\Addons\VK\BaseMethod
     /**
      * Advertising account ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function account_id(integer $account_id) : Ads_CheckLink
+    public function account_id(int $account_id) : Ads_CheckLink
     {
         $this->params['account_id'] = $account_id;
         return $this;
@@ -53,9 +53,9 @@ class Ads_CheckLink extends \Bdb\Addons\VK\BaseMethod
     /**
      * Campaign ID
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _campaign_id(integer $campaign_id) : Ads_CheckLink
+    public function _campaign_id(int $campaign_id) : Ads_CheckLink
     {
         $this->params['campaign_id'] = $campaign_id;
         return $this;

@@ -23,9 +23,9 @@ class Groups_AddLink extends \Bdb\Addons\VK\BaseMethod
     /**
      * Community ID.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function group_id(integer $group_id) : Groups_AddLink
+    public function group_id(int $group_id) : Groups_AddLink
     {
         $this->params['group_id'] = $group_id;
         return $this;

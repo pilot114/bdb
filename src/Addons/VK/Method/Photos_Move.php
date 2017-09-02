@@ -23,9 +23,9 @@ class Photos_Move extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user or community that owns the photo.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function _owner_id(integer $owner_id) : Photos_Move
+    public function _owner_id(int $owner_id) : Photos_Move
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -33,9 +33,9 @@ class Photos_Move extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the album to which the photo will be moved.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function target_album_id(integer $target_album_id) : Photos_Move
+    public function target_album_id(int $target_album_id) : Photos_Move
     {
         $this->params['target_album_id'] = $target_album_id;
         return $this;
@@ -43,9 +43,9 @@ class Photos_Move extends \Bdb\Addons\VK\BaseMethod
     /**
      * Photo ID.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function photo_id(integer $photo_id) : Photos_Move
+    public function photo_id(int $photo_id) : Photos_Move
     {
         $this->params['photo_id'] = $photo_id;
         return $this;

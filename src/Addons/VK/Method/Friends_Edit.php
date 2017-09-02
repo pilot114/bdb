@@ -23,9 +23,9 @@ class Friends_Edit extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of the user whose friend list is to be edited.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function user_id(integer $user_id) : Friends_Edit
+    public function user_id(int $user_id) : Friends_Edit
     {
         $this->params['user_id'] = $user_id;
         return $this;

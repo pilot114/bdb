@@ -43,9 +43,9 @@ class Wall_Repost extends \Bdb\Addons\VK\BaseMethod
     /**
      * Target community ID when reposting to a community.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _group_id(integer $group_id) : Wall_Repost
+    public function _group_id(int $group_id) : Wall_Repost
     {
         $this->params['group_id'] = $group_id;
         return $this;

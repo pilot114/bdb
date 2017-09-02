@@ -23,9 +23,9 @@ class Market_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * ID of an items owner community.
      *
-     * {"type":"integer"}
+     * {"type":"int"}
      */
-    public function owner_id(integer $owner_id) : Market_Search
+    public function owner_id(int $owner_id) : Market_Search
     {
         $this->params['owner_id'] = $owner_id;
         return $this;
@@ -43,9 +43,9 @@ class Market_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Minimum item price value.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _price_from(integer $price_from) : Market_Search
+    public function _price_from(int $price_from) : Market_Search
     {
         $this->params['price_from'] = $price_from;
         return $this;
@@ -53,9 +53,9 @@ class Market_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Maximum item price value.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _price_to(integer $price_to) : Market_Search
+    public function _price_to(int $price_to) : Market_Search
     {
         $this->params['price_to'] = $price_to;
         return $this;
@@ -73,9 +73,9 @@ class Market_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * '0' — do not use reverse order, '1' — use reverse order
      *
-     * {"type":"integer","minimum":0,"default":1,"enum":[0,1],"enumNames":["normal","reverse"]}
+     * {"type":"int","minimum":0,"default":1,"enum":[0,1],"enumNames":["normal","reverse"]}
      */
-    public function _rev(integer $rev) : Market_Search
+    public function _rev(int $rev) : Market_Search
     {
         $this->params['rev'] = $rev;
         return $this;
@@ -83,9 +83,9 @@ class Market_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Offset needed to return a specific subset of results.
      *
-     * {"type":"integer","minimum":0}
+     * {"type":"int","minimum":0}
      */
-    public function _offset(integer $offset) : Market_Search
+    public function _offset(int $offset) : Market_Search
     {
         $this->params['offset'] = $offset;
         return $this;
@@ -93,9 +93,9 @@ class Market_Search extends \Bdb\Addons\VK\BaseMethod
     /**
      * Number of items to return.
      *
-     * {"type":"integer","minimum":0,"default":20,"maximum":200}
+     * {"type":"int","minimum":0,"default":20,"maximum":200}
      */
-    public function _count(integer $count) : Market_Search
+    public function _count(int $count) : Market_Search
     {
         $this->params['count'] = $count;
         return $this;
