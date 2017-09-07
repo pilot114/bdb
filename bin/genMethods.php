@@ -9,6 +9,12 @@ use PhpParser\Node;
 $apiData = file_get_contents('./vendor/vkcom/vk-api-schema/methods.json');
 ['errors' => $errors, 'methods' => $methods] = json_decode($apiData, true);
 
+$apiData = file_get_contents('./vendor/vkcom/vk-api-schema/responses.json');
+$responses = json_decode($apiData, true)['definitions'];
+$apiData = file_get_contents('./vendor/vkcom/vk-api-schema/objects.json');
+$objects = json_decode($apiData, true)['definitions'];
+
+
 foreach ($methods as $i => $method) {
     [$methodDomain, $methodName] = explode('.', $method['name']);
     $methods[$i]['name'] = $methodName;
@@ -96,9 +102,9 @@ $node = $factory->namespace('Bdb\Addons\VK')
     ->getNode()
 ;
 
-$prettyPrinter = new PrettyPrinter\Standard();
-$code = $prettyPrinter->prettyPrintFile([$node]);
-file_put_contents('./src/Addons/VK/Api.php', $code);
+//$prettyPrinter = new PrettyPrinter\Standard();
+//$code = $prettyPrinter->prettyPrintFile([$node]);
+//file_put_contents('./src/Addons/VK/Api.php', $code);
 
 /**
  * ############################### VK\Domain #####################################
@@ -160,8 +166,8 @@ foreach ($domainsStatements as $domainName => $domainStatements) {
     ->getNode()
     ;
 
-    $code = $prettyPrinter->prettyPrintFile([$node]);
-    file_put_contents(sprintf('./src/Addons/VK/Domain/%s.php', ucfirst($domainName)), $code);
+//    $code = $prettyPrinter->prettyPrintFile([$node]);
+//    file_put_contents(sprintf('./src/Addons/VK/Domain/%s.php', ucfirst($domainName)), $code);
 }
 
 /**
@@ -224,8 +230,34 @@ foreach ($methods as $method) {
         )))
     );
 
-    // TODO: add optional responses&errors in method object
     // TODO: add POST support for tipical upload flow
+
+    // TODO: add optional errors
+//    if (isset($method->errors)) {
+//        var_dump($method->errors);
+//        die();
+//    }
+
+    // сначала билдим описания объектов, убирая ссылки, затем уже генерим объекты
+    // если ответов несколько - комбинируем в один с isMutual() -> true
+//    if (count($method->responses) > 1) {
+//        var_dump($method->domain .'.'.$method->name);
+        foreach ($method->responses as $nameResponse => $response) {
+            $ref = $response['$ref'];
+            $ref = str_replace('responses.json#/definitions/', '', $ref);
+//            var_dump($ref);
+            $r = $responses[$ref]['properties']['response'];
+            // получаем описание по ссылке
+
+//            generateResponse()
+            if (isset($r['$ref'])) {
+                var_dump($r['$ref']);
+            } else {
+                // описание объекта, о тоже может содержать ссылки
+//                var_dump($r);
+            }
+        }
+//    }
 
     if (isset($method->parameters)) {
 
@@ -290,6 +322,6 @@ foreach ($methods as $method) {
         ->getNode()
     ;
 
-    $code = $prettyPrinter->prettyPrintFile([$node]);
-    file_put_contents(sprintf('./src/Addons/VK/Method/%s.php', ucfirst($method->domain) . '_' . ucfirst($method->name)), $code);
+//    $code = $prettyPrinter->prettyPrintFile([$node]);
+//    file_put_contents(sprintf('./src/Addons/VK/Method/%s.php', ucfirst($method->domain) . '_' . ucfirst($method->name)), $code);
 }

@@ -36,12 +36,11 @@ bdb - (Proof of Concept) агрегатор открытых данных в Mon
 
 TODO
 
-### Фичи
+### vk
 
-НАПИЛИТЬ НОРМ ГЕНЕРАЦИЮ АПИ ВК
-для автокмплита штук типа:
-$vkApi->users->get($params);
-(реализовать в виде сгенеренного трейта для VkApi)
+all permissions for 4664424 app:
+    
+    https://oauth.vk.com/authorize?client_id=4664424&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=268435455&response_type=token&v=5.52
 
 напилить настраиваемые фильтры на датасеты, чтобы в маппинг не попадал мусор
 пофиксать проблему с кодировками
