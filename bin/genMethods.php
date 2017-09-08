@@ -22,6 +22,7 @@ foreach ($methods as $i => $method) {
 }
 
 $factory = new BuilderFactory();
+$prettyPrinter = new PrettyPrinter\Standard();
 
 /**
  * ############################### VK\Api #####################################
@@ -102,7 +103,6 @@ $node = $factory->namespace('Bdb\Addons\VK')
     ->getNode()
 ;
 
-//$prettyPrinter = new PrettyPrinter\Standard();
 //$code = $prettyPrinter->prettyPrintFile([$node]);
 //file_put_contents('./src/Addons/VK/Api.php', $code);
 
@@ -174,6 +174,103 @@ foreach ($domainsStatements as $domainName => $domainStatements) {
  * ############################### VK\Method #####################################
  */
 
+/**
+ * Собираем описание объекта ответа, "раскрывая" вложенные ссылки
+ * Кусок сложный, но цель простая - заменить все $ref на соотвествующие описания
+ *
+ * @param $refName
+ * @param $responses
+ * @param $objects
+ */
+function resolveRefs($refName, $responses, $objects)
+{
+    $refName = str_replace('responses.json#/definitions/', '', $refName);
+    $response = $responses[$refName]['properties']['response'];
+
+    if (isset($response['$ref'])) {
+        $response = resolveObjectRef(
+            $response,
+            $objects
+        );
+    }
+
+    if (isset($response['items'])){
+        if (isset($response['items']['$ref'])) {
+            $response['items'] = resolveObjectRef(
+                $response['items'],
+                $objects
+            );
+        }
+
+        if (isset($response['items']['oneOf'])) {
+            foreach ($response['items']['oneOf'] as $i => $item) {
+                if (isset($response['items']['oneOf'][$i]['$ref'])) {
+                    $response['items']['oneOf'][$i] = resolveObjectRef(
+                        $response['items']['oneOf'][$i],
+                        $objects
+                    );
+                }
+            }
+        }
+
+        if (isset($response['items']['allOf'])) {
+            foreach ($response['items']['allOf'] as $i => $item) {
+                if (isset($response['items']['allOf'][$i]['$ref'])) {
+                    $response['items']['allOf'][$i] = resolveObjectRef(
+                        $response['items']['allOf'][$i],
+                        $objects
+                    );
+                }
+            }
+        }
+    }
+
+    if (isset($response['properties'])) {
+        foreach ($response['properties'] as $propertyName => $property) {
+
+            if (isset($property['$ref'])) {
+                $response['properties'][$propertyName] = resolveObjectRef(
+                    $response['properties'][$propertyName],
+                    $objects
+                );
+            }
+
+            if (isset($property['items'])) {
+                if (isset($property['items']['$ref'])) {
+                    $response['properties'][$propertyName]['items'] = resolveObjectRef(
+                        $response['properties'][$propertyName]['items'],
+                        $objects
+                    );
+                }
+
+                if (isset($property['items']['oneOf'])) {
+                    foreach ($property['items']['oneOf'] as $i => $item) {
+                        if (isset($property['items']['oneOf'][$i]['$ref'])) {
+                            $response['properties'][$propertyName]['items']['oneOf'][$i] = resolveObjectRef(
+                                $response['properties'][$propertyName]['items']['oneOf'][$i],
+                                $objects
+                            );
+                        }
+                    }
+                }
+
+                if (isset($property['items']['allOf'])) {
+                    foreach ($property['items']['allOf'] as $i => $item) {
+                        if (isset($property['items']['allOf'][$i]['$ref'])) {
+                            $response['properties'][$propertyName]['items']['allOf'][$i] = resolveObjectRef(
+                                $response['properties'][$propertyName]['items']['allOf'][$i],
+                                $objects
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return $response;
+}
+
 $methodsStatements = [];
 foreach ($methods as $method) {
     $method = (object)($method);
@@ -241,21 +338,11 @@ foreach ($methods as $method) {
     // сначала билдим описания объектов, убирая ссылки, затем уже генерим объекты
     // если ответов несколько - комбинируем в один с isMutual() -> true
 //    if (count($method->responses) > 1) {
-//        var_dump($method->domain .'.'.$method->name);
+        var_dump($method->domain .'.'.$method->name);
         foreach ($method->responses as $nameResponse => $response) {
-            $ref = $response['$ref'];
-            $ref = str_replace('responses.json#/definitions/', '', $ref);
-//            var_dump($ref);
-            $r = $responses[$ref]['properties']['response'];
-            // получаем описание по ссылке
-
-//            generateResponse()
-            if (isset($r['$ref'])) {
-                var_dump($r['$ref']);
-            } else {
-                // описание объекта, о тоже может содержать ссылки
-//                var_dump($r);
-            }
+            $response = resolveRefs($response['$ref'], $responses, $objects);
+            var_dump($response);
+            die();
         }
 //    }
 

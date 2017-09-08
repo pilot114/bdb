@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78217b3c-5e04-4962-963e-d116f758e615" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/gen.php" afterPath="$PROJECT_DIR$/bin/genMethods.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/vk.php" afterPath="$PROJECT_DIR$/bin/vk_examples/vk.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/test.php" afterPath="$PROJECT_DIR$/bin/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/genMethods.php" afterPath="$PROJECT_DIR$/bin/genMethods.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="genMethods.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="genMethods.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/genMethods.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="251" column="32" lean-forward="true" selection-start-line="251" selection-start-column="32" selection-end-line="251" selection-end-column="32" />
+            <state relative-caret-position="80">
+              <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
               <folding>
                 <element signature="e#41#70#0#PHP" expanded="true" />
               </folding>
@@ -33,47 +29,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responses.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/responses.json">
+      <file leaf-file-name="genObjects.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/genObjects.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="307" column="31" lean-forward="true" selection-start-line="307" selection-start-column="31" selection-end-line="307" selection-end-column="31" />
+            <state relative-caret-position="238">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <element signature="n#!!block;n#response#0;n#!!block;n#properties#0;n#!!block;n#account_getActiveOffers_response#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="e#41#70#0#PHP" expanded="true" />
+                <marker date="1504892784885" expanded="true" signature="791:894" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseMethod.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
+      <file leaf-file-name="objects.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/objects.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vk.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/vk_examples/vk.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="methods.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/methods.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="449" column="69" lean-forward="true" selection-start-line="449" selection-start-column="69" selection-end-line="449" selection-end-column="69" />
+            <state relative-caret-position="64">
+              <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
-                <element signature="e#14#3927#0" expanded="false" />
-                <element signature="e#4080#5513#0" expanded="false" />
-                <element signature="e#5784#11989#0" expanded="false" />
+                <element signature="n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#friends#0;n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#messages#0;n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#photos#0;n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_lookup_result#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_name_request#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_offer#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_onoff_options#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_other_contact#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_push_conversations#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_push_conversations_item#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_push_params#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_push_settings#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_user_settings#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_user_xtr_contact#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#account_info#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_access_role#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_accesses#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_account#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_ad#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_ad_layout#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_campaign#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_category#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_client#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_criteria#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_demo_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_demostats_format#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_flood_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_link_status#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_object_type#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_paragraphs#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_reject_reason#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_rules#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_stats_format#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_stats_age#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_stats_cities#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_stats_sex#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_stats_sex_age#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_targ_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_targ_suggestions#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_targ_suggestions_regions#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_targ_suggestions_cities#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#ads_targ_suggestions_schools#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#widgets_widget_comment#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#widgets_comment_media#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#widgets_comment_replies#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#widgets_comment_replies_item#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#widgets_widget_page#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -94,6 +118,13 @@
       <find>users_get_response</find>
       <find>ads_createTargetGroup_response</find>
       <find>additionalProperties</find>
+      <find>/definitions/base_bool_int</find>
+      <find>base_bool_int</find>
+      <find>&quot;base_bool_int</find>
+      <find>#/definitions/users_user</find>
+      <find>#/definitions/users_user&quot;</find>
+      <find>Node</find>
+      <find>users_user_xtr_counters</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\pilot114\sources\lp\bdb\src\Addons\VkApi</dir>
@@ -143,9 +174,10 @@
         <option value="$PROJECT_DIR$/bin/vk_examples/vk.php" />
         <option value="$PROJECT_DIR$/bin/geObjects.php" />
         <option value="$PROJECT_DIR$/bin/genResponses.php" />
-        <option value="$PROJECT_DIR$/bin/genObjects.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" />
+        <option value="$PROJECT_DIR$/bin/vk_examples/genObjects.php" />
         <option value="$PROJECT_DIR$/bin/genMethods.php" />
+        <option value="$PROJECT_DIR$/bin/genObjects.php" />
       </list>
     </option>
   </component>
@@ -154,6 +186,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -248,14 +283,14 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pilot114\sources\lp\bdb\bin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pilot114\sources\lp\bdb\bin" />
       <recent name="C:\Users\pilot114\sources\lp\bdb\bin\vk_examples" />
       <recent name="C:\Users\pilot114\sources\lp\bdb\src\Addons\VK" />
       <recent name="C:\Users\pilot114\sources\lp\bdb\conf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pilot114\sources\lp\bdb\bin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,6 +308,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="78217b3c-5e04-4962-963e-d116f758e615" name="Default" comment="" />
@@ -286,12 +324,12 @@
       <workItem from="1504328818591" duration="22345000" />
       <workItem from="1504380303311" duration="1012000" />
       <workItem from="1504416285609" duration="3252000" />
-      <workItem from="1504793597334" duration="5932000" />
+      <workItem from="1504793597334" duration="27638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64856000" />
+    <option name="totallyTimeSpent" value="86562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -346,7 +384,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/SetOnline.php" />
     <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Unpin.php" />
     <entry file="file://$PROJECT_DIR$/src/Source.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -609,26 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/methods.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="449" column="69" lean-forward="true" selection-start-line="449" selection-start-column="69" selection-end-line="449" selection-end-column="69" />
-          <folding>
-            <element signature="e#14#3927#0" expanded="false" />
-            <element signature="e#4080#5513#0" expanded="false" />
-            <element signature="e#5784#11989#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Users_GetSubscriptions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -669,10 +686,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/methods.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="452" column="6" lean-forward="true" selection-start-line="452" selection-start-column="6" selection-end-line="452" selection-end-column="6" />
+          <folding>
+            <element signature="e#14#3927#0" expanded="false" />
+            <element signature="e#4080#5513#0" expanded="false" />
+            <element signature="e#5784#11989#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/responses.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="307" column="31" lean-forward="true" selection-start-line="307" selection-start-column="31" selection-end-line="307" selection-end-column="31" />
+        <state relative-caret-position="281">
+          <caret line="7421" column="62" lean-forward="false" selection-start-line="7421" selection-start-column="37" selection-end-line="7421" selection-end-column="62" />
           <folding>
             <element signature="n#!!block;n#response#0;n#!!block;n#properties#0;n#!!block;n#account_getActiveOffers_response#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
           </folding>
@@ -687,10 +716,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/objects.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="581" column="22" lean-forward="true" selection-start-line="581" selection-start-column="22" selection-end-line="581" selection-end-column="22" />
+        <state relative-caret-position="64">
+          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
@@ -712,6 +749,7 @@
             <element signature="n#!!block;n#ads_access_role#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_accesses#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_account#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ads_ad#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_ad_layout#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_campaign#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_category#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
@@ -733,6 +771,9 @@
             <element signature="n#!!block;n#ads_stats_sex_age#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_targ_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#ads_targ_suggestions#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ads_targ_suggestions_regions#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ads_targ_suggestions_cities#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ads_targ_suggestions_schools#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#widgets_widget_comment#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#widgets_comment_media#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#widgets_comment_replies#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
@@ -744,10 +785,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/genMethods.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="251" column="32" lean-forward="true" selection-start-line="251" selection-start-column="32" selection-end-line="251" selection-end-column="32" />
+        <state relative-caret-position="80">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding>
             <element signature="e#41#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/genObjects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#41#70#0#PHP" expanded="true" />
+            <marker date="1504892784885" expanded="true" signature="791:894" ph="..." />
           </folding>
         </state>
       </provider>
