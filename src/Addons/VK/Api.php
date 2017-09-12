@@ -13,6 +13,11 @@ class Api
         $this->defaultQuery = array('v' => self::VERSION, 'access_token' => $accessToken);
         $this->client = new Client(array('base_uri' => 'https://api.vk.com/method/'));
     }
+    public function execute() : Method\Execute
+    {
+        return new Method\Execute($this->client, $this->defaultQuery);
+    }
+
     public function users() : Domain\Users
     {
         return new Domain\Users($this->client, $this->defaultQuery);

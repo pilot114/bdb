@@ -5,18 +5,92 @@ include './vendor/autoload.php';
 $accessToken = file_get_contents('at.txt');
 $vk = new \Bdb\Addons\VK\Api($accessToken);
 
+//university_country идентификатор страны, в которой пользователи закончили ВУЗ.
+//положительное число
+//university идентификатор ВУЗа.
+//положительное число
+//university_year год окончания ВУЗа.
+//положительное число
+//university_faculty идентификатор факультета.
+//положительное число
+//university_chair идентификатор кафедры.
+//положительное число
+
+//school_country идентификатор страны, в которой пользователи закончили школу.
+//положительное число
+//school_city идентификатор города, в котором пользователи закончили школу.
+//положительное число
+//school_class буква класса.
+//положительное число
+//school идентификатор школы, которую закончили пользователи.
+//положительное число
+//school_year
+
+//company название компании, в которой работают пользователи.
+//строка
+//position название должности.
+//строка
+
+//interests интересы.
+//строка
+//group_id идентификатор группы, среди пользователей которой необходимо проводить поиск.
+//положительное число
+//from_list Разделы среди которых нужно осуществить поиск, перечисленные через запятую. Возможные значения:
+//friends — искать среди друзей;
+//subscriptions — искать среди друзей и подписок пользователя.
+//список слов, разделенных через запятую
+//birth_year год рождения.
+//положительное число
+
+
 $response = $vk->users()->search()
+// 1 - by regDate 0 - popular
+//    ->_sort()
+    ->_offset(0)
+    ->_count(1)
 	->_city(99)
 	->_fields([
-		'bdate', 'photo_200_orig', 'lists', 'domain', 'contacts', 'site', 'education', 'universities',
-		'schools', 'status', 'last_seen', 'followers_count', 'common_count', 'occupation',
-		'nickname', 'relatives', 'relation', 'personal', 'connections', 'exports', 'wall_comments',
-		'activities', 'interests', 'music', 'movies', 'tv', 'books', 'games', 'about', 'quotes',
-		'can_post', 'can_see_all_posts', 'can_see_audio', 'can_write_private_message', 'can_send_friend_request', 'is_favorite',
-		'is_hidden_from_feed', 'timezone', 'screen_name', 'maiden_name', 'is_friend', 'friend_status', 'career', 'military'
+		'bdate', 'photo_200_orig', 'screen_name', 'about', 'contacts', 'site',
+
+        'activities', // Деятельность
+        'interests', // интересы
+        'personal', // миовоззрение и пр.
+        'quotes',
+        'music',
+        'movies',
+        'tv',
+        'books',
+        'games',
+
+        'relatives', // родственники
+        'relation', // семейное положение
+        'last_seen',
+        'followers_count',
+
+        'career',
+        'military',
+        'occupation', // место работы
+        'universities',
+        'schools',
+
+        'connections', // другие соц сети
+        'exports', // куда настроен экспорт (тоже соц сети)
 	])
     ->_q('Иван Петров')
     ->call();
 
 $result = json_decode((string)$response->getBody());
-dump($result);
+
+$count = $result->response->count;
+$users = $result->response->items;
+
+dump($users);
+
+
+//$code = 'return API.users.get({"user_ids": API.photos.search({"q":"Beatles", "count":3}).items@.owner_id})@.last_name;';
+//$response = $vk->execute()
+//    ->code($code)
+//    ->call();
+//
+//$result = json_decode((string)$response->getBody());
+//dump($result);

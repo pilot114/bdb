@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="78217b3c-5e04-4962-963e-d116f758e615" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/genMethods.php" afterPath="$PROJECT_DIR$/bin/genMethods.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/genObjects.php" afterPath="$PROJECT_DIR$/bin/genObjects.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/vk_examples/vk.php" afterPath="$PROJECT_DIR$/bin/vk_examples/vk.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Addons/VK/Api.php" afterPath="$PROJECT_DIR$/src/Addons/VK/Api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,88 +19,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="genMethods.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/genMethods.php">
+      <file leaf-file-name="vk.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/vk_examples/vk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="genObjects.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/genObjects.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding>
-                <element signature="e#41#70#0#PHP" expanded="true" />
-                <marker date="1504892784885" expanded="true" signature="791:894" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="objects.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/vkcom/vk-api-schema/objects.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#friends#0;n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#messages#0;n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#photos#0;n#!!block;n#properties#0;n#!!block;n#account_account_counters#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_lookup_result#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_name_request#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_offer#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_onoff_options#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_other_contact#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_push_conversations#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_push_conversations_item#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_push_params#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_push_settings#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_user_settings#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_user_xtr_contact#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#account_info#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_access_role#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_accesses#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_account#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_ad#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_ad_layout#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_campaign#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_category#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_client#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_criteria#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_demo_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_demostats_format#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_flood_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_link_status#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_object_type#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_paragraphs#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_reject_reason#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_rules#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_stats_format#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_stats_age#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_stats_cities#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_stats_sex#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_stats_sex_age#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_targ_stats#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_targ_suggestions#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_targ_suggestions_regions#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_targ_suggestions_cities#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#ads_targ_suggestions_schools#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#widgets_widget_comment#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#widgets_comment_media#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#widgets_comment_replies#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#widgets_comment_replies_item#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-                <element signature="n#!!block;n#widgets_widget_page#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="352">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,6 +51,7 @@
       <find>#/definitions/users_user&quot;</find>
       <find>Node</find>
       <find>users_user_xtr_counters</find>
+      <find>sk</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\pilot114\sources\lp\bdb\src\Addons\VkApi</dir>
@@ -157,7 +84,6 @@
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/AddLink.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/BaseMethod.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_RegisterDevice.php" />
-        <option value="$PROJECT_DIR$/src/Addons/VK/Api.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Domain/Users.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/bin/parse.php" />
@@ -166,18 +92,20 @@
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Ads_GetSuggestions.php" />
         <option value="$PROJECT_DIR$/at.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Addons/VK/BaseMethod.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Audio_GetCount.php" />
         <option value="$PROJECT_DIR$/bin/gen.php" />
         <option value="$PROJECT_DIR$/bin/vk.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/bin/vk_examples/vk.php" />
         <option value="$PROJECT_DIR$/bin/geObjects.php" />
         <option value="$PROJECT_DIR$/bin/genResponses.php" />
         <option value="$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php" />
         <option value="$PROJECT_DIR$/bin/vk_examples/genObjects.php" />
         <option value="$PROJECT_DIR$/bin/genMethods.php" />
         <option value="$PROJECT_DIR$/bin/genObjects.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Api.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/Method/Execute.php" />
+        <option value="$PROJECT_DIR$/src/Addons/VK/BaseMethod.php" />
+        <option value="$PROJECT_DIR$/bin/vk_examples/vk.php" />
       </list>
     </option>
   </component>
@@ -215,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,46 +161,11 @@
               <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vk_examples" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="VK" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vkcom" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vkcom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vk-api-schema" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -324,18 +216,20 @@
       <workItem from="1504328818591" duration="22345000" />
       <workItem from="1504380303311" duration="1012000" />
       <workItem from="1504416285609" duration="3252000" />
-      <workItem from="1504793597334" duration="27638000" />
+      <workItem from="1504793597334" duration="28267000" />
+      <workItem from="1504946873941" duration="2859000" />
+      <workItem from="1505226149952" duration="9052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86562000" />
+    <option name="totallyTimeSpent" value="99102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439232" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26972282" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -384,14 +278,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Unpin.php" />
-    <entry file="file://$PROJECT_DIR$/src/Source.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Processor/Html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -535,21 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/at.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="85" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -582,7 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="139" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,23 +525,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#41#70#0#PHP" expanded="true" />
+            <marker date="1504950212798" expanded="true" signature="1084:1187" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/genResponses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/genResponses.php" />
     <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Account_BanUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,11 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="452" column="6" lean-forward="true" selection-start-line="452" selection-start-column="6" selection-end-line="452" selection-end-column="6" />
-          <folding>
-            <element signature="e#14#3927#0" expanded="false" />
-            <element signature="e#4080#5513#0" expanded="false" />
-            <element signature="e#5784#11989#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,25 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="7421" column="62" lean-forward="false" selection-start-line="7421" selection-start-column="37" selection-end-line="7421" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!block;n#response#0;n#!!block;n#properties#0;n#!!block;n#account_getActiveOffers_response#0;n#!!block;n#definitions#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/vk_examples/vk.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,24 +620,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/genMethods.php">
+    <entry file="file://$PROJECT_DIR$/bin/genObjects.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        <state relative-caret-position="256">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="e#41#70#0#PHP" expanded="true" />
+            <marker date="1504950212798" expanded="true" signature="1084:1187" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/genObjects.php">
+    <entry file="file://$PROJECT_DIR$/bin/genMethods.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="16">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding>
-            <element signature="e#41#70#0#PHP" expanded="true" />
-            <marker date="1504892784885" expanded="true" signature="791:894" ph="..." />
+            <element signature="e#41#70#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/at.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="85" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Docs_Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/Method/Execute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Addons/VK/BaseMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/vk_examples/vk.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

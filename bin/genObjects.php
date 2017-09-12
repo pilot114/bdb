@@ -9,6 +9,22 @@ use PhpParser\Node;
 $apiData = file_get_contents('./vendor/vkcom/vk-api-schema/objects.json');
 $objects = json_decode($apiData, true)['definitions'];
 
+
+function getObjectName($inputNode)
+{
+    $refName = str_replace('#/definitions/', '', $inputNode['$ref']);
+    return str_replace('objects.json', '', $refName);
+}
+
+function normalizeObjectName($objectName)
+{
+    $words = explode('_', $objectName);
+    foreach ($words as $i => $word) {
+        $words[$i] = ucfirst($word);
+    }
+    return implode('', $words);
+}
+
 /**
  * @param $path
  * @param $inputNode
@@ -17,8 +33,7 @@ $objects = json_decode($apiData, true)['definitions'];
  */
 function resolveObjectRef($inputNode, $collection)
 {
-    $refName = str_replace('#/definitions/', '', $inputNode['$ref']);
-    $refName = str_replace('objects.json', '', $refName);
+    $refName = getObjectName($inputNode);
     return $collection[$refName];
 }
 
@@ -26,8 +41,9 @@ $factory = new BuilderFactory();
 $prettyPrinter = new PrettyPrinter\Standard();
 
 
-// 1) пробуем создать базовые объекты
 foreach ($objects as $objectName => $object) {
+    $className = normalizeObjectName($objectName);
+
     if (!isset($object['type'])) {
         var_dump($object);
     }
