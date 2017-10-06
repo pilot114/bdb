@@ -5,8 +5,6 @@ include './vendor/autoload.php';
 $accessToken = file_get_contents('at.txt');
 $vk = new \Bdb\Addons\VK\Api($accessToken);
 
-//university_country идентификатор страны, в которой пользователи закончили ВУЗ.
-//положительное число
 //university идентификатор ВУЗа.
 //положительное число
 //university_year год окончания ВУЗа.
@@ -85,12 +83,3 @@ $count = $result->response->count;
 $users = $result->response->items;
 
 dump($users);
-
-
-//$code = 'return API.users.get({"user_ids": API.photos.search({"q":"Beatles", "count":3}).items@.owner_id})@.last_name;';
-//$response = $vk->execute()
-//    ->code($code)
-//    ->call();
-//
-//$result = json_decode((string)$response->getBody());
-//dump($result);

@@ -75,7 +75,7 @@ class Groups_Search extends \Bdb\Addons\VK\BaseMethod
      *
      * {"type":"boolean"}
      */
-    public function _market(boolean $market) : Groups_Search
+    public function _market($market) : Groups_Search
     {
         $this->params['market'] = $market;
         return $this;
