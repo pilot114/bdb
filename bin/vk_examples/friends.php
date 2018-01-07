@@ -18,7 +18,8 @@ var uid = 0;
 while (uid = uids.pop()) {
     var res = API.friends.get({
     fields: "bdate,photo_200_orig,activities,interests,personal,quotes,music,movies,tv,books,games,relatives,relation,last_seen,followers_count,career,military,occupation,universities,schools,connections,exports",
-    user_id:uid});
+    user_id:uid,
+    count: 4500});
     var userInfo = {uid:uid, friends:res.items};
     result.push(userInfo);
 };
@@ -124,14 +125,14 @@ function prepareBatchUsers($vk, $users)
         // обновляем связи
         updateUserMeta($user['uid'], $friendsIds);
     }
-    sleep(rand(25, 30));
+    sleep(rand(30, 35));
 }
 
 
 $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->common;
 
 $total = $collection->count();
-$offset = 72200;
+$offset = 166000;
 while($offset < $total) {
     echo sprintf("offset: %s total: %s\n", $offset, $total);
 
@@ -139,8 +140,8 @@ while($offset < $total) {
         echo sprintf("ts: %s\n", time());
     }
 
-    $batchUsers = $collection->find([], ['limit' => 5, 'skip' => $offset])->toArray();
+    $batchUsers = $collection->find([], ['limit' => 4, 'skip' => $offset])->toArray();
     prepareBatchUsers($vk, $batchUsers);
-    $offset += 5;
+    $offset += 4;
 }
 echo "Done\n";
