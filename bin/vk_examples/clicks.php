@@ -1,14 +1,16 @@
 <?php
 
+/**
+ * перебираем vk_users->common (пары), чтобы найти друзей, затем находим пересечения для них, получаем триплеты
+ */
+
 include './vendor/autoload.php';
 
 $accessToken = file_get_contents('at.txt');
-$vk = new \Bdb\Addons\VK\Api($accessToken);
+$vk = new \VkApigen\Api($accessToken);
 
 $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->common;
 
-// перебираем пары из common, чтобы найти друзей, затем находим пересечения для них, получаем триплеты
-
-foreach($collection->find() as $user) {
+foreach ($collection->find() as $user) {
     dump($user->meta);
 }

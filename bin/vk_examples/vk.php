@@ -46,9 +46,9 @@ $response = $vk->users()->search()
 //    ->_sort()
     ->_offset(0)
     ->_count(1)
-	->_city(99)
-	->_fields([
-		'bdate', 'photo_200_orig', 'screen_name', 'about', 'contacts', 'site',
+    ->_city(99)
+    ->_fields([
+        'bdate', 'photo_200_orig', 'screen_name', 'about', 'contacts', 'site',
 
         'activities', // Деятельность
         'interests', // интересы
@@ -73,7 +73,7 @@ $response = $vk->users()->search()
 
         'connections', // другие соц сети
         'exports', // куда настроен экспорт (тоже соц сети)
-	])
+    ])
     ->_q('Иван Петров')
     ->call();
 

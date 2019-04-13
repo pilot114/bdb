@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+    workspace:
+        image: pilot114/base-workspace72
+        volumes:
+            - "./:/var/www/bdb"
+        tty: true
+        depends_on:
+            - mongo
+        networks:
+            mynet:
+                ipv4_address: 172.24.0.100
+    mongo:
+        user: root
+        image: mongo:4.0
+        volumes:
+            - "./data:/data/db"
+        ports:
+          - "27017:27017"
+        networks:
+            mynet:
+                ipv4_address: 172.24.0.101
+networks:
+    mynet:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.24.0.0/24

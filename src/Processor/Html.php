@@ -3,30 +3,31 @@
 namespace Bdb\Processor;
 
 use \PHPHtmlParser\Dom;
+use function PHPSTORM_META\type;
 
 class Html
 {
-	private $dom;
-	private $messages = [];
+    private $dom;
+    private $messages = [];
 
-	function __construct()
-	{
-		$this->dom = new Dom();
-	}
+    function __construct()
+    {
+        $this->dom = new Dom();
+    }
 
-	public function filterData($data, $selectors)
-	{
-		$this->dom->load($data);
-		$result = [];
-		foreach ($selectors as $name => $selector) {
-			$result[$name] = [];
+    public function filterData($data, $selectors)
+    {
+        $this->dom->load($data);
+        $result = [];
+        foreach ($selectors as $name => $selector) {
+            $result[$name] = [];
 
-			$finds = $this->dom->find($selector);
-			foreach ($finds as $find) {
-				$result[$name][] = $find->text();
-			}
-			$this->messages[] = sprintf("%s: %d\n", $selector, count($finds));
-		}
-		return $result;
-	}
+            $finds = $this->dom->find($selector);
+            foreach ($finds as $find) {
+                $result[$name][] = $find->text();
+            }
+            $this->messages[] = sprintf("%s: %d\n", $selector, count($finds));
+        }
+        return $result;
+    }
 }

@@ -5,7 +5,8 @@ include './vendor/autoload.php';
 $accessToken = file_get_contents('at.txt');
 $vk = new \Bdb\Addons\VK\Api($accessToken);
 
-function getFriends($vk, $users) {
+function getFriends($vk, $users)
+{
     $uids = implode(',', array_column($users, 'id'));
 
     echo sprintf("getFriends. uids: %s\n", $uids);
@@ -77,10 +78,10 @@ function bulkInsert($users)
 function updateUserMeta($userId, $friendsIds)
 {
     $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->common;
-        $collection->updateOne(
-            ['id' => $userId],
-            ['$set' => ['meta.friends_ids' => $friendsIds]]
-        );
+    $collection->updateOne(
+        ['id' => $userId],
+        ['$set' => ['meta.friends_ids' => $friendsIds]]
+    );
 }
 
 function prepareBatchUsers($vk, $users)
@@ -131,9 +132,9 @@ function prepareBatchUsers($vk, $users)
 
 $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->common;
 
-$total = $collection->count();
+$total = $collection->countDocuments();
 $offset = 166000;
-while($offset < $total) {
+while ($offset < $total) {
     echo sprintf("offset: %s total: %s\n", $offset, $total);
 
     if ($offset % 1000 == 0) {

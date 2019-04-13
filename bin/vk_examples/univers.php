@@ -5,9 +5,10 @@ include './vendor/autoload.php';
 $accessToken = file_get_contents('at.txt');
 $vk = new \Bdb\Addons\VK\Api($accessToken);
 
-function getUsersForFiveYears($vk, $startYear, $faculty) {
+function getUsersForFiveYears($vk, $startYear, $faculty)
+{
 
-$code = sprintf('
+    $code = sprintf('
 var result = {count:0,real_count:0, items:[]};
 var year = %s;
 var year_limit = year + 5;
@@ -30,7 +31,7 @@ return result;
         ->code($code)
         ->call();
     $result = json_decode((string)$response->getBody(), true)['response'];
-    $result['items'] = array_reduce($result['items'], function($carry, $item){
+    $result['items'] = array_reduce($result['items'], function ($carry, $item) {
         return array_merge($carry, $item);
     }, []);
 
@@ -78,7 +79,6 @@ function checkUniversity($universityId)
 }
 
 
-
 $response = $vk->database()->getUniversities()
     ->_city_id(99)
     ->call();
@@ -115,7 +115,7 @@ foreach ($result->response->items as $university) {
 
             $result = getUsersForFiveYears($vk, $year, $faculty->id);
 
-            echo sprintf("(%s-%s) %s ", $year,$year+4, $result['real_count']);
+            echo sprintf("(%s-%s) %s ", $year, $year + 4, $result['real_count']);
 
             if (isset($result['items']) && $result['items']) {
                 bulkInsert($result['items']);
@@ -125,7 +125,7 @@ foreach ($result->response->items as $university) {
         addFaculty($faculty->id);
 
         echo sprintf("sleep 10 min...\n");
-        sleep(60*10);
+        sleep(60 * 10);
     }
 
     addUniversity($university->id);
