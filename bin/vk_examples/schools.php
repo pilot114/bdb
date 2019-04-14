@@ -1,11 +1,15 @@
 <?php
 
+/**
+ * Обновление списка школ и их выпускников
+ */
+
 include './vendor/autoload.php';
 
 $accessToken = file_get_contents('at.txt');
-$vk = new \Bdb\Addons\VK\Api($accessToken);
+$vk = new \VkApigen\Api($accessToken);
 
-function getUsersForFiveYears($vk, $startYear, $school)
+function getUsersForFiveYears(\VkApigen\Api $vk, $startYear, $school)
 {
 
     $code = sprintf('
@@ -27,9 +31,7 @@ return result;
 
     $code = trim($code);
 
-    $response = $vk->execute()
-        ->code($code)
-        ->call();
+    $response = $vk->execute($code);
     $result = json_decode((string)$response->getBody(), true)['response'];
     $result['items'] = array_reduce($result['items'], function ($carry, $item) {
         return array_merge($carry, $item);
@@ -54,7 +56,7 @@ function addSchool($schoolId)
     );
 }
 
-function checkSchool($schoolId)
+function existSchool($schoolId)
 {
     $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->counters;
     $result = $collection->findOne(['school' => $schoolId]);
@@ -71,7 +73,7 @@ $result = json_decode((string)$response->getBody());
 
 foreach ($result->response->items as $school) {
 
-    if (checkSchool($school->id)) {
+    if (existSchool($school->id)) {
         continue;
     }
 

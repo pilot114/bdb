@@ -1,11 +1,15 @@
 <?php
 
+/**
+ * Обновление списка универов, факультетов, и их выпускников
+ */
+
 include './vendor/autoload.php';
 
 $accessToken = file_get_contents('at.txt');
-$vk = new \Bdb\Addons\VK\Api($accessToken);
+$vk = new \VkApigen\Api($accessToken);
 
-function getUsersForFiveYears($vk, $startYear, $faculty)
+function getUsersForFiveYears(\VkApigen\Api $vk, $startYear, $faculty)
 {
 
     $code = sprintf('
@@ -27,9 +31,7 @@ return result;
 
     $code = trim($code);
 
-    $response = $vk->execute()
-        ->code($code)
-        ->call();
+    $response = $vk->execute($code);
     $result = json_decode((string)$response->getBody(), true)['response'];
     $result['items'] = array_reduce($result['items'], function ($carry, $item) {
         return array_merge($carry, $item);
@@ -54,7 +56,7 @@ function addFaculty($facultyId)
     );
 }
 
-function checkFaculty($facultyId)
+function existFaculty($facultyId)
 {
     $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->counters;
     $result = $collection->findOne(['faculty' => $facultyId]);
@@ -71,7 +73,7 @@ function addUniversity($universityId)
     );
 }
 
-function checkUniversity($universityId)
+function existUniversity($universityId)
 {
     $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->counters;
     $result = $collection->findOne(['university' => $universityId]);
@@ -87,22 +89,28 @@ $result = json_decode((string)$response->getBody());
 
 foreach ($result->response->items as $university) {
 
-    if (checkUniversity($university->id)) {
-        continue;
+    if (!existUniversity($university->id)) {
+        addUniversity($university->id);
     }
 
     sleep(rand(5, 30));
 
+    // получаем факультеты универа
     $universityName = $university->title;
-
     $response = $vk->database()->getFaculties()
         ->university_id($university->id)
         ->call();
     $resultFaculty = json_decode((string)$response->getBody());
 
+    if (empty($resultFaculty->response->items)) {
+        echo sprintf("Нет факультетов: %s\n", $universityName);
+        continue;
+    }
+
     foreach ($resultFaculty->response->items as $faculty) {
 
-        if (checkFaculty($faculty->id)) {
+        // если факультет уже есть - идём дальше
+        if (existFaculty($faculty->id)) {
             continue;
         }
 
@@ -127,7 +135,5 @@ foreach ($result->response->items as $university) {
         echo sprintf("sleep 10 min...\n");
         sleep(60 * 10);
     }
-
-    addUniversity($university->id);
 }
 echo sprintf("Done\n");

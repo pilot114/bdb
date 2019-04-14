@@ -3,7 +3,7 @@
 include './vendor/autoload.php';
 
 $accessToken = file_get_contents('at.txt');
-$vk = new \Bdb\Addons\VK\Api($accessToken);
+$vk = new \VkApigen\Api($accessToken);
 
 function getFriends($vk, $users)
 {
@@ -84,7 +84,7 @@ function updateUserMeta($userId, $friendsIds)
     );
 }
 
-function prepareBatchUsers($vk, $users)
+function prepareBatchUsers(\VkApigen\Api $vk, $users)
 {
     // чтобы не начинать сначала
     $users = filterFindFriends($users);

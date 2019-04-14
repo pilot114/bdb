@@ -23,5 +23,8 @@
       "url": "https://github.com/pilot114/vk-apigen.git",
       "type": "git"
     }
-  ]
+  ],
+  "require-dev": {
+    "symfony/var-dumper": "^4.2"
+  }
 }
