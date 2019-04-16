@@ -29,9 +29,7 @@ return result;
 
     $code = trim($code);
 
-    $response = $vk->execute()
-        ->code($code)
-        ->call();
+    $response = $vk->execute($code);
 
     $res = json_decode((string)$response->getBody(), true);
 
@@ -84,6 +82,13 @@ function updateUserMeta($userId, $friendsIds)
     );
 }
 
+/**
+ * 1) Проверяем, что ещё не искали по этим пользователям
+ * 2) получаем друзей, с retry
+ * 3) добавляем друзей в каунтеры (upsert)
+ * 4) добавляем найденных в коллекцию friends
+ * 5) добавляем связи в common
+ */
 function prepareBatchUsers(\VkApigen\Api $vk, $users)
 {
     // чтобы не начинать сначала
@@ -109,6 +114,10 @@ function prepareBatchUsers(\VkApigen\Api $vk, $users)
     }
 
     foreach ($users as $user) {
+        if (is_null($user['friends'])) {
+            $user['friends'] = [];
+        }
+
         echo sprintf("User: %s, count friends: %s\n", $user['uid'], count($user['friends']));
 
         // обновляем каунтеры
@@ -126,14 +135,14 @@ function prepareBatchUsers(\VkApigen\Api $vk, $users)
         // обновляем связи
         updateUserMeta($user['uid'], $friendsIds);
     }
-    sleep(rand(30, 35));
+    sleep(rand(10, 15));
 }
 
 
 $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->common;
 
 $total = $collection->countDocuments();
-$offset = 166000;
+$offset = 188512;
 while ($offset < $total) {
     echo sprintf("offset: %s total: %s\n", $offset, $total);
 
