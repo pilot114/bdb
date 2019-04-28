@@ -135,14 +135,14 @@ function prepareBatchUsers(\VkApigen\Api $vk, $users)
         // обновляем связи
         updateUserMeta($user['uid'], $friendsIds);
     }
-    sleep(rand(10, 15));
+    sleep(rand(2, 8));
 }
 
 
 $collection = (new MongoDB\Client('mongodb://mongo/'))->vk_users->common;
 
 $total = $collection->countDocuments();
-$offset = 188512;
+$offset = 439000;
 while ($offset < $total) {
     echo sprintf("offset: %s total: %s\n", $offset, $total);
 
