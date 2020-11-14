@@ -2,6 +2,7 @@
 
 namespace Bdb\Client;
 
+use Bdb\Source;
 use \GuzzleHttp\Client as GuzzleClient;
 
 class Http
@@ -37,14 +38,32 @@ class Http
 
     /*
      * возвращает массив реальных URL
-     * Больше одного, если исходный URL содержит паттерн вида {startNumber:endNumber}
+     * Больше одного, если исходный URL содержит:
+     * range: {startNumber:endNumber}
+     * ref: {#SOURCE.FIELD}
      */
     private function extractUrls(string $urlPattern): array
     {
         if (!preg_match('#{(.*)}#', $urlPattern, $matches)) {
             return [$urlPattern];
         };
-        list($start, $end) = explode(':', end($matches));
+        $diap = end($matches);
+
+        if (strpos($diap, '#') === 0) {
+            // ссылка на датасет
+            $ref = substr($diap, 1);
+            list($sourceName, $field) = explode('.', $ref);
+            $source = Source::getInstanse($sourceName);
+            $dataset = $source->get([$field])[$field];
+
+            $urls = [];
+            foreach ($dataset as $item) {
+                $urls[] = preg_replace('#{(.*)}#', $item, $urlPattern);
+            }
+            return $urls;
+        }
+
+        list($start, $end) = explode(':', $diap);
 
         $urls = [];
         for ($i = $start; $i <= $end; $i++) {

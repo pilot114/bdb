@@ -2,6 +2,10 @@
 
 namespace Bdb;
 
+use Bdb\Client\ClientFactory;
+use Bdb\Processor\ProcessorFactory;
+use Symfony\Component\Yaml\Yaml;
+
 /**
  *  Class Source
  *
@@ -62,6 +66,17 @@ class Source
         if (time() < ($lastUpdateTs + $getExpireSec)) {
             $this->expired = false;
         }
+    }
+
+    public static function getInstanse($configName)
+    {
+        $config = Yaml::parse(file_get_contents('./conf/sources/inet.yml'));
+        $config = $config[$configName];
+        $client = ClientFactory::build($config['type']);
+        $processor = ProcessorFactory::build($config['format']);
+        return (new self($config, $configName))
+            ->setClient($client)
+            ->setProcessor($processor);
     }
 
     public function __toString()

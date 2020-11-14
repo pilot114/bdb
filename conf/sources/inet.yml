@@ -1,0 +1,17 @@
+inet_by_asn:
+  description: Список ASN Белоруссии
+  expire: 1d
+  type: http
+  format: html
+  url: https://whois.ipip.net/countries/BY
+  datasets:
+    asn: tr a
+
+inet_by_cidr:
+  description: Список сетей Белоруссии (по списку ASN)
+  expire: 1d
+  type: http
+  format: html
+  url: https://whois.ipip.net/{#inet_by_asn.asn}
+  datasets:
+    id_name: '#pills-ipv4 tr a'
